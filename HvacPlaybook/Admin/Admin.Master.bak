@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="HvacPlaybook.AdminMaster" %>
+<%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/Images/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <a id="LogoImage" href="~/" runat="server"><img src="../Images/Playbook.jpg" style="float:left;border:none"/></a>
+            <div class="container">
+                <div class="navbar-header">
+                    <a id="LogoText" href="~/" runat="server" class="navbar-brand" style="padding-top:40px;padding-left:25px;font-size:16pt">HVAC Playbook - Control Panel</a>
+                </div>
+                <div class="navbar-collapse collapse">
+<% if (Request.Url.AbsoluteUri.ToLower().IndexOf("login") == -1) { %>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><asp:LinkButton id="Logout" Text="Logout" OnClick="Logout_Click" runat="server" style="padding-top:40px;" /></li>
+                    </ul>
+<% } %>
+                </div>
+            </div>
+        </div>
+        <table style="min-height:400px;width:100%" border="0">
+            <tr>
+                <td style="vertical-align:top;width:150px">
+                    <br />
+                    <dx:ASPxNavBar ID="nbMain" runat="server" AllowSelectItem="True" EnableAnimation="True" Width="100%" Visible="false">
+                        <GroupHeaderStyle HorizontalAlign="Left" />
+                        <ItemStyle HorizontalAlign="Left" />
+                        <Groups>
+                            <dx:NavBarGroup Text="Playbook Resources">
+                                <Items>
+                                    <dx:NavBarItem Text="Manage Users" NavigateUrl="ManageUsers.aspx">
+                                        <Image Height="16px" Url="~/Images/NavBar/BO_Users.png" Width="16px" />
+                                    </dx:NavBarItem>
+                                    <dx:NavBarItem Text="View Prospects" NavigateUrl="ProspectView.aspx">
+                                        <Image Height="16px" Url="~/Images/NavBar/BO_Organizations.png" Width="16px" />
+                                    </dx:NavBarItem>
+                                    <dx:NavBarItem Text="Set Proposal Reminders">
+                                        <Image Height="16px" Url="~/Images/NavBar/BO_Scheduler.png" Width="16px" />
+                                    </dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup ItemImagePosition="Top" Text="Playbook Data">
+                                <ContentStyle>
+                                    <Paddings PaddingBottom="1px" PaddingTop="1px" />
+                                </ContentStyle>
+                                <ItemStyle HorizontalAlign="Center" />
+                                <Items>
+                                    <dx:NavBarItem Text="Default Playbook Data">
+                                        <Image Height="32px" Url="~/Images/NavBar/BO_Notes_Large.png" Width="32px" />
+                                    </dx:NavBarItem>
+                                    <dx:NavBarItem Text="Proposal Designer">
+                                        <Image Height="32px" Url="~/Images/NavBar/BO_Reports_Large.png" Width="32px" />
+                                    </dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                        </Groups>
+                    </dx:ASPxNavBar>
+                </td>
+                <td style="width:10px">&nbsp;</td>
+                <td style="vertical-align:top;padding-top:50px">
+                    <div class="container body-content">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td style="width:20px">&nbsp;</td>
+                <td style="text-align:center">
+                    <hr />
+                    <footer>
+                        <p>&copy; <%: DateTime.Now.Year %> - HVAC Playbook</p>
+                    </footer>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
