@@ -27,6 +27,7 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -166,7 +167,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Admin\ControlPanel.aspx" />
-    <Content Include="Admin\ProspectView.aspx" />
+    <Content Include="Admin\CustomerView.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\ManageUsers.aspx" />
     <Content Include="Contact.aspx" />
@@ -262,12 +263,12 @@
     <Compile Include="Admin\ControlPanel.aspx.designer.cs">
       <DependentUpon>ControlPanel.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ProspectView.aspx.cs">
-      <DependentUpon>ProspectView.aspx</DependentUpon>
+    <Compile Include="Admin\CustomerView.aspx.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\ProspectView.aspx.designer.cs">
-      <DependentUpon>ProspectView.aspx</DependentUpon>
+    <Compile Include="Admin\CustomerView.aspx.designer.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
