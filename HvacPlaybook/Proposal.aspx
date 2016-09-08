@@ -36,119 +36,152 @@
             </dx:ASPxCheckBox>
             <br />
             <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                ActiveTabIndex="0" EnableHierarchyRecreation="true" Width="800">
+                ActiveTabIndex="0" Width="800px" OnActiveTabChanged="pageControl_ActiveTabChanged">
                 <ClientSideEvents ActiveTabChanging="OnTabChanging" />
                 <TabPages>
                     <dx:TabPage Name="CustomerInfo" Text="Customer Information" ActiveTabStyle-Font-Bold="true">
+<ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
                         <ContentCollection>
                             <dx:ContentControl runat="server">
                                 <table border="0">
                                     <tr>
                                         <td style="width:180px">
-                                            <dx:ASPxLabel ID="lblFirstName" runat="server" Text="First name"/>
-                                            <dx:ASPxTextBox ID="txtFirstName" runat="server" Width="170px" ClientInstanceName="txtFirstName">
-                                                <ValidationSettings SetFocusOnError="True" ValidationGroup="groupCustomerInfo">
-                                                    <RequiredField IsRequired="True" ErrorText="First Name is required" />
-                                                </ValidationSettings>
-                                            </dx:ASPxTextBox>
-                                        </td>
-                                        <td>&nbsp;&nbsp;</td>
-                                        <td style="width:180px" colspan="3">
-                                            <dx:ASPxLabel ID="lblLastName" runat="server" Text="Last name"/>
-                                            <dx:ASPxTextBox ID="txtLastName" runat="server" Width="170px" ClientInstanceName="txtLastName">
-                                                <ValidationSettings SetFocusOnError="true" ValidationGroup="groupCustomerInfo">
-                                                    <RequiredField IsRequired="true" ErrorText="Last Name is required" />
-                                                </ValidationSettings>
-                                            </dx:ASPxTextBox>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:180px">
-                                            <dx:ASPxLabel ID="lblStreet" runat="server" Text="Street"/>
-                                            <dx:ASPxTextBox ID="txtStreet" runat="server" Width="170px" ClientInstanceName="txtStreet">
-                                                <ValidationSettings SetFocusOnError="True" ValidationGroup="groupCustomerInfo">
-                                                    <RequiredField IsRequired="True" ErrorText="Street is required" />
-                                                </ValidationSettings>
-                                            </dx:ASPxTextBox>
-                                        </td>
-                                        <td>&nbsp;&nbsp;</td>
-                                        <td style="width:180px" colspan="3">
-                                            <dx:ASPxLabel ID="lblAddStreet" runat="server" Text="Additional Street Info"/>
-                                            <dx:ASPxTextBox ID="txtAddStreet" runat="server" Width="170px" ClientInstanceName="txtAddStreet"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:180px">
-                                            <dx:ASPxLabel ID="lblCity" runat="server" Text="City"/>
-                                            <dx:ASPxTextBox ID="txtCity" runat="server" Width="170px" ClientInstanceName="txtCity">
-                                                <ValidationSettings SetFocusOnError="True" ValidationGroup="groupCustomerInfo">
-                                                    <RequiredField IsRequired="True" ErrorText="City is required" />
-                                                </ValidationSettings>
-                                            </dx:ASPxTextBox>
-                                        </td>
-                                        <td>&nbsp;&nbsp;</td>
-                                        <td style="width:180px">
-                                            <dx:ASPxLabel ID="lblState" runat="server" Text="State"/>
-                                            <dx:ASPxComboBox ID="cbState" runat="server" ValueType="System.String" ClientInstanceName="cbState" Width="170px">
+                                            &nbsp;
+                                            <dx:ASPxFormLayout runat="server" ID="exampleFormLayout" RequiredMarkDisplayMode="RequiredOnly" EnableViewState="false" EncodeHtml="false">
                                                 <Items>
-                                                    <dx:ListEditItem Value="Alaska" Text="Alaska" />
-                                                    <dx:ListEditItem Value="Indiana" Text="Indiana" />
-                                                    <dx:ListEditItem Value="Kentucky" Text="Kentucky" />
-                                                    <dx:ListEditItem Value="Minnesota" Text="Minnesota" />
-                                                    <dx:ListEditItem Value="Nevada" Text="Nevada" />
+                                                    <dx:LayoutGroup Caption="Coustomer Info" ColCount="2" GroupBoxDecoration="HeadingLine">
+                                                        <Items>
+                                                            <dx:LayoutItem Caption="First Name">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E2" runat="server">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                                <RequiredField ErrorText="First Name is Required!" IsRequired="True" />
+                                                                            </ValidationSettings>
+                                                                        </dx:ASPxTextBox>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                            <dx:LayoutItem Caption="Last Name">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E1" runat="server">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                                <RequiredField ErrorText="Last Name is Required!" IsRequired="True" />
+                                                                            </ValidationSettings>
+                                                                        </dx:ASPxTextBox>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                            <dx:LayoutItem Caption="Street">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E3" runat="server">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                                <RequiredField ErrorText="Street is Required!" IsRequired="True" />
+                                                                            </ValidationSettings>
+                                                                        </dx:ASPxTextBox>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                            <dx:LayoutItem Caption="Additional Street Info">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E4" runat="server">
+                                                                        </dx:ASPxTextBox>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                            <dx:LayoutItem Caption="City">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E5" runat="server">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                                <RequiredField ErrorText="City is Required!" IsRequired="True" />
+                                                                            </ValidationSettings>
+                                                                        </dx:ASPxTextBox>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                            <dx:LayoutItem Caption="State">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxComboBox ID="State_ComboBox" runat="server"   OnSelectedIndexChanged="exampleFormLayout_E7_SelectedIndexChanged" DisplayFormatString="{0} {1}" >
+                                                                            <Columns>
+                                                                                <dx:ListBoxColumn FieldName="StateCode" />
+                                                                                <dx:ListBoxColumn FieldName="StateName" />
+                                                                            </Columns>
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                                <RequiredField ErrorText="State is Required!" IsRequired="True" />
+                                                                            </ValidationSettings>
+                                                                        </dx:ASPxComboBox>
+                                                                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HVACPlaybookConnectionString %>" SelectCommand="SELECT [StateCode], [StateName] FROM [States]"></asp:SqlDataSource>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                            <dx:LayoutItem Caption="ZIP Code">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E8" runat="server">
+                                                                            <MaskSettings ErrorText="Invalid ZIP Code!" Mask="00000" />
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                                <RequiredField ErrorText="ZIP Code is Required!" IsRequired="True" />
+                                                                            </ValidationSettings>
+                                                                        </dx:ASPxTextBox>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                            <dx:LayoutItem Caption="Primary Phone">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E9" runat="server" HelpText="E.g. (123)555-1234">
+                                                                            <MaskSettings ErrorText="Invalid Phone Number!" Mask="(999) 000-0000" />
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                                <RequiredField ErrorText="Primary Phone is Required!" IsRequired="True" />
+                                                                            </ValidationSettings>
+                                                                        </dx:ASPxTextBox>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                            <dx:LayoutItem Caption="E-Mail">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E10" runat="server">
+                                                                            <MaskSettings ErrorText="Invalid E-Mail!" />
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                                <RegularExpression ErrorText="Invalid E-Mail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+                                                                                <RequiredField ErrorText="E-Mail is Required!" IsRequired="True" />
+                                                                            </ValidationSettings>
+                                                                        </dx:ASPxTextBox>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                            <dx:LayoutItem Caption="Other Contact Name &amp; Phone">
+                                                                <LayoutItemNestedControlCollection>
+                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E11" runat="server">
+                                                                        </dx:ASPxTextBox>
+                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                </LayoutItemNestedControlCollection>
+                                                            </dx:LayoutItem>
+                                                        </Items>
+                                                    </dx:LayoutGroup>
+                                                    <dx:LayoutItem Caption="Notes (Gate code, location info, etc.)" Width="100%">
+                                                        <LayoutItemNestedControlCollection>
+                                                            <dx:LayoutItemNestedControlContainer runat="server">
+                                                                <dx:ASPxMemo ID="exampleFormLayout_E12" runat="server" AutoResizeWithContainer="True" Height="71px" Width="100%">
+                                                                </dx:ASPxMemo>
+                                                            </dx:LayoutItemNestedControlContainer>
+                                                        </LayoutItemNestedControlCollection>
+                                                    </dx:LayoutItem>
                                                 </Items>
-                                                <ValidationSettings ValidationGroup="groupCustomerInfo" ValidateOnLeave="true" SetFocusOnError="true">
-                                                    <RequiredField IsRequired="true" ErrorText="State is required" />
-                                                </ValidationSettings>
-                                            </dx:ASPxComboBox>
-                                        </td>
-                                        <td>&nbsp;&nbsp;</td>
-                                        <td style="width:180px">
-                                            <dx:ASPxLabel ID="lblZipcode" runat="server" Text="ZIP Code"/>
-                                            <dx:ASPxTextBox ID="txtZipcode" runat="server" Width="170px" ClientInstanceName="txtZipcode">
-                                                <ValidationSettings SetFocusOnError="True" ValidationGroup="groupCustomerInfo">
-                                                    <RequiredField IsRequired="true" ErrorText="ZIP Code is required" />
-                                                    <RegularExpression ValidationExpression="\d{5}(-\d{4})?" ErrorText="Invalid ZIP Code" />
-                                                </ValidationSettings>
-                                            </dx:ASPxTextBox>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:180px">
-                                            <dx:ASPxLabel ID="lblPhone" runat="server" Text="Primary Phone"/>
-                                            <dx:ASPxTextBox ID="txtPhone" runat="server" Width="170px" ClientInstanceName="txtPhone">
-                                                <ValidationSettings SetFocusOnError="True" ValidationGroup="groupCustomerInfo">
-                                                    <RegularExpression ErrorText="Invalid phone number" ValidationExpression="\(?\b[0-9]{3}\)?[-. ]?[0-9]{3}[-. ]?[0-9]{4}\b" />
-                                                    <RequiredField IsRequired="True" ErrorText="Primary Phone is required" />
-                                                </ValidationSettings>
-                                            </dx:ASPxTextBox>
-                                        </td>
-                                        <td>&nbsp;&nbsp;</td>
-                                        <td style="width:180px" colspan="3">
-                                            <dx:ASPxLabel ID="lblEmail" runat="server" Text="E-Mail"/>
-                                            <dx:ASPxTextBox ID="txtEmail" runat="server" ClientInstanceName="txtEmail" Width="170px">
-                                                <ValidationSettings SetFocusOnError="True" ValidationGroup="groupCustomerInfo">
-                                                    <RegularExpression ErrorText="Invalid E-Mail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
-                                                    <RequiredField IsRequired="True" ErrorText="E-Mail is required" />
-                                                </ValidationSettings>
-                                            </dx:ASPxTextBox>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:180px;vertical-align:top">
-                                            <dx:ASPxLabel ID="lblOtherContact" runat="server" Text="Other Contact Name & Phone"/>
-                                            <dx:ASPxTextBox ID="txtOtherContact" runat="server" Width="170px" ClientInstanceName="txtOtherContact"/>
-                                        </td>
-                                        <td>&nbsp;&nbsp;</td>
-                                        <td style="width:180px" colspan="3">
-                                            <dx:ASPxLabel ID="lblNotes" runat="server" Text="Notes (Gate code, location info, etc.)"/>
-                                            <dx:ASPxMemo ID="memNotes" runat="server" ClientInstanceName="memNotes" Height="100" Width="360"/>
+                                            </dx:ASPxFormLayout>
                                         </td>
                                     </tr>
                                 </table>
                                 <hr />
                                 <dx:ASPxButton ID="btnNextCustomerInfo" runat="server" Text="Next" ClientInstanceName="btnNextCustomerInfo"
-                                    AutoPostBack="false" ValidationGroup="groupCustomerInfo" Width="150">
+                                    AutoPostBack="false" ValidationGroup="groupCustomerInfo" Width="150" OnClick="btnNextCustomerInfo_Click">
                                     <ClientSideEvents Click="OnButtonClick" />
                                 </dx:ASPxButton>
                                 <dx:ASPxValidationSummary ID="validSummaryPersonal" runat="server" ValidationGroup="groupCustomerInfo">
@@ -157,6 +190,7 @@
                         </ContentCollection>
                     </dx:TabPage>
                     <dx:TabPage Name="Survey" Text="Use Survey" ActiveTabStyle-Font-Bold="true">
+<ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
                         <ContentCollection>
                             <dx:ContentControl runat="server">
                                 <dx:ASPxLabel runat="server" Text="Admin driven questions 1-10 below...." Font-Bold="true"/><br /><br />
@@ -179,6 +213,7 @@
                         </ContentCollection>
                     </dx:TabPage>
                     <dx:TabPage Name="ProposalType" Text="Type of Proposal" ActiveTabStyle-Font-Bold="true">
+<ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
                         <ContentCollection>
                             <dx:ContentControl runat="server">
                                 <dx:ASPxLabel ID="lblProposalType" runat="server" Text="Proposal Type"/>

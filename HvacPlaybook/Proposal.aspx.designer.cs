@@ -31,202 +31,121 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxPageControl pageControl;
         
         /// <summary>
-        /// lblFirstName control.
+        /// exampleFormLayout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblFirstName;
+        protected global::DevExpress.Web.ASPxFormLayout exampleFormLayout;
         
         /// <summary>
-        /// txtFirstName control.
+        /// exampleFormLayout_E2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txtFirstName;
+        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E2;
         
         /// <summary>
-        /// lblLastName control.
+        /// exampleFormLayout_E1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblLastName;
+        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E1;
         
         /// <summary>
-        /// txtLastName control.
+        /// exampleFormLayout_E3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txtLastName;
+        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E3;
         
         /// <summary>
-        /// lblStreet control.
+        /// exampleFormLayout_E4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblStreet;
+        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E4;
         
         /// <summary>
-        /// txtStreet control.
+        /// exampleFormLayout_E5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txtStreet;
+        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E5;
         
         /// <summary>
-        /// lblAddStreet control.
+        /// State_ComboBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblAddStreet;
+        protected global::DevExpress.Web.ASPxComboBox State_ComboBox;
         
         /// <summary>
-        /// txtAddStreet control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txtAddStreet;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// lblCity control.
+        /// exampleFormLayout_E8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblCity;
+        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E8;
         
         /// <summary>
-        /// txtCity control.
+        /// exampleFormLayout_E9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txtCity;
+        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E9;
         
         /// <summary>
-        /// lblState control.
+        /// exampleFormLayout_E10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblState;
+        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E10;
         
         /// <summary>
-        /// cbState control.
+        /// exampleFormLayout_E11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox cbState;
+        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E11;
         
         /// <summary>
-        /// lblZipcode control.
+        /// exampleFormLayout_E12 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblZipcode;
-        
-        /// <summary>
-        /// txtZipcode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txtZipcode;
-        
-        /// <summary>
-        /// lblPhone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblPhone;
-        
-        /// <summary>
-        /// txtPhone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txtPhone;
-        
-        /// <summary>
-        /// lblEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblEmail;
-        
-        /// <summary>
-        /// txtEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txtEmail;
-        
-        /// <summary>
-        /// lblOtherContact control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblOtherContact;
-        
-        /// <summary>
-        /// txtOtherContact control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txtOtherContact;
-        
-        /// <summary>
-        /// lblNotes control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblNotes;
-        
-        /// <summary>
-        /// memNotes control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxMemo memNotes;
+        protected global::DevExpress.Web.ASPxMemo exampleFormLayout_E12;
         
         /// <summary>
         /// btnNextCustomerInfo control.

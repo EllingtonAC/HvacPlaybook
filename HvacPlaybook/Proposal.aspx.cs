@@ -12,6 +12,10 @@ namespace HvacPlaybook
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            State_ComboBox.DataSource = SqlDataSource1;
+            State_ComboBox.ValueField = "StateCode";
+            State_ComboBox.DataBind();
+            SqlDataSource1.DataBind();
 
         }
 
@@ -29,5 +33,7 @@ namespace HvacPlaybook
             pageControl.ShowTabs = cb.Checked;
             popupControl.ShowOnPageLoad = false;
         }
+
+        
     }
 }

@@ -2,14 +2,12 @@
 <%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <style type="text/css">
+    w<style type="text/css">
         .centerGrid {margin: 0 auto;min-width:700px}
         .dxgvTable_DevEx caption {font-weight: bold;}
         .dxflCaptionCell_DevEx {font-weight: bold !important;}
-    </style>
-    <script type="text/javascript">
-    </script>
-    <div style="align-content:center;">
+    </style><script type="text/javascript">
+    </script><div style="align-content:center;">
     <dx:ASPxGridView ID="ASPxGridView1" runat="server" Caption="HVAC Playbook Customers" AutoGenerateColumns="False" EnableTheming="True" Theme="DevEx" CssClass="centerGrid"
             OnDataBinding="ASPxGridView1_DataBinding"
             OnRowUpdating="ASPxGridView1_RowUpdating"
@@ -53,10 +51,10 @@
         <asp:SqlDataSource id="HVACPlaybookData" runat="server" ConnectionString="<%$ ConnectionStrings:HVACPlaybook %>" 
             SelectCommand="SELECT [CustomerID], [FirstName], [LastName], [Street1], [Street2], [City], [States].[StateCode], [States].[StateName], [Zip], [PrimaryPhone], [Email], [OtherContact], [Notes] FROM [Customer] Inner Join [States] On [Customer].[StateCode] = [States].[StateCode]"
             InsertCommand="INSERT INTO [Customer] ([FirstName], [LastName], [Street1], [Street2], [City], [StateCode], [Zip], [PrimaryPhone], [Email], [OtherContact], [Notes])VALUES (@FirstName, @LastName, @Street1, @Street2, @City, @StateCode, @Zip, @PrimaryPhone, @Email, @OtherContact, @Notes)"
-            UpdateCommand="UPDATE [Customer] Set [FirstName]=@FirstName, [LastName]=@LastName, [Street1]=@Street1, [Street2]=@Street2, [City]=@City, [StateCode]=@StateCode, [Zip]=@Zip, [PrimaryPhone]=@PrimaryPhone, [Email]=@Email, [OtherContact]=@OtherContact, [Notes]=@Notes WHERE [CustomerID]=@CustomerID">
+            UpdateCommand="UPDATE [Customer] Set [FirstName]=@FirstName, [LastName]=@LastName, [Street1]=@Street1, [Street2]=@Street2, [City]=@City, [StateCode]=@StateCode, [Zip]=@Zip, [PrimaryPhone]=@PrimaryPhone, [Email]=@Email, [OtherContact]=@OtherContact, [Notes]=@Notes WHERE [CustomerID]=@CustomerID" OnSelecting="HVACPlaybookData_Selecting">
         </asp:SqlDataSource>
         <asp:SqlDataSource id="USStates" runat="server" ConnectionString="<%$ ConnectionStrings:HVACPlaybook %>" 
-            SelectCommand="SELECT [StateCode], [StateName] From States Order By StateName">
+            SelectCommand="SELECT [StateCode], [StateName] From States Order By StateName" OnSelecting="USStates_Selecting">
         </asp:SqlDataSource>
     </div>
 </asp:Content>

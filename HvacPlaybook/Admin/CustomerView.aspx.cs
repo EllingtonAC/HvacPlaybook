@@ -54,5 +54,15 @@ namespace HvacPlaybook.Admin
                 lst1.SelectedValue = string.Empty;
             }
         }
+
+        protected void USStates_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void HVACPlaybookData_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }
