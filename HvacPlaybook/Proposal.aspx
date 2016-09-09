@@ -49,7 +49,7 @@
                                             &nbsp;
                                             <dx:ASPxFormLayout runat="server" ID="exampleFormLayout" RequiredMarkDisplayMode="RequiredOnly" EnableViewState="false" EncodeHtml="false" Theme="Aqua" RequiredMark="<span style='color: red'>*</span>">
                                                 <Items>
-                                                    <dx:LayoutGroup Caption="Coustomer Info" ColCount="2" GroupBoxDecoration="HeadingLine">
+                                                    <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
                                                         <Items>
                                                             <dx:LayoutItem Caption="First Name">
                                                                 <LayoutItemNestedControlCollection>
@@ -183,8 +183,7 @@
                                     </tr>
                                 </table>
                                 <hr />
-                                <dx:ASPxButton ID="btnNextCustomerInfo" runat="server" Text="Next" ClientInstanceName="btnNextCustomerInfo"
-                                    AutoPostBack="false" ValidationGroup="groupCustomerInfo" Width="150" OnClick="btnNextCustomerInfo_Click">
+                                <dx:ASPxButton ID="btnNextCustomerInfo" runat="server" Text="Next" ClientInstanceName="btnNextCustomerInfo" ValidationGroup="groupCustomerInfo" Width="150" OnClick="btnNextCustomerInfo_Click">
                                     <ClientSideEvents Click="OnButtonClick" />
                                 </dx:ASPxButton>
                                 <dx:ASPxValidationSummary ID="validSummaryPersonal" runat="server" ValidationGroup="groupCustomerInfo">
