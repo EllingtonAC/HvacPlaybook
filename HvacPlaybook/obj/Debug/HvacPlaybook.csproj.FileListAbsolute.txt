@@ -178,7 +178,7 @@ C:\Users\zhaobo.hu\Source\Repos\HvacPlaybook2\HvacPlaybook\bin\de\DevExpress.Pdf
 C:\Users\zhaobo.hu\Source\Repos\HvacPlaybook2\HvacPlaybook\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
 C:\Users\zhaobo.hu\Source\Repos\HvacPlaybook2\HvacPlaybook\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
 C:\Users\zhaobo.hu\Source\Repos\HvacPlaybook2\HvacPlaybook\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
-C:\Users\zhaobo.hu\Source\Repos\HvacPlaybook2\HvacPlaybook\obj\Debug\HvacPlaybook.csprojResolveAssemblyReference.cache
 C:\Users\zhaobo.hu\Source\Repos\HvacPlaybook2\HvacPlaybook\obj\Debug\HvacPlaybook.dll.licenses
 C:\Users\zhaobo.hu\Source\Repos\HvacPlaybook2\HvacPlaybook\obj\Debug\HvacPlaybook.dll
 C:\Users\zhaobo.hu\Source\Repos\HvacPlaybook2\HvacPlaybook\obj\Debug\HvacPlaybook.pdb
+C:\Users\zhaobo.hu\Source\Repos\HvacPlaybook2\HvacPlaybook\obj\Debug\HvacPlaybook.csprojResolveAssemblyReference.cache

@@ -43,3 +43,8 @@ input[type="password"] {
         padding: 0;
     }
 }
+
+  .dxeRequiredMark {
+            color: red;
+            font-weight: 600;
+        }

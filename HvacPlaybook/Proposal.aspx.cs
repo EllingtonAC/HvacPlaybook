@@ -34,6 +34,19 @@ namespace HvacPlaybook
             popupControl.ShowOnPageLoad = false;
         }
 
-        
+        protected void btnNextCustomerInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void pageControl_ActiveTabChanged(object source, TabControlEventArgs e)
+        {
+
+        }
+
+        protected void exampleFormLayout_E7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

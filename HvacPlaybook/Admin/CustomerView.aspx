@@ -13,7 +13,7 @@
             OnRowUpdating="ASPxGridView1_RowUpdating"
             OnRowInserting="ASPxGridView1_RowInserting"
             OnRowInserted="ASPxGridView1_RowInserted"
-            Width="600"
+            Width="600px"
             >
             <Columns>
                 <dx:GridViewCommandColumn Caption=" " VisibleIndex="0" ShowNewButton="true" ShowEditButton="true" ShowDeleteButton="false"/>
@@ -27,9 +27,17 @@
                     <PropertiesComboBox DataSourceID="USStates" DropDownStyle="DropDownList" ValueField="StateCode" TextField="StateName" ValueType="System.String"/>
                 </dx:GridViewDataComboBoxColumn>
                 <dx:GridViewDataTextColumn FieldName="Zip" VisibleIndex="7" Name="Zip" Visible="false" PropertiesTextEdit-MaxLength="5" PropertiesTextEdit-MaskSettings-Mask="00000">
+<PropertiesTextEdit MaxLength="5">
+<MaskSettings Mask="00000"></MaskSettings>
+</PropertiesTextEdit>
+
                     <EditFormSettings Visible="True" />
                 </dx:GridViewDataTextColumn>
                 <dx:GridViewDataTextColumn FieldName="PrimaryPhone" VisibleIndex="8" Name="PrimaryPhone" PropertiesTextEdit-MaxLength="12" PropertiesTextEdit-MaskSettings-Mask="999-999-9999">
+<PropertiesTextEdit MaxLength="12">
+<MaskSettings Mask="999-999-9999"></MaskSettings>
+</PropertiesTextEdit>
+
                     <EditFormSettings Visible="True" />
                 </dx:GridViewDataTextColumn>
                 <dx:GridViewDataColumn FieldName="Email" VisibleIndex="11" Name="Email" Visible="false">
@@ -42,6 +50,13 @@
                     <EditFormSettings Visible="True" />
                 </dx:GridViewDataColumn>
             </Columns>
+
+<SettingsCommandButton>
+<ShowAdaptiveDetailButton ButtonType="Image"></ShowAdaptiveDetailButton>
+
+<HideAdaptiveDetailButton ButtonType="Image"></HideAdaptiveDetailButton>
+</SettingsCommandButton>
+
             <SettingsPopup>
                 <EditForm Width="600" />
             </SettingsPopup>

@@ -47,7 +47,7 @@
                                     <tr>
                                         <td style="width:180px">
                                             &nbsp;
-                                            <dx:ASPxFormLayout runat="server" ID="exampleFormLayout" RequiredMarkDisplayMode="RequiredOnly" EnableViewState="false" EncodeHtml="false">
+                                            <dx:ASPxFormLayout runat="server" ID="exampleFormLayout" RequiredMarkDisplayMode="RequiredOnly" EnableViewState="false" EncodeHtml="false" Theme="Aqua" RequiredMark="<span style='color: red'>*</span>">
                                                 <Items>
                                                     <dx:LayoutGroup Caption="Coustomer Info" ColCount="2" GroupBoxDecoration="HeadingLine">
                                                         <Items>
@@ -55,9 +55,12 @@
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                         <dx:ASPxTextBox ID="exampleFormLayout_E2" runat="server">
-                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="First Name is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
+                                                                      
+                                                                           
+                                                                      
                                                                         </dx:ASPxTextBox>
                                                                     </dx:LayoutItemNestedControlContainer>
                                                                 </LayoutItemNestedControlCollection>
@@ -66,7 +69,7 @@
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                         <dx:ASPxTextBox ID="exampleFormLayout_E1" runat="server">
-                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="Last Name is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
                                                                         </dx:ASPxTextBox>
@@ -77,7 +80,7 @@
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                         <dx:ASPxTextBox ID="exampleFormLayout_E3" runat="server">
-                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="Street is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
                                                                         </dx:ASPxTextBox>
@@ -96,7 +99,7 @@
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                         <dx:ASPxTextBox ID="exampleFormLayout_E5" runat="server">
-                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="City is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
                                                                         </dx:ASPxTextBox>
@@ -106,12 +109,12 @@
                                                             <dx:LayoutItem Caption="State">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxComboBox ID="State_ComboBox" runat="server"   OnSelectedIndexChanged="exampleFormLayout_E7_SelectedIndexChanged" DisplayFormatString="{0} {1}" >
+                                                                        <dx:ASPxComboBox ID="State_ComboBox" runat="server"   OnSelectedIndexChanged="exampleFormLayout_E7_SelectedIndexChanged" EnableTheming="false"   TextField="StateName" ValueType="System.String" ValueField="StateCode"
+>
                                                                             <Columns>
-                                                                                <dx:ListBoxColumn FieldName="StateCode" />
-                                                                                <dx:ListBoxColumn FieldName="StateName" />
+                                                                               
                                                                             </Columns>
-                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="State is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
                                                                         </dx:ASPxComboBox>
@@ -124,7 +127,7 @@
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                         <dx:ASPxTextBox ID="exampleFormLayout_E8" runat="server">
                                                                             <MaskSettings ErrorText="Invalid ZIP Code!" Mask="00000" />
-                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="ZIP Code is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
                                                                         </dx:ASPxTextBox>
@@ -136,7 +139,7 @@
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                         <dx:ASPxTextBox ID="exampleFormLayout_E9" runat="server" HelpText="E.g. (123)555-1234">
                                                                             <MaskSettings ErrorText="Invalid Phone Number!" Mask="(999) 000-0000" />
-                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="Primary Phone is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
                                                                         </dx:ASPxTextBox>
@@ -148,7 +151,7 @@
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                         <dx:ASPxTextBox ID="exampleFormLayout_E10" runat="server">
                                                                             <MaskSettings ErrorText="Invalid E-Mail!" />
-                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip">
+                                                                            <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RegularExpression ErrorText="Invalid E-Mail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
                                                                                 <RequiredField ErrorText="E-Mail is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
