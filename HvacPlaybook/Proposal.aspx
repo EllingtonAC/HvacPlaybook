@@ -183,7 +183,8 @@
                                     </tr>
                                 </table>
                                 <hr />
-                                <dx:ASPxButton ID="btnNextCustomerInfo" runat="server" Text="Next" ClientInstanceName="btnNextCustomerInfo" ValidationGroup="groupCustomerInfo" Width="150" OnClick="btnNextCustomerInfo_Click">
+                                <dx:ASPxButton ID="btnNextCustomerInfo" runat="server" Text="Next" ClientInstanceName="btnNextCustomerInfo"
+                                    AutoPostBack="False" ValidationGroup="groupCustomerInfo" Width="150" >
                                     <ClientSideEvents Click="OnButtonClick" />
                                 </dx:ASPxButton>
                                 <dx:ASPxValidationSummary ID="validSummaryPersonal" runat="server" ValidationGroup="groupCustomerInfo">
