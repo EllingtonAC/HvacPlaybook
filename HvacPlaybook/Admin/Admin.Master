@@ -53,10 +53,10 @@
                 </div>
             </div>
         </div>
-        <table style="min-height:400px;width:100%" border="0">
+        <div style =" margin-top:50PX">
+           <table style="min-height:400px;width:100%" border="0">
             <tr>
                 <td style="vertical-align:top;width:150px">
-                    <br /><br /><br />
                     <dx:ASPxNavBar ID="nbMain" runat="server" AllowSelectItem="True" EnableAnimation="True" Width="100%" Visible="false">
                         <GroupHeaderStyle HorizontalAlign="Left" />
                         <ItemStyle HorizontalAlign="Left" />
@@ -64,6 +64,9 @@
                             <dx:NavBarGroup Text="Playbook Resources">
                                 <Items>
                                     <dx:NavBarItem Text="Manage Users" NavigateUrl="ManageUsers.aspx">
+                                        <Image Height="16px" Url="~/Images/NavBar/BO_Users.png" Width="16px" />
+                                    </dx:NavBarItem>
+                                     <dx:NavBarItem Text="Manage Servey" NavigateUrl="ManageServey.aspx">
                                         <Image Height="16px" Url="~/Images/NavBar/BO_Users.png" Width="16px" />
                                     </dx:NavBarItem>
                                     <dx:NavBarItem Text="View Customers" NavigateUrl="CustomerView.aspx">
@@ -92,8 +95,8 @@
                     </dx:ASPxNavBar>
                 </td>
                 <td style="width:10px">&nbsp;</td>
-                <td style="vertical-align:top;padding-top:50px">
-                    <div class="container body-content"><br />
+                <td style="vertical-align:top">
+                    <div class="container body-content" style ="padding-top:50px">
                         <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
                     </div>
                 </td>
@@ -109,6 +112,7 @@
                 </td>
             </tr>
         </table>
+        </div>
     </form>
 </body>
 </html>

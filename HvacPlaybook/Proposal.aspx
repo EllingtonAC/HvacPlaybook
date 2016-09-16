@@ -192,22 +192,42 @@
                             </dx:ContentControl>
                         </ContentCollection>
                     </dx:TabPage>
-                    <dx:TabPage Name="Survey" Text="Use Survey" ActiveTabStyle-Font-Bold="true">
+                    <dx:TabPage Name="Survey" Text="Comfort Survey" ActiveTabStyle-Font-Bold="true">
 <ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
                         <ContentCollection>
                             <dx:ContentControl runat="server">
-                                <dx:ASPxLabel runat="server" Text="Admin driven questions 1-10 below...." Font-Bold="true"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #1"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #2"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #3"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #4"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #5"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #6"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #7"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #8"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #9"/><br /><br />
-                                <dx:ASPxLabel runat="server" Text="Question #10"/>
-                                <hr />
+                               
+                                <dx:ASPxGridView ID="Survey_GridView" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" KeyFieldName="ComfortSurveyID">
+
+                                    <SettingsCommandButton>
+                                        <ShowAdaptiveDetailButton ButtonType="Image"></ShowAdaptiveDetailButton>
+
+                                        <HideAdaptiveDetailButton ButtonType="Image"></HideAdaptiveDetailButton>
+                                    </SettingsCommandButton>
+
+                                    <Columns>
+                                        <dx:GridViewDataTextColumn FieldName="QuestionOrder" VisibleIndex="1">
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn FieldName="QuestionText" VisibleIndex="2"></dx:GridViewDataTextColumn>
+                                    </Columns>
+                                </dx:ASPxGridView>
+
+                                <asp:SqlDataSource runat="server" ID="SqlDataSource2" ConnectionString='<%$ ConnectionStrings:HVACPlaybookConnectionString %>' DeleteCommand="DELETE FROM [ComfortSurvey] WHERE [ComfortSurveyID] = @ComfortSurveyID" InsertCommand="INSERT INTO [ComfortSurvey] ([QuestionOrder], [QuestionText], [Display]) VALUES (@QuestionOrder, @QuestionText, @Display)" SelectCommand="SELECT [ComfortSurveyID], [QuestionOrder], [QuestionText], [Display] FROM [ComfortSurvey] WHERE [Display] = 'true'" UpdateCommand="UPDATE [ComfortSurvey] SET [QuestionOrder] = @QuestionOrder, [QuestionText] = @QuestionText, [Display] = @Display WHERE [ComfortSurveyID] = @ComfortSurveyID">
+                                    <DeleteParameters>
+                                        <asp:Parameter Name="ComfortSurveyID" Type="Int32"></asp:Parameter>
+                                    </DeleteParameters>
+                                    <InsertParameters>
+                                        <asp:Parameter Name="QuestionOrder" Type="Int32"></asp:Parameter>
+                                        <asp:Parameter Name="QuestionText" Type="String"></asp:Parameter>
+                                        <asp:Parameter Name="Display" Type="Boolean"></asp:Parameter>
+                                    </InsertParameters>
+                                    <UpdateParameters>
+                                        <asp:Parameter Name="QuestionOrder" Type="Int32"></asp:Parameter>
+                                        <asp:Parameter Name="QuestionText" Type="String"></asp:Parameter>
+                                        <asp:Parameter Name="Display" Type="Boolean"></asp:Parameter>
+                                        <asp:Parameter Name="ComfortSurveyID" Type="Int32"></asp:Parameter>
+                                    </UpdateParameters>
+                                </asp:SqlDataSource>
                                 <dx:ASPxButton ID="btnNext" ValidationGroup="groupSurvey" runat="server" Text="Next"
                                     ClientInstanceName="btnNexSurvey" AutoPostBack="false" Width="150">
                                     <ClientSideEvents Click="OnButtonClick" />

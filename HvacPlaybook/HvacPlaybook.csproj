@@ -169,24 +169,23 @@
     <Content Include="Admin\ControlPanel.aspx" />
     <Content Include="Admin\CustomerView.aspx" />
     <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\ManageServey.aspx" />
     <Content Include="Admin\ManageUsers.aspx" />
     <Content Include="Contact.aspx" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Images\Ellington-AC-Logo.png" />
-    <Content Include="Images\HVACPlaybook.png" />
-    <Content Include="Images\NavBar\BO_Notes_Large.png" />
-    <Content Include="Images\NavBar\BO_Organizations.png" />
-    <Content Include="Images\NavBar\BO_Reports_Large.png" />
-    <Content Include="Images\NavBar\BO_Scheduler.png" />
-    <Content Include="Images\NavBar\BO_Users.png" />
-    <Content Include="Images\Playbook.jpg" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\Images\Ellington-AC-Logo.png" />
+    <Content Include="Scripts\Images\HVACPlaybook.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Notes_Large.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Organizations.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Reports_Large.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Scheduler.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Users.png" />
+    <Content Include="Scripts\Images\Playbook.jpg" />
     <Content Include="packages.config" />
-    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.eot" />
     <None Include="Properties\PublishProfiles\HvacPlaybook.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Proposal.aspx" />
@@ -276,6 +275,13 @@
     </Compile>
     <Compile Include="Admin\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageServey.aspx.cs">
+      <DependentUpon>ManageServey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageServey.aspx.designer.cs">
+      <DependentUpon>ManageServey.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\ManageUsers.aspx.cs">
       <DependentUpon>ManageUsers.aspx</DependentUpon>

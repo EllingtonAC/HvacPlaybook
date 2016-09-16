@@ -5,7 +5,7 @@
     <hr style="margin-bottom:0px;padding-bottom:0px" />
     <div class="row">
         <div class="col-md-4">
-            <h2>Manage HVAC Playbook Users</h2>
+            <h2>Manage Users</h2>
             <p>
                 Manage HVAC Playbook user accounts by adding new users, modifying & disabling existing user accounts.
             </p>

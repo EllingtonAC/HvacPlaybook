@@ -166,6 +166,24 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxValidationSummary validSummaryPersonal;
         
         /// <summary>
+        /// Survey_GridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxGridView Survey_GridView;
+        
+        /// <summary>
+        /// SqlDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+        
+        /// <summary>
         /// btnNext control.
         /// </summary>
         /// <remarks>
