@@ -211,24 +211,6 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox cbProposalType;
         
         /// <summary>
-        /// lblBrand control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblBrand;
-        
-        /// <summary>
-        /// cbBrand control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox cbBrand;
-        
-        /// <summary>
         /// btnFinish control.
         /// </summary>
         /// <remarks>

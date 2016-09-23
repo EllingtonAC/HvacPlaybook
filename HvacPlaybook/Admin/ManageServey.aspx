@@ -5,10 +5,15 @@
     <style type="text/css">
         .centerGrid {margin: 0 auto;}
         .dxgvTable_DevEx caption {font-weight: bold;}
+
     </style>
 
      <div style="align-content:center;">
-         <dx:ASPxGridView ID="Servey_GridView" runat="server" Caption="HVAC Playbook Serveys" AutoGenerateColumns="False" EnableTheming="True" Theme="DevEx" CssClass="centerGrid" Width="600px" DataSourceID="SqlDataSource1" KeyFieldName="ComfortSurveyID">
+         <dx:ASPxGridView ID="Servey_GridView" runat="server" Caption="HVAC Playbook Serveys" AutoGenerateColumns="False" EnableTheming="True" Theme="DevEx" CssClass="centerGrid" Width="600px" DataSourceID="SqlDataSource1" KeyFieldName="ComfortSurveyID" SettingsPager-PageSize ="15">
+<SettingsPager PageSize="15"></SettingsPager>
+
+             <SettingsEditing EditFormColumnCount="1">
+             </SettingsEditing>
 <SettingsCommandButton>
 <ShowAdaptiveDetailButton ButtonType="Image"></ShowAdaptiveDetailButton>
 
@@ -17,18 +22,25 @@
              <Columns>
                  <dx:GridViewCommandColumn ShowDeleteButton="True" ShowEditButton="True" ShowNewButtonInHeader="True" VisibleIndex="0">
                  </dx:GridViewCommandColumn>
-                 <dx:GridViewDataTextColumn FieldName="QuestionOrder" VisibleIndex="1">
-                 </dx:GridViewDataTextColumn>
-                 <dx:GridViewDataTextColumn FieldName="QuestionText" VisibleIndex="2">
+                 <dx:GridViewDataTextColumn FieldName="QuestionOrder" VisibleIndex="1">    
+                     <PropertiesTextEdit Width="100px">
+                     </PropertiesTextEdit>
                  </dx:GridViewDataTextColumn>
                  <dx:GridViewDataCheckColumn FieldName="Display" VisibleIndex="3">
                  </dx:GridViewDataCheckColumn>
+     
+                 <dx:GridViewDataMemoColumn FieldName="QuestionText" VisibleIndex="2">
+                 </dx:GridViewDataMemoColumn>
      
              </Columns>
 
 
    </dx:ASPxGridView>
-         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HVACPlaybookConnectionString %>" SelectCommand="SELECT [QuestionOrder], [QuestionText], [Display], [ComfortSurveyID] FROM [ComfortSurvey]" DeleteCommand="DELETE FROM [ComfortSurvey] WHERE [ComfortSurveyID] = @ComfortSurveyID" InsertCommand="INSERT INTO [ComfortSurvey] ([QuestionOrder], [QuestionText], [Display]) VALUES (@QuestionOrder, @QuestionText, @Display)" UpdateCommand="UPDATE [ComfortSurvey] SET [QuestionOrder] = @QuestionOrder, [QuestionText] = @QuestionText, [Display] = @Display WHERE [ComfortSurveyID] = @ComfortSurveyID">
+         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HVACPlaybookConnectionString %>" 
+             SelectCommand="SELECT [QuestionOrder], [QuestionText], [Display], [ComfortSurveyID] FROM [ComfortSurvey] ORDER BY [QuestionOrder]" 
+             DeleteCommand="DELETE FROM [ComfortSurvey] WHERE [ComfortSurveyID] = @ComfortSurveyID" 
+             InsertCommand="INSERT INTO [ComfortSurvey] ([QuestionOrder], [QuestionText], [Display]) VALUES (@QuestionOrder, @QuestionText, @Display)" 
+             UpdateCommand="UPDATE [ComfortSurvey] SET [QuestionOrder] = @QuestionOrder, [QuestionText] = @QuestionText, [Display] = @Display WHERE [ComfortSurveyID] = @ComfortSurveyID">
              <DeleteParameters>
                  <asp:Parameter Name="ComfortSurveyID" Type="Int32"></asp:Parameter>
              </DeleteParameters>

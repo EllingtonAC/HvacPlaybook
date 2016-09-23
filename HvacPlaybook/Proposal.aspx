@@ -36,7 +36,7 @@
             </dx:ASPxCheckBox>
             <br />
             <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                ActiveTabIndex="0" Width="800px" OnActiveTabChanged="pageControl_ActiveTabChanged">
+                ActiveTabIndex="1" Width="800px" OnActiveTabChanged="pageControl_ActiveTabChanged">
                 <ClientSideEvents ActiveTabChanging="OnTabChanging" />
                 <TabPages>
                     <dx:TabPage Name="CustomerInfo" Text="Customer Information" ActiveTabStyle-Font-Bold="true">
@@ -197,7 +197,10 @@
                         <ContentCollection>
                             <dx:ContentControl runat="server">
                                
-                                <dx:ASPxGridView ID="Survey_GridView" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" KeyFieldName="ComfortSurveyID">
+                                <dx:ASPxGridView ID="Survey_GridView" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" KeyFieldName="ComfortSurveyID" Width="100%">
+
+                                    <SettingsPager PageSize="15">
+                                    </SettingsPager>
 
                                     <SettingsCommandButton>
                                         <ShowAdaptiveDetailButton ButtonType="Image"></ShowAdaptiveDetailButton>
@@ -206,13 +209,25 @@
                                     </SettingsCommandButton>
 
                                     <Columns>
-                                        <dx:GridViewDataTextColumn FieldName="QuestionOrder" VisibleIndex="1">
+                                        <dx:GridViewDataTextColumn FieldName="QuestionOrder" VisibleIndex="0">
                                         </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn FieldName="QuestionText" VisibleIndex="2"></dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn FieldName="QuestionText" VisibleIndex="1"></dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="Answer" ShowInCustomizationForm="True" VisibleIndex="2">
+                                             <DataItemTemplate>
+                                                <dx:ASPxMemo ID="txtBox" Width="100%" runat="server"></dx:ASPxMemo>
+                                                 
+                                             </DataItemTemplate>
+                                            
+                                        </dx:GridViewDataTextColumn>
+                                       
                                     </Columns>
+                     
+
+                                 
+
                                 </dx:ASPxGridView>
 
-                                <asp:SqlDataSource runat="server" ID="SqlDataSource2" ConnectionString='<%$ ConnectionStrings:HVACPlaybookConnectionString %>' DeleteCommand="DELETE FROM [ComfortSurvey] WHERE [ComfortSurveyID] = @ComfortSurveyID" InsertCommand="INSERT INTO [ComfortSurvey] ([QuestionOrder], [QuestionText], [Display]) VALUES (@QuestionOrder, @QuestionText, @Display)" SelectCommand="SELECT [ComfortSurveyID], [QuestionOrder], [QuestionText], [Display] FROM [ComfortSurvey] WHERE [Display] = 'true'" UpdateCommand="UPDATE [ComfortSurvey] SET [QuestionOrder] = @QuestionOrder, [QuestionText] = @QuestionText, [Display] = @Display WHERE [ComfortSurveyID] = @ComfortSurveyID">
+                                <asp:SqlDataSource runat="server" ID="SqlDataSource2" ConnectionString='<%$ ConnectionStrings:HVACPlaybookConnectionString %>' DeleteCommand="DELETE FROM [ComfortSurvey] WHERE [ComfortSurveyID] = @ComfortSurveyID" InsertCommand="INSERT INTO [ComfortSurvey] ([QuestionOrder], [QuestionText], [Display]) VALUES (@QuestionOrder, @QuestionText, @Display)" SelectCommand="SELECT [ComfortSurveyID], [QuestionOrder], [QuestionText], [Display] FROM [ComfortSurvey] WHERE [Display] = 'true' ORDER BY [QuestionOrder]" UpdateCommand="UPDATE [ComfortSurvey] SET [QuestionOrder] = @QuestionOrder, [QuestionText] = @QuestionText, [Display] = @Display WHERE [ComfortSurveyID] = @ComfortSurveyID">
                                     <DeleteParameters>
                                         <asp:Parameter Name="ComfortSurveyID" Type="Int32"></asp:Parameter>
                                     </DeleteParameters>
@@ -251,17 +266,9 @@
                                     </ValidationSettings>
                                 </dx:ASPxComboBox>
                                 <hr />
-                                <dx:ASPxLabel ID="lblBrand" runat="server" Text="Brand"/>
-                                <dx:ASPxComboBox ID="cbBrand" runat="server" ValueType="System.String" ClientInstanceName="cbBrand" Width="170">
-                                    <Items>
-                                        <dx:ListEditItem Value="1" Text="Carrier" />
-                                        <dx:ListEditItem Value="2" Text="Trane" />
-                                    </Items>
-                                    <ValidationSettings ValidationGroup="groupProposalType" ValidateOnLeave="true" SetFocusOnError="true">
-                                        <RequiredField IsRequired="true" ErrorText="Brand is required" />
-                                    </ValidationSettings>
-                                </dx:ASPxComboBox>
-                                <hr />
+                               
+                                
+                               
                                 <dx:ASPxButton ID="btnFinish" runat="server" Text="Finish" ValidationGroup="groupProposalType"
                                     AutoPostBack="false" Width="150">
                                     <ClientSideEvents Click="OnFinishClick" />
