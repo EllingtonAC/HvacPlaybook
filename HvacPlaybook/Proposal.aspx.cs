@@ -41,9 +41,20 @@ namespace HvacPlaybook
          
         }
 
-        protected void exampleFormLayout_E7_SelectedIndexChanged(object sender, EventArgs e)
+       
+
+        protected void cbProposalType_SelectedIndexChanged(object sender, EventArgs e)
         {
+         
+            tb.Text = cbProposalType.SelectedItem.ToString();
+            if(cbProposalType.SelectedIndex == 0)
+            {
+                ASPxTabControl_Standar.Visible = true;
+            }
+         
+
 
         }
+
     }
 }

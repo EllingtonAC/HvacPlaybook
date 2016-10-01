@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Proposal.aspx.cs" Inherits="HvacPlaybook.Proposal" %>
+
 <%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
@@ -36,17 +37,16 @@
             </dx:ASPxCheckBox>
             <br />
             <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                ActiveTabIndex="1" Width="800px" OnActiveTabChanged="pageControl_ActiveTabChanged">
+                ActiveTabIndex="2" Width="800px" OnActiveTabChanged="pageControl_ActiveTabChanged">
                 <ClientSideEvents ActiveTabChanging="OnTabChanging" />
                 <TabPages>
                     <dx:TabPage Name="CustomerInfo" Text="Customer Information" ActiveTabStyle-Font-Bold="true">
-<ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
+                        <ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
                         <ContentCollection>
                             <dx:ContentControl runat="server">
                                 <table border="0">
                                     <tr>
-                                        <td style="width:180px">
-                                            &nbsp;
+                                        <td style="width: 180px">&nbsp;
                                             <dx:ASPxFormLayout runat="server" ID="exampleFormLayout" RequiredMarkDisplayMode="RequiredOnly" EnableViewState="false" EncodeHtml="false" Theme="Aqua" RequiredMark="<span style='color: red'>*</span>">
                                                 <Items>
                                                     <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
@@ -58,9 +58,9 @@
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="First Name is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
-                                                                      
-                                                                           
-                                                                      
+
+
+
                                                                         </dx:ASPxTextBox>
                                                                     </dx:LayoutItemNestedControlContainer>
                                                                 </LayoutItemNestedControlCollection>
@@ -109,10 +109,8 @@
                                                             <dx:LayoutItem Caption="State">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxComboBox ID="State_ComboBox" runat="server"   OnSelectedIndexChanged="exampleFormLayout_E7_SelectedIndexChanged" EnableTheming="false"   TextField="StateName" ValueType="System.String" ValueField="StateCode"
->
+                                                                        <dx:ASPxComboBox ID="State_ComboBox" runat="server" EnableTheming="false" TextField="StateName" ValueType="System.String" ValueField="StateCode">
                                                                             <Columns>
-                                                                               
                                                                             </Columns>
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="State is Required!" IsRequired="True" />
@@ -184,7 +182,7 @@
                                 </table>
                                 <hr />
                                 <dx:ASPxButton ID="btnNextCustomerInfo" runat="server" Text="Next" ClientInstanceName="btnNextCustomerInfo"
-                                    AutoPostBack="False" ValidationGroup="groupCustomerInfo" Width="150" >
+                                    AutoPostBack="False" ValidationGroup="groupCustomerInfo" Width="150">
                                     <ClientSideEvents Click="OnButtonClick" />
                                 </dx:ASPxButton>
                                 <dx:ASPxValidationSummary ID="validSummaryPersonal" runat="server" ValidationGroup="groupCustomerInfo">
@@ -193,10 +191,10 @@
                         </ContentCollection>
                     </dx:TabPage>
                     <dx:TabPage Name="Survey" Text="Comfort Survey" ActiveTabStyle-Font-Bold="true">
-<ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
+                        <ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
                         <ContentCollection>
                             <dx:ContentControl runat="server">
-                               
+
                                 <dx:ASPxGridView ID="Survey_GridView" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" KeyFieldName="ComfortSurveyID" Width="100%">
 
                                     <SettingsPager PageSize="15">
@@ -209,21 +207,18 @@
                                     </SettingsCommandButton>
 
                                     <Columns>
-                                        <dx:GridViewDataTextColumn FieldName="QuestionOrder" VisibleIndex="0">
+                                        <dx:GridViewDataTextColumn FieldName="QuestionOrder" VisibleIndex="0" Width="20px">
                                         </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn FieldName="QuestionText" VisibleIndex="1"></dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn FieldName="QuestionText" VisibleIndex="1" Width="300px"></dx:GridViewDataTextColumn>
                                         <dx:GridViewDataTextColumn Caption="Answer" ShowInCustomizationForm="True" VisibleIndex="2">
-                                             <DataItemTemplate>
+                                            <DataItemTemplate>
                                                 <dx:ASPxMemo ID="txtBox" Width="100%" runat="server"></dx:ASPxMemo>
-                                                 
-                                             </DataItemTemplate>
-                                            
-                                        </dx:GridViewDataTextColumn>
-                                       
-                                    </Columns>
-                     
 
-                                 
+                                            </DataItemTemplate>
+
+                                        </dx:GridViewDataTextColumn>
+
+                                    </Columns>
 
                                 </dx:ASPxGridView>
 
@@ -251,11 +246,11 @@
                         </ContentCollection>
                     </dx:TabPage>
                     <dx:TabPage Name="ProposalType" Text="Type of Proposal" ActiveTabStyle-Font-Bold="true">
-<ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
+                        <ActiveTabStyle Font-Bold="True"></ActiveTabStyle>
                         <ContentCollection>
                             <dx:ContentControl runat="server">
-                                <dx:ASPxLabel ID="lblProposalType" runat="server" Text="Proposal Type"/>
-                                <dx:ASPxComboBox ID="cbProposalType" runat="server" ValueType="System.String" ClientInstanceName="cbProposalType" Width="170">
+                                <dx:ASPxLabel ID="lblProposalType" runat="server" Text="Proposal Type" />
+                                <dx:ASPxComboBox ID="cbProposalType" runat="server" ValueType="System.String" ClientInstanceName="cbProposalType" Width="170" OnSelectedIndexChanged="cbProposalType_SelectedIndexChanged" ClientEnabled="true" EnableClientSideAPI ="true" AutoPostBack="True">
                                     <Items>
                                         <dx:ListEditItem Value="Standard or Ductless HVAC" Text="Standard" />
                                         <dx:ListEditItem Value="Duct Cleaning" Text="Duct Cleaning" />
@@ -266,9 +261,22 @@
                                     </ValidationSettings>
                                 </dx:ASPxComboBox>
                                 <hr />
-                               
+                                <dx:ASPxTabControl ID="ASPxTabControl_Standar" runat="server" ActiveTabIndex="0" ClientInstanceName ="ASPxTabControl_Standar" Visible="False" >
+                                    <Tabs>
+                                        <dx:Tab Text="Outdoor Unit" />
+                                        <dx:Tab Text="Indoor Unit" />
+                                        <dx:Tab Text="Ducting" />
+                                        <dx:Tab Text="Electircal" />
+                                        <dx:Tab Text="Piping" />
+                                        <dx:Tab Text="Add-On" />
+                                    </Tabs>
+                                </dx:ASPxTabControl>
+                                <br />
+                                <br />
+
+                                <dx:ASPxTextBox ID="tb" runat="server" ClientInstanceName ="tb"></dx:ASPxTextBox>
                                 
-                               
+
                                 <dx:ASPxButton ID="btnFinish" runat="server" Text="Finish" ValidationGroup="groupProposalType"
                                     AutoPostBack="false" Width="150">
                                     <ClientSideEvents Click="OnFinishClick" />

@@ -66,7 +66,7 @@
                                     <dx:NavBarItem Text="Manage Users" NavigateUrl="ManageUsers.aspx">
                                         <Image Height="16px" Url="~/Images/NavBar/BO_Users.png" Width="16px" />
                                     </dx:NavBarItem>
-                                     <dx:NavBarItem Text="Manage Servey" NavigateUrl="ManageServey.aspx">
+                                     <dx:NavBarItem Text="Manage Survey" NavigateUrl="ManageServey.aspx">
                                         <Image Height="16px" Url="~/Images/NavBar/BO_Users.png" Width="16px" />
                                     </dx:NavBarItem>
                                     <dx:NavBarItem Text="View Customers" NavigateUrl="CustomerView.aspx">
