@@ -10,12 +10,14 @@ namespace HvacPlaybook
 {
     public partial class Proposal : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             State_ComboBox.DataSource = SqlDataSource1;
             State_ComboBox.ValueField = "StateCode";
             State_ComboBox.DataBind();
             SqlDataSource1.DataBind();
+            
 
         }
 
@@ -45,15 +47,13 @@ namespace HvacPlaybook
 
         protected void cbProposalType_SelectedIndexChanged(object sender, EventArgs e)
         {
-         
-            tb.Text = cbProposalType.SelectedItem.ToString();
+           
+           // tb.Text = cbProposalType.SelectedItem.ToString();
             if(cbProposalType.SelectedIndex == 0)
             {
-                ASPxTabControl_Standar.Visible = true;
+                standar_pagecontrol.Visible = true;
             }
          
-
-
         }
 
     }

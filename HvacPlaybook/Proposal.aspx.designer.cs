@@ -139,15 +139,6 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E11;
         
         /// <summary>
-        /// exampleFormLayout_E12 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxMemo exampleFormLayout_E12;
-        
-        /// <summary>
         /// btnNextCustomerInfo control.
         /// </summary>
         /// <remarks>
@@ -211,22 +202,166 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox cbProposalType;
         
         /// <summary>
-        /// ASPxTabControl_Standar control.
+        /// standar_pagecontrol control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTabControl ASPxTabControl_Standar;
+        protected global::DevExpress.Web.ASPxPageControl standar_pagecontrol;
         
         /// <summary>
-        /// tb control.
+        /// OutDoor_fl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox tb;
+        protected global::DevExpress.Web.ASPxFormLayout OutDoor_fl;
+        
+        /// <summary>
+        /// OutDoor_fl_E1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E1;
+        
+        /// <summary>
+        /// OutDoor_fl_E3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E3;
+        
+        /// <summary>
+        /// OutDoor_fl_E5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E5;
+        
+        /// <summary>
+        /// OutDoor_fl_E6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E6;
+        
+        /// <summary>
+        /// OutDoor_fl_E2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E2;
+        
+        /// <summary>
+        /// OutDoor_fl_E4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E4;
+        
+        /// <summary>
+        /// OutDoor_fl_E7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E7;
+        
+        /// <summary>
+        /// OutDoor_fl_E8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E8;
+        
+        /// <summary>
+        /// OutDoor_fl_E9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E9;
+        
+        /// <summary>
+        /// OutDoor_fl_E10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E10;
+        
+        /// <summary>
+        /// OutDoor_fl_E15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E15;
+        
+        /// <summary>
+        /// OutDoor_fl_E12 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E12;
+        
+        /// <summary>
+        /// OutDoor_fl_E13 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E13;
+        
+        /// <summary>
+        /// OutDoor_fl_E11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E11;
+        
+        /// <summary>
+        /// OutDoor_fl_E14 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E14;
+        
+        /// <summary>
+        /// OutDoor_fl_E16 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E16;
         
         /// <summary>
         /// btnFinish control.
