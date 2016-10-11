@@ -13,9 +13,9 @@ namespace HvacPlaybook
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            State_ComboBox.DataSource = SqlDataSource1;
-            State_ComboBox.ValueField = "StateCode";
-            State_ComboBox.DataBind();
+            cbState.DataSource = SqlDataSource1;
+            cbState.ValueField = "StateCode";
+            cbState.DataBind();
             SqlDataSource1.DataBind();
             
 

@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="HvacPlaybook.AdminMaster" %>
-<%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <!DOCTYPE html>
 
@@ -53,10 +53,10 @@
                 </div>
             </div>
         </div>
-        <table style="min-height:400px;width:100%" border="0">
+        <div style =" margin-top:50PX">
+           <table style="min-height:400px;width:100%" border="0">
             <tr>
                 <td style="vertical-align:top;width:150px">
-                    <br />
                     <dx:ASPxNavBar ID="nbMain" runat="server" AllowSelectItem="True" EnableAnimation="True" Width="100%" Visible="false">
                         <GroupHeaderStyle HorizontalAlign="Left" />
                         <ItemStyle HorizontalAlign="Left" />
@@ -66,7 +66,10 @@
                                     <dx:NavBarItem Text="Manage Users" NavigateUrl="ManageUsers.aspx">
                                         <Image Height="16px" Url="~/Images/NavBar/BO_Users.png" Width="16px" />
                                     </dx:NavBarItem>
-                                    <dx:NavBarItem Text="View Prospects" NavigateUrl="ProspectView.aspx">
+                                     <dx:NavBarItem Text="Manage Survey" NavigateUrl="ManageServey.aspx">
+                                        <Image Height="16px" Url="~/Images/NavBar/BO_Users.png" Width="16px" />
+                                    </dx:NavBarItem>
+                                    <dx:NavBarItem Text="View Customers" NavigateUrl="CustomerView.aspx">
                                         <Image Height="16px" Url="~/Images/NavBar/BO_Organizations.png" Width="16px" />
                                     </dx:NavBarItem>
                                     <dx:NavBarItem Text="Set Proposal Reminders">
@@ -92,8 +95,8 @@
                     </dx:ASPxNavBar>
                 </td>
                 <td style="width:10px">&nbsp;</td>
-                <td style="vertical-align:top;padding-top:50px">
-                    <div class="container body-content">
+                <td style="vertical-align:top">
+                    <div class="container body-content" style ="padding-top:50px">
                         <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
                     </div>
                 </td>
@@ -109,6 +112,7 @@
                 </td>
             </tr>
         </table>
+        </div>
     </form>
 </body>
 </html>

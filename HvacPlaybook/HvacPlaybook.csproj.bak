@@ -19,10 +19,15 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,15 +47,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Data.v16.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxThemes.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.Resources.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -162,13 +167,13 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Admin\ControlPanel.aspx" />
-    <Content Include="Admin\ProspectView.aspx" />
+    <Content Include="Admin\CustomerView.aspx" />
     <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\ManageServey.aspx" />
     <Content Include="Admin\ManageUsers.aspx" />
     <Content Include="Contact.aspx" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\Ellington-AC-Logo.png" />
     <Content Include="Images\HVACPlaybook.png" />
@@ -178,10 +183,21 @@
     <Content Include="Images\NavBar\BO_Scheduler.png" />
     <Content Include="Images\NavBar\BO_Users.png" />
     <Content Include="Images\Playbook.jpg" />
+    <Content Include="Scripts\Images\Ellington-AC-Logo.png" />
+    <Content Include="Scripts\Images\HVACPlaybook.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Notes_Large.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Organizations.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Reports_Large.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Scheduler.png" />
+    <Content Include="Scripts\Images\NavBar\BO_Users.png" />
+    <Content Include="Scripts\Images\Playbook.jpg" />
     <Content Include="packages.config" />
-    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
     <None Include="Properties\PublishProfiles\HvacPlaybook.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Proposal.aspx" />
@@ -258,12 +274,12 @@
     <Compile Include="Admin\ControlPanel.aspx.designer.cs">
       <DependentUpon>ControlPanel.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ProspectView.aspx.cs">
-      <DependentUpon>ProspectView.aspx</DependentUpon>
+    <Compile Include="Admin\CustomerView.aspx.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\ProspectView.aspx.designer.cs">
-      <DependentUpon>ProspectView.aspx</DependentUpon>
+    <Compile Include="Admin\CustomerView.aspx.designer.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -271,6 +287,13 @@
     </Compile>
     <Compile Include="Admin\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageServey.aspx.cs">
+      <DependentUpon>ManageServey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageServey.aspx.designer.cs">
+      <DependentUpon>ManageServey.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\ManageUsers.aspx.cs">
       <DependentUpon>ManageUsers.aspx</DependentUpon>
@@ -358,6 +381,7 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="StandardProposal\OutDoor.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

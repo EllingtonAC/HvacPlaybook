@@ -40,58 +40,58 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxFormLayout exampleFormLayout;
         
         /// <summary>
-        /// exampleFormLayout_E2 control.
+        /// txtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E2;
+        protected global::DevExpress.Web.ASPxTextBox txtFirstName;
         
         /// <summary>
-        /// exampleFormLayout_E1 control.
+        /// txtLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E1;
+        protected global::DevExpress.Web.ASPxTextBox txtLastName;
         
         /// <summary>
-        /// exampleFormLayout_E3 control.
+        /// txtStreet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E3;
+        protected global::DevExpress.Web.ASPxTextBox txtStreet;
         
         /// <summary>
-        /// exampleFormLayout_E4 control.
+        /// txtAddStreet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E4;
+        protected global::DevExpress.Web.ASPxTextBox txtAddStreet;
         
         /// <summary>
-        /// exampleFormLayout_E5 control.
+        /// txtCity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E5;
+        protected global::DevExpress.Web.ASPxTextBox txtCity;
         
         /// <summary>
-        /// State_ComboBox control.
+        /// cbState control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox State_ComboBox;
+        protected global::DevExpress.Web.ASPxComboBox cbState;
         
         /// <summary>
         /// SqlDataSource1 control.
@@ -103,31 +103,31 @@ namespace HvacPlaybook {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// exampleFormLayout_E8 control.
+        /// txtZipcode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E8;
+        protected global::DevExpress.Web.ASPxTextBox txtZipcode;
         
         /// <summary>
-        /// exampleFormLayout_E9 control.
+        /// txtPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E9;
+        protected global::DevExpress.Web.ASPxTextBox txtPhone;
         
         /// <summary>
-        /// exampleFormLayout_E10 control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox exampleFormLayout_E10;
+        protected global::DevExpress.Web.ASPxTextBox txtEmail;
         
         /// <summary>
         /// exampleFormLayout_E11 control.

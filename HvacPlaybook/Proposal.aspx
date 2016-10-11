@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Proposal.aspx.cs" Inherits="HvacPlaybook.Proposal" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Proposal.aspx.cs" ViewStateMode="Enabled" Inherits="HvacPlaybook.Proposal" %>
 
-<%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div>
@@ -54,7 +54,7 @@
                                                             <dx:LayoutItem Caption="First Name">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E2" runat="server">
+                                                                        <dx:ASPxTextBox ID="txtFirstName" ClientInstanceName="txtFirstName" runat="server">
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="First Name is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
@@ -68,7 +68,7 @@
                                                             <dx:LayoutItem Caption="Last Name">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E1" runat="server">
+                                                                        <dx:ASPxTextBox ID="txtLastName" ClientInstanceName="txtLastName" runat="server">
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="Last Name is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
@@ -79,7 +79,7 @@
                                                             <dx:LayoutItem Caption="Street">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E3" runat="server">
+                                                                        <dx:ASPxTextBox ID="txtStreet" ClientInstanceName="txtStreet" runat ="server">
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="Street is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
@@ -90,7 +90,7 @@
                                                             <dx:LayoutItem Caption="Additional Street Info">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E4" runat="server">
+                                                                        <dx:ASPxTextBox ID="txtAddStreet" ClientInstanceName="txtAddStreet" runat="server">
                                                                         </dx:ASPxTextBox>
                                                                     </dx:LayoutItemNestedControlContainer>
                                                                 </LayoutItemNestedControlCollection>
@@ -98,7 +98,7 @@
                                                             <dx:LayoutItem Caption="City">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E5" runat="server">
+                                                                        <dx:ASPxTextBox ID="txtCity" ClientInstanceName="txtCity" runat="server">
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="City is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
@@ -109,7 +109,7 @@
                                                             <dx:LayoutItem Caption="State">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxComboBox ID="State_ComboBox" runat="server" EnableTheming="false" TextField="StateName" ValueType="System.String" ValueField="StateCode">
+                                                                        <dx:ASPxComboBox ID="cbState" ClientInstanceName="cbState" runat ="server" EnableTheming="false" TextField="StateName" ValueType="System.String" ValueField="StateCode">
                                                                             <Columns>
                                                                             </Columns>
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
@@ -123,7 +123,7 @@
                                                             <dx:LayoutItem Caption="ZIP Code">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E8" runat="server">
+                                                                        <dx:ASPxTextBox ID="txtZipcode" ClientInstanceName="txtZipcode" runat="server">
                                                                             <MaskSettings ErrorText="Invalid ZIP Code!" Mask="00000" />
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="ZIP Code is Required!" IsRequired="True" />
@@ -135,7 +135,7 @@
                                                             <dx:LayoutItem Caption="Primary Phone">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E9" runat="server" HelpText="E.g. (123)555-1234">
+                                                                        <dx:ASPxTextBox ID="txtPhone" ClientInstanceName="txtPhone" runat="server" HelpText="E.g. (123)555-1234">
                                                                             <MaskSettings ErrorText="Invalid Phone Number!" Mask="(999) 000-0000" />
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="Primary Phone is Required!" IsRequired="True" />
@@ -147,7 +147,7 @@
                                                             <dx:LayoutItem Caption="E-Mail">
                                                                 <LayoutItemNestedControlCollection>
                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                        <dx:ASPxTextBox ID="exampleFormLayout_E10" runat="server">
+                                                                        <dx:ASPxTextBox ID="txtEmail" ClientInstanceName="txtEmail" runat="server">
                                                                             <MaskSettings ErrorText="Invalid E-Mail!" />
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RegularExpression ErrorText="Invalid E-Mail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
@@ -249,7 +249,7 @@
                             <dx:ContentControl runat="server">
                                 <dx:ASPxLabel ID="lblProposalType" runat="server" Text="Proposal Type" />
                                 <dx:ASPxComboBox ID="cbProposalType" runat="server" ValueType="System.String" ClientInstanceName="cbProposalType" Width="170"
-                                     OnSelectedIndexChanged ="cbProposalType_SelectedIndexChanged" ClientEnabled="true" AutoPostBack="True" EnableCallbackMode="True">
+                                     OnSelectedIndexChanged ="cbProposalType_SelectedIndexChanged" ClientEnabled="true" AutoPostBack="True" ViewStateMode="Enabled" EnableCallbackMode="True">
                                     <Items>
                                         <dx:ListEditItem Value="Standard or Ductless HVAC" Text="Standard" />
                                         <dx:ListEditItem Value="Duct Cleaning" Text="Duct Cleaning" />
@@ -516,6 +516,7 @@
                     </dx:TabPage>
                 </TabPages>
             </dx:ASPxPageControl>
+            <br />
         </div>
         <dx:ASPxPopupControl ID="popupControl" runat="server" CloseAction="CloseButton" ClientInstanceName="popupControl"
             HeaderText="Summary" PopupHorizontalAlign="OutsideRight" PopupHorizontalOffset="10">
