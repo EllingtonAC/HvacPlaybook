@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Proposal.aspx.cs" ViewStateMode="Enabled" Inherits="HvacPlaybook.Proposal" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Proposal.aspx.cs" ViewStateMode="Enabled" EnableViewState="true" Inherits="HvacPlaybook.Proposal" %>
 
 <%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
@@ -37,7 +37,7 @@
             </dx:ASPxCheckBox>
             <br />
             <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                ActiveTabIndex="2" Width="800px" OnActiveTabChanged="pageControl_ActiveTabChanged">
+                ActiveTabIndex="0" Width="800px" OnActiveTabChanged="pageControl_ActiveTabChanged">
                 <ClientSideEvents ActiveTabChanging="OnTabChanging" />
                 <TabPages>
                     <dx:TabPage Name="CustomerInfo" Text="Customer Information" ActiveTabStyle-Font-Bold="true">
@@ -58,8 +58,6 @@
                                                                             <ValidationSettings ErrorDisplayMode="ImageWithTooltip" ValidationGroup="groupCustomerInfo">
                                                                                 <RequiredField ErrorText="First Name is Required!" IsRequired="True" />
                                                                             </ValidationSettings>
-
-
 
                                                                         </dx:ASPxTextBox>
                                                                     </dx:LayoutItemNestedControlContainer>
@@ -206,9 +204,19 @@
 
                                     <Columns>
                                         <dx:GridViewDataTextColumn FieldName="QuestionOrder" VisibleIndex="0" Width="20px">
+<SettingsHeaderFilter>
+<DateRangePickerSettings EditFormatString=""></DateRangePickerSettings>
+</SettingsHeaderFilter>
                                         </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn FieldName="QuestionText" VisibleIndex="1" Width="300px"></dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn FieldName="QuestionText" VisibleIndex="1" Width="300px">
+<SettingsHeaderFilter>
+<DateRangePickerSettings EditFormatString=""></DateRangePickerSettings>
+</SettingsHeaderFilter>
+                                        </dx:GridViewDataTextColumn>
                                         <dx:GridViewDataTextColumn Caption="Answer" ShowInCustomizationForm="True" VisibleIndex="2">
+<SettingsHeaderFilter>
+<DateRangePickerSettings EditFormatString=""></DateRangePickerSettings>
+</SettingsHeaderFilter>
                                             <DataItemTemplate>
                                                 <dx:ASPxMemo ID="txtBox" Width="100%" runat="server"></dx:ASPxMemo>
 
@@ -248,8 +256,8 @@
                         <ContentCollection>
                             <dx:ContentControl runat="server">
                                 <dx:ASPxLabel ID="lblProposalType" runat="server" Text="Proposal Type" />
-                                <dx:ASPxComboBox ID="cbProposalType" runat="server" ValueType="System.String" ClientInstanceName="cbProposalType" Width="170"
-                                     OnSelectedIndexChanged ="cbProposalType_SelectedIndexChanged" ClientEnabled="true" AutoPostBack="True" ViewStateMode="Enabled" EnableCallbackMode="True">
+                                <dx:ASPxComboBox ID="cbProposalType" runat="server" ValueType="System.String" ClientInstanceName="cbProposalType" Width="170" 
+                                     OnSelectedIndexChanged ="cbProposalType_SelectedIndexChanged" ClientEnabled="true" AutoPostBack="True" ViewStateMode="Enabled" EnableViewState="true" EnableCallbackMode="True">
                                     <Items>
                                         <dx:ListEditItem Value="Standard or Ductless HVAC" Text="Standard" />
                                         <dx:ListEditItem Value="Duct Cleaning" Text="Duct Cleaning" />
