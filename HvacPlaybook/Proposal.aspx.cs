@@ -17,6 +17,8 @@ namespace HvacPlaybook
             cbState.ValueField = "StateCode";
             cbState.DataBind();
             SqlDataSource1.DataBind();
+
+            standar_pagecontrol.ClientVisible = false;
         
             
         }
@@ -38,11 +40,6 @@ namespace HvacPlaybook
 
       
 
-        protected void pageControl_ActiveTabChanged(object source, TabControlEventArgs e)
-        {
-         
-        }
-
        
 
         protected void cbProposalType_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,6 +49,8 @@ namespace HvacPlaybook
                 {
                     standar_pagecontrol.Visible = true;
                 }
+
+              
          
         }
 

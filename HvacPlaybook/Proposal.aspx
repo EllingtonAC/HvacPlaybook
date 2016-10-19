@@ -14,6 +14,18 @@
                 pageControl.SetActiveTab(pageControl.GetTab(indexTab + 1));
 
             }
+
+            function OnSelectedIndexChanged(s, e) {
+
+                var value = s.GetValue();
+               if (value == "Standard or Ductless HVAC") {
+                   standar_pagecontrol.SetVisible(true);
+                //   alert(value);
+               }
+               
+
+            }
+
             function OnFinishClick(s, e) {
                 if (ASPxClientEdit.ValidateGroup('groupProposalType')) {
                     var addStreet = txtAddStreet.GetValue() != null ? txtAddStreet.GetValue() : '';
@@ -37,7 +49,7 @@
             </dx:ASPxCheckBox>
             <br />
             <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                ActiveTabIndex="0" Width="800px" OnActiveTabChanged="pageControl_ActiveTabChanged">
+                ActiveTabIndex="0" Width="800px">
                 <ClientSideEvents ActiveTabChanging="OnTabChanging" />
                 <TabPages>
                     <dx:TabPage Name="CustomerInfo" Text="Customer Information" ActiveTabStyle-Font-Bold="true">
@@ -257,7 +269,8 @@
                             <dx:ContentControl runat="server">
                                 <dx:ASPxLabel ID="lblProposalType" runat="server" Text="Proposal Type" />
                                 <dx:ASPxComboBox ID="cbProposalType" runat="server" ValueType="System.String" ClientInstanceName="cbProposalType" Width="170" 
-                                     OnSelectedIndexChanged ="cbProposalType_SelectedIndexChanged" ClientEnabled="true" AutoPostBack="True" ViewStateMode="Enabled" EnableViewState="true" EnableCallbackMode="True">
+                                     ClientEnabled="true"  AutoPostBack="false" ViewStateMode="Enabled" EnableViewState="true" EnableCallbackMode="True">
+                                    <ClientSideEvents SelectedIndexChanged= "OnSelectedIndexChanged" />
                                     <Items>
                                         <dx:ListEditItem Value="Standard or Ductless HVAC" Text="Standard" />
                                         <dx:ListEditItem Value="Duct Cleaning" Text="Duct Cleaning" />
@@ -268,7 +281,7 @@
                                     </ValidationSettings>
                                 </dx:ASPxComboBox>
                                 <hr />
-                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="0" Visible="False">
+                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="0" >
 
                                     <TabPages>
                                         <dx:TabPage Name="OutDoor" Text="OutDoor">
