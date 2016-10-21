@@ -49,7 +49,7 @@
             </dx:ASPxCheckBox>
             <br />
             <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                ActiveTabIndex="2" Width="800px">
+                ActiveTabIndex="0" Width="800px">
                 <ClientSideEvents ActiveTabChanging="OnTabChanging" />
                 <TabPages>
                     <dx:TabPage Name="CustomerInfo" Text="Customer Information" ActiveTabStyle-Font-Bold="true">
