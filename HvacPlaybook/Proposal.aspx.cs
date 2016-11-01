@@ -19,8 +19,12 @@ namespace HvacPlaybook
             SqlDataSource1.DataBind();
 
             standar_pagecontrol.ClientVisible = false;
-        
-            
+            S1Title.ClientVisible = false;
+            S1Type.ClientVisible = false;
+            S1_UTorPU.ClientVisible = false;
+            S1Capacity.ClientVisible = false;
+            S1ID_TorH.ClientVisible = false;
+
         }
 
         protected void showTabs_Init(object sender, EventArgs e)
@@ -38,21 +42,6 @@ namespace HvacPlaybook
             popupControl.ShowOnPageLoad = false;
         }
 
-      
-
-       
-
-        protected void cbProposalType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-               
-                if (cbProposalType.SelectedIndex == 0)
-                {
-                    standar_pagecontrol.Visible = true;
-                }
-
-              
-         
-        }
 
     }
 }

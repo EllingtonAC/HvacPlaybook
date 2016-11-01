@@ -22,7 +22,23 @@
                    standar_pagecontrol.SetVisible(true);
                 //   alert(value);
                }
-               
+            }
+
+            function OnOptionChanged(s, e) {
+                var value = s.GetValue();
+                if (value == "Yes") {
+                  //   alert(value);
+                    S1Title.SetVisible(true);
+                    S1Type.SetVisible(true);
+//                    S1_UTorPU.SetVisible(true);
+//                    S1Capacity.SetVisible(true);
+//                   S1ID_TorH.SetVisible(true);
+
+                    $('.TargetCaption').text('System #1 Title:');
+                    $('.Sys_NewCaptiion').text('System Type:');
+                  
+                    
+                }
 
             }
 
@@ -49,7 +65,7 @@
             </dx:ASPxCheckBox>
             <br />
             <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                ActiveTabIndex="0" Width="800px">
+                ActiveTabIndex="2" Width="800px">
                 <ClientSideEvents ActiveTabChanging="OnTabChanging" />
                 <TabPages>
                     <dx:TabPage Name="CustomerInfo" Text="Customer Information" ActiveTabStyle-Font-Bold="true">
@@ -294,8 +310,13 @@
                                                                     <dx:LayoutItem Caption="Standard System Option #1">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxTextBox ID="ASPxFormLayout_System_E1" runat="server">
-                                                                                </dx:ASPxTextBox>
+                                                                                <dx:ASPxComboBox ID="S1O_combo" runat="server" ClientInstanceName="S1O_combo">
+                                                                                    <ClientSideEvents SelectedIndexChanged ="OnOptionChanged" />                                                                                
+                                                                                    <Items>
+                                                                                        <dx:ListEditItem Text="Yes" Value="Yes" />
+                                                                                        <dx:ListEditItem Text="No" Value="No" />
+                                                                                    </Items>
+                                                                                </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
                                                                     </dx:LayoutItem>
@@ -307,15 +328,17 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="System Name">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="TargetCaption">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxTextBox ID="ASPxFormLayout_System_E5" runat="server">
+                                                                                <dx:ASPxTextBox ID="S1Title" runat="server" ClientInstanceName="S1Title">
                                                                                 </dx:ASPxTextBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+
+<CaptionStyle CssClass="TargetCaption"></CaptionStyle>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="Sys. #1 Tag">
+                                                                    <dx:LayoutItem Caption="System #2 Title">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
                                                                                 <dx:ASPxTextBox ID="ASPxFormLayout_System_E6" runat="server">
@@ -323,13 +346,19 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="System Type">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="Sys_NewCaptiion">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E7" runat="server">
+                                                                                <dx:ASPxComboBox ID="S1Type" runat="server" ClientInstanceName="S1Type">
+                                                                                    <Items>
+                                                                                        <dx:ListEditItem Text="Split" Value="0" />
+                                                                                        <dx:ListEditItem Text="Package" Value="1" />
+                                                                                    </Items>
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+
+<CaptionStyle CssClass="Sys_NewCaptiion"></CaptionStyle>
                                                                     </dx:LayoutItem>
                                                                     <dx:LayoutItem Caption="System Type">
                                                                         <LayoutItemNestedControlCollection>
@@ -339,10 +368,10 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="OD Unit Type">
+                                                                    <dx:LayoutItem Caption="">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E9" runat="server">
+                                                                                <dx:ASPxComboBox ID="S1_UTorPU" runat="server" ClientInstanceName="S1_UTorPU">
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
@@ -355,10 +384,10 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="Capacity">
+                                                                    <dx:LayoutItem Caption="">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E11" runat="server">
+                                                                                <dx:ASPxComboBox ID="S1Capacity" runat="server" ClientInstanceName="S1Capacity">
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
@@ -371,10 +400,10 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="ID Type">
+                                                                    <dx:LayoutItem Caption="">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E13" runat="server">
+                                                                                <dx:ASPxComboBox ID="S1ID_TorH" runat="server" ClientInstanceName="S1ID_TorH">
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
@@ -406,7 +435,7 @@
                                                                             <dx:LayoutItem Caption="">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxComboBox ID="OutDoor_fl_E1" runat="server" Height ="16px" Width="361px">
+                                                                                        <dx:ASPxComboBox ID="OutDoor_fl_E1" runat="server" Height="16px" Width="361px">
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>

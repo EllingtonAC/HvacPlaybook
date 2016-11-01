@@ -220,13 +220,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxFormLayout ASPxFormLayout_System;
         
         /// <summary>
-        /// ASPxFormLayout_System_E1 control.
+        /// S1O_combo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxFormLayout_System_E1;
+        protected global::DevExpress.Web.ASPxComboBox S1O_combo;
         
         /// <summary>
         /// ASPxFormLayout_System_E2 control.
@@ -238,13 +238,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E2;
         
         /// <summary>
-        /// ASPxFormLayout_System_E5 control.
+        /// S1Title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxFormLayout_System_E5;
+        protected global::DevExpress.Web.ASPxTextBox S1Title;
         
         /// <summary>
         /// ASPxFormLayout_System_E6 control.
@@ -256,13 +256,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxTextBox ASPxFormLayout_System_E6;
         
         /// <summary>
-        /// ASPxFormLayout_System_E7 control.
+        /// S1Type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E7;
+        protected global::DevExpress.Web.ASPxComboBox S1Type;
         
         /// <summary>
         /// ASPxFormLayout_System_E8 control.
@@ -274,13 +274,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E8;
         
         /// <summary>
-        /// ASPxFormLayout_System_E9 control.
+        /// S1_UTorPU control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E9;
+        protected global::DevExpress.Web.ASPxComboBox S1_UTorPU;
         
         /// <summary>
         /// ASPxFormLayout_System_E10 control.
@@ -292,13 +292,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E10;
         
         /// <summary>
-        /// ASPxFormLayout_System_E11 control.
+        /// S1Capacity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E11;
+        protected global::DevExpress.Web.ASPxComboBox S1Capacity;
         
         /// <summary>
         /// ASPxFormLayout_System_E12 control.
@@ -310,13 +310,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E12;
         
         /// <summary>
-        /// ASPxFormLayout_System_E13 control.
+        /// S1ID_TorH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E13;
+        protected global::DevExpress.Web.ASPxComboBox S1ID_TorH;
         
         /// <summary>
         /// ASPxFormLayout_System_E14 control.
