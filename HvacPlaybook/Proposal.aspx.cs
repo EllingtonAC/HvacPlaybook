@@ -19,12 +19,22 @@ namespace HvacPlaybook
             SqlDataSource1.DataBind();
 
             standar_pagecontrol.ClientVisible = false;
+
             S1Title.ClientVisible = false;
             S1Type.ClientVisible = false;
             S1_UTorPU.ClientVisible = false;
             S1Capacity.ClientVisible = false;
             S1ID_TorH.ClientVisible = false;
 
+            S2Title.ClientVisible = false;
+            S2Type.ClientVisible = false;
+            S2_UTorPU.ClientVisible = false;
+            S2Capacity.ClientVisible = false;
+            S2ID_TorH.ClientVisible = false;
+
+            Duc_Tag1.ClientVisible = false;
+            Duc_Sys_Type1.ClientVisible = false;
+            Duc_OD_Cap1.ClientVisible = false;
         }
 
         protected void showTabs_Init(object sender, EventArgs e)
@@ -42,13 +52,37 @@ namespace HvacPlaybook
             popupControl.ShowOnPageLoad = false;
         }
 
-        protected void Parent_cmb_Callback(object sender, EventArgs e)
+        protected void S1Type_cmb_Callback(object sender, EventArgs e)
         {
             S1Type.DataSource = getS1TypeDataSource();
             S1Type.DataBind();
+            
         }
 
-        protected void Child_cmb_Callback(object sender, EventArgs e)
+        protected void S2Type_cmb_Callback(object sender, EventArgs e)
+        {
+            S2Type.DataSource = getS1TypeDataSource();
+            S2Type.DataBind();
+        }
+
+        protected void Duc_Sys_Type1_cmb_Callback(object sender, EventArgs e)
+        {
+            List<String> li = new List<string>();
+            li.Add("Cooling Only Single Wall Head");
+            li.Add("Heat Pump W/Celling Unit");
+            li.Add("Heat Pump and Wall Unit");
+            li.Add("Heat Pump and Wall Unit(High-Efficiency 3D)");
+            li.Add("Heat Pump Multi-port/Two Head");
+            li.Add("Heat Pump Multi-port/Three Head");
+            li.Add("Heat Pump Multi-port/Four Head");
+            li.Add("Heat Pump Multi-port/Five Head");
+            Duc_Sys_Type1.DataSource = li;
+            Duc_Sys_Type1.DataBind();
+        }
+
+        
+
+        protected void S1ID_TorH_cmb_Callback(object sender, EventArgs e)
         {
             string s = S1Type.SelectedItem.Value.ToString();
             if (s == "Split")
@@ -63,6 +97,22 @@ namespace HvacPlaybook
             }
         }
 
+        protected void S2ID_TorH_cmb_Callback(object sender, EventArgs e)
+        {
+            string s = S2Type.SelectedItem.Value.ToString();
+            if (s == "Split")
+            {
+
+                S2ID_TorH.DataSource = getS1ID_TorHDataSource();
+                S2ID_TorH.DataBind();
+            }
+            else if (s == "Package")
+            {
+
+                S2ID_TorH.DataSource = getS1ID_TorH_DataSource();
+                S2ID_TorH.DataBind();
+            }
+        }
 
         protected void S1_UTorPU_cmb_Callback(object sender, EventArgs e)
         {
@@ -78,6 +128,23 @@ namespace HvacPlaybook
 
             }
         }
+
+        protected void S2_UTorPU_cmb_Callback(object sender, EventArgs e)
+        {
+            string s = S2Type.SelectedItem.Value.ToString();
+            if (s == "Split")
+            {
+                S2_UTorPU.DataSource = getS1_UTorPUDataSource();
+                S2_UTorPU.DataBind();
+            }
+            else
+            {
+                S2_UTorPU.DataSource = getS1_UTorPU_DataSource();
+                S2_UTorPU.DataBind();
+                
+            }
+        }
+
         protected void S1Capacity_cmb_Callback(object sender, CallbackEventArgsBase e)
         {
             string s = S1Type.SelectedItem.Value.ToString();
@@ -107,6 +174,111 @@ namespace HvacPlaybook
 
             }
         }
+
+        protected void S2Capacity_cmb_Callback(object sender, CallbackEventArgsBase e)
+        {
+            string s = S2Type.SelectedItem.Value.ToString();
+            if (s == "Split")
+            {
+                S2Capacity.DataSource = getS1CapacityDataSource();
+                S2Capacity.DataBind();
+
+            }
+            else
+            {
+                if (e.Parameter == "Heat Pump")
+                {
+                    S2Capacity.DataSource = getS1CapacityDataSource_1();
+                    S2Capacity.DataBind();
+                }
+                if (e.Parameter == "Heat Pump(Over/Under)")
+                {
+                    S2Capacity.DataSource = getS1Capacity_DataSource();
+                    S2Capacity.DataBind();
+                }
+                else
+                {
+                    S2Capacity.DataSource = getS1CapacityDataSource_1();
+                    S2Capacity.DataBind();
+                }
+
+            }
+        }
+
+        protected void Duc_OD_Cap1_cmb_Callback(object sender, CallbackEventArgsBase e)
+        {
+
+            List<String> li = new List<string>();
+            switch (e.Parameter)
+            {
+                case "Cooling Only Single Wall Head":
+                    li.Add("09K");
+                    li.Add("12K");
+                    li.Add("15K");
+                    li.Add("18K");
+                    li.Add("24K");
+                    li.Add("30K");
+                    li.Add("36K");
+                    Duc_OD_Cap1.DataSource = li;
+                    Duc_OD_Cap1.DataBind();
+                    break;
+                case "Heat Pump and Wall Unit":
+                    Duc_OD_Cap1.DataSource = li;
+                    Duc_OD_Cap1.DataBind();
+                    break;
+                case "Heat Pump W/Celling Unit":
+                    li.Clear();
+                    li.Add("09K");
+                    li.Add("12K");
+                    li.Add("15K");
+                    Duc_OD_Cap1.DataSource = li;
+                    Duc_OD_Cap1.DataBind();
+                    break;
+                case "Heat Pump and Wall Unit(High-Efficiency 3D)":
+                    li.Clear();
+                    li.Add("09K");
+                    li.Add("12K");
+                    li.Add("15K");
+                    li.Add("18K");
+                    Duc_OD_Cap1.DataSource = li;
+                    Duc_OD_Cap1.DataBind();
+                    break;
+                case "Heat Pump Multi-port/Two Head":
+                    li.Clear();
+                    li.Add("20K");
+                    li.Add("30K");
+                    li.Add("36K");
+                    li.Add("42K");
+                    Duc_OD_Cap1.DataSource = li;
+                    Duc_OD_Cap1.DataBind();
+                    break;
+                case "Heat Pump Multi-port/Three Head":
+                    li.Clear();
+                    li.Add("30K");
+                    li.Add("36K");
+                    li.Add("42K");
+                    Duc_OD_Cap1.DataSource = li;
+                    Duc_OD_Cap1.DataBind();
+                    break;
+                case "Heat Pump Multi-port/Four Head":
+                    li.Clear();
+                    li.Add("36K");
+                    li.Add("42K");
+                    Duc_OD_Cap1.DataSource = li;
+                    Duc_OD_Cap1.DataBind();
+                    break;
+                case "Heat Pump Multi-port/Five Head":
+                    li.Clear();
+                    li.Add("42K");
+                    Duc_OD_Cap1.DataSource = li;
+                    Duc_OD_Cap1.DataBind();
+                    break;
+            }
+
+        }
+        
+
+
 
         private List<String> getS1CapacityDataSource_1()
         {

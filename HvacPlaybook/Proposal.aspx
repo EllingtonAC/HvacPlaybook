@@ -20,19 +20,17 @@
                 var value = s.GetValue();
                if (value == "Standard or Ductless HVAC") {
                    standar_pagecontrol.SetVisible(true);
-                //   alert(value);
                }
             }
 
-            function OnOptionChanged(s, e) {
+            function S1O_combo_OnSelectChanged(s, e) {
                 var value = s.GetValue();
-                if (value == "Yes") {
-                  //   alert(value);
+                if (value == "Yes") { 
                     S1Title.SetVisible(true);
                     S1Type.SetVisible(true);
                     S1Type.PerformCallback();
                     $('.TargetCaption').text('System #1 Title:');
-                    $('.Sys_NewCaptiion').text('System Type:');
+                    $('.Sys_NewCaption').text('System Type:');
              
                 } else {
                     S1Title.SetVisible(false);
@@ -41,14 +39,42 @@
                     S1Capacity.SetVisible(false);
                     S1ID_TorH.SetVisible(false);
                     $('.TargetCaption').text(' ');
-                    $('.Sys_NewCaptiion').text(' ');
+                    $('.Sys_NewCaption').text(' ');
                     $('.S1_UTorPU_NewCaption').text(' ');
                     $('.S1Capacity_NewCaption').text(' ');
                     $('.S1ID_TorH_NewCaption').text(' ');
 
                     S1Type.ClearItems();
+                    S1Title.Clear();
+
                 }
 
+            }
+
+            function S2O_combo_OnSelectChanged(s,e) {
+                var value = s.GetValue();
+                if (value == "Yes") {
+                    S2Title.SetVisible(true);
+                    S2Type.SetVisible(true);
+                    S2Type.PerformCallback();
+                    $('.TargetCaption2').text('System #2 Title:');
+                    $('.Sys_NewCaption2').text('System Type:');
+
+                } else {
+                    S2Title.SetVisible(false);
+                    S2Type.SetVisible(false);
+                    S2_UTorPU.SetVisible(false);
+                    S2Capacity.SetVisible(false);
+                    S2ID_TorH.SetVisible(false);
+                    $('.TargetCaption2').text(' ');
+                    $('.Sys_NewCaption2').text(' ');
+                    $('.S1_UTorPU_NewCaption2').text(' ');
+                    $('.S1Capacity_NewCaption2').text(' ');
+                    $('.S1ID_TorH_NewCaption2').text(' ');
+
+                    S2Type.ClearItems();
+                    S2Title.Clear();
+                }
             }
 
             function S1Type_OnSelectedChanged(s,e) {
@@ -82,9 +108,83 @@
                 }
             }
 
+            function S2Type_OnSelectedChanged(s, e) {
+                var value = s.GetValue();
+                if (value == "Split") {
+
+                    S2_UTorPU.SetVisible(true);
+                    S2Capacity.SetVisible(true);
+                    S2ID_TorH.SetVisible(true);
+                    $('.S1_UTorPU_NewCaption2').text('OD Unit Type:');
+                    $('.S1Capacity_NewCaption2').text('Capacity:');
+                    $('.S1ID_TorH_NewCaption2').text('ID Type:');
+
+                    S2_UTorPU.PerformCallback();
+                    S2Capacity.PerformCallback();
+                    S2ID_TorH.PerformCallback();
+
+                } else {
+
+                    S2_UTorPU.SetVisible(true);
+                    S2Capacity.SetVisible(true);
+                    S2ID_TorH.SetVisible(true);
+                    $('.S1_UTorPU_NewCaption2').text('Package Unit:');
+                    $('.S1Capacity_NewCaption2').text('Capacity:');
+                    $('.S1ID_TorH_NewCaption2').text('ID Heat:');
+
+                    S2_UTorPU.PerformCallback();
+                    S2Capacity.PerformCallback();
+                    S2ID_TorH.PerformCallback();
+
+                }
+            }
+
             function S1_UTorPU_OnSelectChanged(s,e) {
                 S1Capacity.PerformCallback(S1_UTorPU.GetValue().toString());
+                S1ID_TorH.PerformCallback(S1_UTorPU.GetValue().toString());
               
+            }
+
+
+            function S2_UTorPU_OnSelectChanged(s, e) {
+                S2Capacity.PerformCallback(S2_UTorPU.GetValue().toString());
+                S2ID_TorH.PerformCallback(S2_UTorPU.GetValue().toString());
+
+            }
+
+            function Duc_Sys_Opt1_OnSelectChange(s, e) {
+                var value = s.GetValue();
+                if (value == "Yes") {
+                    Duc_Tag1.SetVisible(true);
+                    Duc_Sys_Type1.SetVisible(true);
+                    Duc_Sys_Type1.PerformCallback();
+                    Duc_OD_Cap1.SetVisible(true);
+                    $('.Duc_Tag1_NewCaption').text('Ductless Tag:');
+                    $('.Duc_Sys_Type1_NewCaption').text('System Type:');
+                    $('.Duc_OD_Cap1_NewCaption').text('OD Capacity:');
+
+                   
+
+                } else {
+                    Duc_Tag1.SetVisible(false);
+                    Duc_Sys_Type1.SetVisible(false);
+                    Duc_OD_Cap1.SetVisible(false);
+                    $('.Duc_Tag1_NewCaption').text(' ');
+                    $('.Duc_Sys_Type1_NewCaption').text(' ');
+                    $('.Duc_OD_Cap1_NewCaption').text(' ');
+
+                    Duc_Sys_Type1.ClearItems();
+                    Duc_Tag1.Clear();
+                    Duc_OD_Cap1.ClearItems();
+                }
+
+                                  
+            }
+
+            function Duc_Sys_Type1_OnSelectChanged(s, e) {
+              
+                Duc_OD_Cap1.PerformCallback(Duc_Sys_Type1.GetValue().toString());
+
             }
 
                 function OnFinishClick(s, e) {
@@ -104,6 +204,8 @@
                     var str = month.toString() + '/' + date.getDate().toString() + '/' + date.getFullYear().toString();
                     return str;
                 }
+            
+          
         </script>
         <div>
             <dx:ASPxCheckBox ID="showTabs" runat="server" AutoPostBack="true" Text="Show Tabs" OnCheckedChanged="showTabs_CheckedChanged" OnInit="showTabs_Init">
@@ -356,7 +458,7 @@
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
                                                                                 <dx:ASPxComboBox ID="S1O_combo" runat="server" ClientInstanceName="S1O_combo" EnableSynchronization ="False">
-                                                                                    <ClientSideEvents SelectedIndexChanged ="OnOptionChanged" />                                                                                
+                                                                                    <ClientSideEvents SelectedIndexChanged ="S1O_combo_OnSelectChanged" />                                                                                
                                                                                     <Items>
                                                                                         <dx:ListEditItem Text="Yes" Value="Yes" />
                                                                                         <dx:ListEditItem Text="No" Value="No" />
@@ -368,7 +470,12 @@
                                                                     <dx:LayoutItem Caption="Standard System Option #2">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E2" runat="server" Height="21px" Width="170px">
+                                                                                <dx:ASPxComboBox ID="S2O_combo" runat="server" Height="21px" Width="170px" ClientInstanceName="S2O_combo">
+                                                                                    <ClientSideEvents SelectedIndexChanged ="S2O_combo_OnSelectChanged" />
+                                                                                    <Items>
+                                                                                        <dx:ListEditItem Text="Yes" Value="Yes" />
+                                                                                        <dx:ListEditItem Text="No" Value="No" />
+                                                                                    </Items>
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
@@ -376,25 +483,28 @@
                                                                     <dx:LayoutItem Caption="" CaptionStyle-CssClass="TargetCaption">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxTextBox ID="S1Title" runat="server" ClientInstanceName="S1Title">
+                                                                                <dx:ASPxTextBox ID="S1Title" runat="server" ClientInstanceName="S1Title" >
                                                                                 </dx:ASPxTextBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
 
-<CaptionStyle CssClass="TargetCaption"></CaptionStyle>
+                                                                     <CaptionStyle CssClass="TargetCaption"></CaptionStyle>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="System #2 Title">
+
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="TargetCaption2" >
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxTextBox ID="ASPxFormLayout_System_E6" runat="server">
+                                                                                <dx:ASPxTextBox ID="S2Title" runat="server" ClientInstanceName="S2Title" >
                                                                                 </dx:ASPxTextBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+
+                                                                      <CaptionStyle CssClass="TargetCaption2"></CaptionStyle>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="Sys_NewCaptiion">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="Sys_NewCaption">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="S1Type" runat="server" ClientInstanceName="S1Type" EnableSynchronization="False" OnCallback="Parent_cmb_Callback" >
+                                                                                <dx:ASPxComboBox ID="S1Type" runat="server" ClientInstanceName="S1Type" EnableSynchronization="False" OnCallback="S1Type_cmb_Callback" >
                                                                                     <ClientSideEvents SelectedIndexChanged="S1Type_OnSelectedChanged" />
                                                                                     <Items>
                                                                                         <dx:ListEditItem Text="Split" Value="Split" />
@@ -404,15 +514,22 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
 
-<CaptionStyle CssClass="Sys_NewCaptiion"></CaptionStyle>
+                                                                            <CaptionStyle CssClass="Sys_NewCaption"></CaptionStyle>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="System Type">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="Sys_NewCaption2">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E8" runat="server">
+                                                                                <dx:ASPxComboBox ID="S2Type" runat="server" ClientInstanceName="S2Type" EnableSynchronization="False" OnCallback="S2Type_cmb_Callback">
+                                                                                    <ClientSideEvents SelectedIndexChanged="S2Type_OnSelectedChanged" />
+                                                                                    <Items>
+                                                                                        <dx:ListEditItem Text="Split" Value="Split" />
+                                                                                        <dx:ListEditItem Text="Package" Value="Package" />
+                                                                                    </Items>
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+                                                                        <CaptionStyle CssClass="Sys_NewCaption2"></CaptionStyle>
+
                                                                     </dx:LayoutItem>
                                                                     <dx:LayoutItem Caption="" CaptionStyle-CssClass="S1_UTorPU_NewCaption">
                                                                         <LayoutItemNestedControlCollection>
@@ -424,15 +541,17 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
 
-<CaptionStyle CssClass="S1_UTorPU_NewCaption"></CaptionStyle>
+                                                                       <CaptionStyle CssClass="S1_UTorPU_NewCaption"></CaptionStyle>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption=" Package Unit">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="S1_UTorPU_NewCaption2">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E10" runat="server">
+                                                                                <dx:ASPxComboBox ID="S2_UTorPU" runat="server" ClientInstanceName="S2_UTorPU" OnCallback="S2_UTorPU_cmb_Callback">
+                                                                                      <ClientSideEvents SelectedIndexChanged="S2_UTorPU_OnSelectChanged" />
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+                                                                        <CaptionStyle CssClass="S1_UTorPU_NewCaption2"></CaptionStyle>
                                                                     </dx:LayoutItem>
                                                                     <dx:LayoutItem Caption="" CaptionStyle-CssClass="S1Capacity_NewCaption">
                                                                         <LayoutItemNestedControlCollection>
@@ -443,33 +562,35 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
 
-<CaptionStyle CssClass="S1Capacity_NewCaption"></CaptionStyle>
+                                                                        <CaptionStyle CssClass="S1Capacity_NewCaption"></CaptionStyle>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="Capacity">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="S1Capacity_NewCaption2">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E12" runat="server">
+                                                                                <dx:ASPxComboBox ID="S2Capacity" runat="server" ClientInstanceName="S2Capacity" OnCallback="S2Capacity_cmb_Callback">
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+                                                                        <CaptionStyle CssClass="S1Capacity_NewCaption2"></CaptionStyle>
                                                                     </dx:LayoutItem>
                                                                     <dx:LayoutItem Caption="" CaptionStyle-CssClass="S1ID_TorH_NewCaption">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="S1ID_TorH" runat="server" ClientInstanceName="S1ID_TorH" OnCallback="Child_cmb_Callback" EnableSynchronization="False" >
+                                                                                <dx:ASPxComboBox ID="S1ID_TorH" runat="server" ClientInstanceName="S1ID_TorH" OnCallback="S1ID_TorH_cmb_Callback" EnableSynchronization="False" >
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
 
-<CaptionStyle CssClass="S1ID_TorH_NewCaption"></CaptionStyle>
+                                                                            <CaptionStyle CssClass="S1ID_TorH_NewCaption"></CaptionStyle>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="ID Heat">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="S1ID_TorH_NewCaption2">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E14" runat="server">
+                                                                                <dx:ASPxComboBox ID="S2ID_TorH" runat="server" ClientInstanceName="S2ID_TorH" OnCallback="S2ID_TorH_cmb_Callback">
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+                                                                        <CaptionStyle CssClass="S1ID_TorH_NewCaption2"></CaptionStyle>
                                                                     </dx:LayoutItem>
                                                                 </Items>
                                                             </dx:LayoutGroup>
@@ -478,7 +599,12 @@
                                                                     <dx:LayoutItem Caption="Ductless System Option #1">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E1" runat="server">
+                                                                                <dx:ASPxComboBox ID="Duc_Sys_Opt1" runat="server" ClientInstanceName="Duc_Sys_Opt1" EnableSynchronization ="False">
+                                                                                    <ClientSideEvents SelectedIndexChanged="Duc_Sys_Opt1_OnSelectChange" />
+                                                                                    <Items>
+                                                                                        <dx:ListEditItem Text="Yes" Value="Yes" />
+                                                                                        <dx:ListEditItem Text="No" Value="No" />
+                                                                                    </Items>
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
@@ -491,13 +617,14 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="Duc_Tag1_NewCaption">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxTextBox ID="ASPxFormLayout_System_E4" runat="server">
+                                                                                <dx:ASPxTextBox ID="Duc_Tag1" runat="server" ClientInstanceName="Duc_Tag1">
                                                                                 </dx:ASPxTextBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+                                                                        <CaptionStyle CssClass="Duc_Tag1_NewCaption"></CaptionStyle>
                                                                     </dx:LayoutItem>
                                                                     <dx:LayoutItem Caption="">
                                                                         <LayoutItemNestedControlCollection>
@@ -507,13 +634,25 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="Duc_Sys_Type1_NewCaption">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E7" runat="server">
+                                                                                <dx:ASPxComboBox ID="Duc_Sys_Type1" runat="server" ClientInstanceName="Duc_Sys_Type1" OnCallback ="Duc_Sys_Type1_cmb_Callback">
+                                                                                    <ClientSideEvents SelectedIndexChanged="Duc_Sys_Type1_OnSelectChanged" />
+                                                                                    <Items>
+                                                                                        <dx:ListEditItem Text="Cooling Only Single Wall Head" Value="Cooling Only Single Wall Head" />
+                                                                                        <dx:ListEditItem Text="Heat Pump W/Celling Unit" Value="Heat Pump W/Celling Unit" />
+                                                                                        <dx:ListEditItem Text="Heat Pump and Wall Unit" Value="Heat Pump and Wall Unit" />
+                                                                                        <dx:ListEditItem Text="Heat Pump and Wall Unit(High-Efficiency 3D)" Value="Heat Pump and Wall Unit(High-Efficiency 3D)" />
+                                                                                        <dx:ListEditItem Text="Heat Pump Multi-port/Two Head" Value="Heat Pump Multi-port/Two Head" />
+                                                                                        <dx:ListEditItem Text="Heat Pump Multi-port/Three Head" Value="Heat Pump Multi-port/Three Head" />
+                                                                                        <dx:ListEditItem Text="Heat Pump Multi-port/Four Head" Value="Heat Pump Multi-port/Four Head" />
+                                                                                        <dx:ListEditItem Text="Heat Pump Multi-port/Five Head" Value="Heat Pump Multi-port/Five Head" />
+                                                                                    </Items>
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+                                                                         <CaptionStyle CssClass="Duc_Sys_Type1_NewCaption"></CaptionStyle>
                                                                     </dx:LayoutItem>
                                                                     <dx:LayoutItem Caption="">
                                                                         <LayoutItemNestedControlCollection>
@@ -523,13 +662,14 @@
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
                                                                     </dx:LayoutItem>
-                                                                    <dx:LayoutItem Caption="">
+                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="Duc_OD_Cap1_NewCaption">
                                                                         <LayoutItemNestedControlCollection>
                                                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                <dx:ASPxComboBox ID="ASPxFormLayout_System_E11" runat="server">
+                                                                                <dx:ASPxComboBox ID="Duc_OD_Cap1" runat="server" ClientInstanceName="Duc_OD_Cap1" OnCallback="Duc_OD_Cap1_cmb_Callback">
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
+                                                                        <CaptionStyle CssClass="Duc_OD_Cap1_NewCaption"></CaptionStyle>
                                                                     </dx:LayoutItem>
                                                                     <dx:LayoutItem Caption="">
                                                                         <LayoutItemNestedControlCollection>
