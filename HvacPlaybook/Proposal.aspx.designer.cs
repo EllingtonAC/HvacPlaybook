@@ -328,6 +328,78 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E14;
         
         /// <summary>
+        /// ASPxFormLayout_System_E1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E1;
+        
+        /// <summary>
+        /// ASPxFormLayout_System_E3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E3;
+        
+        /// <summary>
+        /// ASPxFormLayout_System_E4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox ASPxFormLayout_System_E4;
+        
+        /// <summary>
+        /// ASPxFormLayout_System_E5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox ASPxFormLayout_System_E5;
+        
+        /// <summary>
+        /// ASPxFormLayout_System_E7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E7;
+        
+        /// <summary>
+        /// ASPxFormLayout_System_E9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E9;
+        
+        /// <summary>
+        /// ASPxFormLayout_System_E11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E11;
+        
+        /// <summary>
+        /// ASPxFormLayout_System_E13 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E13;
+        
+        /// <summary>
         /// OutDoor_fl control.
         /// </summary>
         /// <remarks>
