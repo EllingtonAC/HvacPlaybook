@@ -337,13 +337,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox Duc_Sys_Opt1;
         
         /// <summary>
-        /// ASPxFormLayout_System_E3 control.
+        /// Duc_Sys_Opt2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E3;
+        protected global::DevExpress.Web.ASPxComboBox Duc_Sys_Opt2;
         
         /// <summary>
         /// Duc_Tag1 control.
@@ -355,13 +355,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxTextBox Duc_Tag1;
         
         /// <summary>
-        /// ASPxFormLayout_System_E5 control.
+        /// Duc_Tag2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxFormLayout_System_E5;
+        protected global::DevExpress.Web.ASPxTextBox Duc_Tag2;
         
         /// <summary>
         /// Duc_Sys_Type1 control.
@@ -373,13 +373,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox Duc_Sys_Type1;
         
         /// <summary>
-        /// ASPxFormLayout_System_E9 control.
+        /// Duc_Sys_Type2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E9;
+        protected global::DevExpress.Web.ASPxComboBox Duc_Sys_Type2;
         
         /// <summary>
         /// Duc_OD_Cap1 control.
@@ -391,13 +391,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox Duc_OD_Cap1;
         
         /// <summary>
-        /// ASPxFormLayout_System_E13 control.
+        /// Duc_OD_Cap2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox ASPxFormLayout_System_E13;
+        protected global::DevExpress.Web.ASPxComboBox Duc_OD_Cap2;
         
         /// <summary>
         /// OutDoor_fl control.
@@ -409,6 +409,15 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxFormLayout OutDoor_fl;
         
         /// <summary>
+        /// OutDoor_fl_E18 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E18;
+        
+        /// <summary>
         /// OutDoor_fl_E1 control.
         /// </summary>
         /// <remarks>
@@ -416,15 +425,6 @@ namespace HvacPlaybook {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E1;
-        
-        /// <summary>
-        /// OutDoor_fl_E3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E3;
         
         /// <summary>
         /// OutDoor_fl_E5 control.
@@ -535,13 +535,13 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E11;
         
         /// <summary>
-        /// OutDoor_fl_E14 control.
+        /// OutDoor_fl_E100 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E14;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E100;
         
         /// <summary>
         /// OutDoor_fl_E16 control.
@@ -551,6 +551,69 @@ namespace HvacPlaybook {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E16;
+        
+        /// <summary>
+        /// OutDoor_fl_E3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E3;
+        
+        /// <summary>
+        /// OutDoor_fl_E14 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E14;
+        
+        /// <summary>
+        /// OutDoor_fl_E17 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E17;
+        
+        /// <summary>
+        /// OutDoor_fl_E19 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E19;
+        
+        /// <summary>
+        /// OutDoor_fl_E20 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E20;
+        
+        /// <summary>
+        /// OutDoor_fl_E21 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E21;
+        
+        /// <summary>
+        /// OutDoor_fl_E22 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E22;
         
         /// <summary>
         /// btnFinish control.
