@@ -409,211 +409,328 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxFormLayout OutDoor_fl;
         
         /// <summary>
-        /// OutDoor_fl_E18 control.
+        /// OutDoor_tb_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E18;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_tb_1;
         
         /// <summary>
-        /// OutDoor_fl_E1 control.
+        /// OutDoor_Pad_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E1;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Pad_1;
         
         /// <summary>
-        /// OutDoor_fl_E5 control.
+        /// OutDoor_Pad_1_Cost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E5;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Pad_1_Cost;
         
         /// <summary>
-        /// OutDoor_fl_E6 control.
+        /// OutDoor_Pad_1_Time control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E6;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Pad_1_Time;
         
         /// <summary>
-        /// OutDoor_fl_E2 control.
+        /// OutDoor_Move_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E2;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Move_1;
         
         /// <summary>
-        /// OutDoor_fl_E4 control.
+        /// OutDoor_Move_1_Cost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E4;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Move_1_Cost;
         
         /// <summary>
-        /// OutDoor_fl_E7 control.
+        /// OutDoor_Move_1_Time control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E7;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Move_1_Time;
         
         /// <summary>
-        /// OutDoor_fl_E8 control.
+        /// OutDoor_Electirc_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E8;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Electirc_1;
         
         /// <summary>
-        /// OutDoor_fl_E9 control.
+        /// OutDoor_Electirc_1_Cost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E9;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electirc_1_Cost;
         
         /// <summary>
-        /// OutDoor_fl_E10 control.
+        /// OutDoor_Electirc_1_Time control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E10;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electirc_1_Time;
         
         /// <summary>
-        /// OutDoor_fl_E15 control.
+        /// OutDoor_Lifting_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E15;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Lifting_1;
         
         /// <summary>
-        /// OutDoor_fl_E12 control.
+        /// OutDoor_Lifting_1_Cost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E12;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_1_Cost;
         
         /// <summary>
-        /// OutDoor_fl_E13 control.
+        /// OutDoor_Lifting_1_Time control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E13;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_1_Time;
         
         /// <summary>
-        /// OutDoor_fl_E11 control.
+        /// OutDoor_SN_Conditions_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E11;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_SN_Conditions_1;
         
         /// <summary>
-        /// OutDoor_fl_E100 control.
+        /// OutDoor_Responsible_LP_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E100;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Responsible_LP_1;
         
         /// <summary>
-        /// OutDoor_fl_E16 control.
+        /// OutDoor_DN_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E16;
+        protected global::DevExpress.Web.ASPxMemo OutDoor_DN_1;
         
         /// <summary>
-        /// OutDoor_fl_E3 control.
+        /// OutDoor_SN_Conditions_1_Cost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E3;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_SN_Conditions_1_Cost;
         
         /// <summary>
-        /// OutDoor_fl_E14 control.
+        /// OutDoor_SN_Conditions_1_Time control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E14;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_SN_Conditions_1_Time;
         
         /// <summary>
-        /// OutDoor_fl_E17 control.
+        /// OutDoor_tb_2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E17;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_tb_2;
         
         /// <summary>
-        /// OutDoor_fl_E19 control.
+        /// OutDoor_Pad_2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E19;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Pad_2;
         
         /// <summary>
-        /// OutDoor_fl_E20 control.
+        /// OutDoor_Pad_2_Cost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_fl_E20;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Pad_2_Cost;
         
         /// <summary>
-        /// OutDoor_fl_E21 control.
+        /// OutDoor_Pad_2_Time control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E21;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Pad_2_Time;
         
         /// <summary>
-        /// OutDoor_fl_E22 control.
+        /// OutDoor_Move_2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_fl_E22;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Move_2;
+        
+        /// <summary>
+        /// OutDoor_Move_2_Cost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Move_2_Cost;
+        
+        /// <summary>
+        /// OutDoor_Move_2_Time control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Move_2_Time;
+        
+        /// <summary>
+        /// OutDoor_Electric_2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Electric_2;
+        
+        /// <summary>
+        /// OutDoor_Electric_2_Cost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electric_2_Cost;
+        
+        /// <summary>
+        /// OutDoor_Electric_2_Time control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electric_2_Time;
+        
+        /// <summary>
+        /// OutDoor_Lifting_2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Lifting_2;
+        
+        /// <summary>
+        /// OutDoor_Lifting_2_Cost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_2_Cost;
+        
+        /// <summary>
+        /// OutDoor_Lifting_2_Time control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_2_Time;
+        
+        /// <summary>
+        /// OutDoor_SN_Condition_2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_SN_Condition_2;
+        
+        /// <summary>
+        /// OutDoor_Responsible_LP_2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Responsible_LP_2;
+        
+        /// <summary>
+        /// OutDoor_DN_2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxMemo OutDoor_DN_2;
+        
+        /// <summary>
+        /// OutDoor_SN_Condition_2_Cost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_SN_Condition_2_Cost;
+        
+        /// <summary>
+        /// OutDoor_SN_Condition_2_Time control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_SN_Condition_2_Time;
         
         /// <summary>
         /// btnFinish control.

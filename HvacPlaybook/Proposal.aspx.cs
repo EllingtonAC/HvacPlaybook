@@ -41,6 +41,7 @@ namespace HvacPlaybook
             Duc_OD_Cap2.ClientVisible = false;
 
             btnFinish.ClientVisible = false;
+
         }
 
         protected void showTabs_Init(object sender, EventArgs e)
@@ -56,6 +57,18 @@ namespace HvacPlaybook
             ASPxCheckBox cb = (ASPxCheckBox)sender;
             pageControl.ShowTabs = cb.Checked;
             popupControl.ShowOnPageLoad = false;
+        }
+
+
+        protected void OutDoor_tb_1_Callback(object sender, EventArgs e)
+        {
+            OutDoor_tb_1.Text = "hu";
+        }
+
+        protected String getOutdoor_tb1()
+        {
+            String str = S1Title.Text;
+            return str;
         }
 
         protected void S1Type_cmb_Callback(object sender, EventArgs e)
