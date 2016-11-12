@@ -260,7 +260,7 @@
             </dx:ASPxCheckBox>
             <br />
             <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                ActiveTabIndex="2" Width="800px">
+                ActiveTabIndex="0" Width="800px">
                 <ClientSideEvents ActiveTabChanging="OnTabChanging"/>
                 <TabPages>
                     <dx:TabPage Name="CustomerInfo" Text="Customer Information" ActiveTabStyle-Font-Bold="true">
@@ -500,7 +500,10 @@
                                                 <dx:ContentControl runat="server">
                                                     <dx:ASPxFormLayout ID="ASPxFormLayout_System" runat="server">
                                                         <Items>
-                                                            <dx:LayoutGroup Caption="Standard System" ColCount="2">
+                                                            <dx:LayoutGroup Caption="Standard System" GroupBoxStyle-Caption-Font-Bold="true" GroupBoxStyle-Caption-ForeColor="Black" ColCount="2">
+<GroupBoxStyle>
+<Caption Font-Bold="True"></Caption>
+</GroupBoxStyle>
                                                                 <Items>
                                                                     <dx:LayoutItem Caption="Standard System Option #1">
                                                                         <LayoutItemNestedControlCollection>
@@ -643,7 +646,10 @@
                                                                     </dx:LayoutItem>
                                                                 </Items>
                                                             </dx:LayoutGroup>
-                                                            <dx:LayoutGroup Caption="Ductless System" ColCount="2" GroupBoxDecoration="Box">
+                                                            <dx:LayoutGroup Caption="Ductless System" GroupBoxStyle-Caption-Font-Bold="true" GroupBoxStyle-Caption-ForeColor="Black" ColCount="2" GroupBoxDecoration="Box">
+<GroupBoxStyle>
+<Caption Font-Bold="True" ForeColor="Black"></Caption>
+</GroupBoxStyle>
                                                                 <Items>
                                                                     <dx:LayoutItem Caption="Ductless System Option #1">
                                                                         <LayoutItemNestedControlCollection>
@@ -759,7 +765,10 @@
                                                 <dx:ContentControl runat="server">
                                                     <dx:ASPxFormLayout ID ="OutDoor_fl" runat="server" ColCount="2" ClientInstanceName="OutDoor_fl">
                                                         <Items>
-                                                            <dx:LayoutGroup Caption="Standar System #1" ColCount="2" Name="Standar_System_#1" ClientVisible="false">
+                                                            <dx:LayoutGroup Caption="Standar System #1" GroupBoxStyle-Caption-Font-Bold="true" GroupBoxStyle-Caption-ForeColor="Black" ColCount="2" Name="Standar_System_#1" ClientVisible="false">
+<GroupBoxStyle>
+<Caption Font-Bold="True" ForeColor="Black"></Caption>
+</GroupBoxStyle>
                                                                 <Items>
                                                                     <dx:LayoutGroup ColSpan="2" GroupBoxDecoration="None">
                                                                         <Items>
@@ -784,19 +793,19 @@
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Cost Add" Width="30px">
+                                                                            <dx:LayoutItem Caption="Cost Add">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Cost" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Pad_1_Cost">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Cost" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_1_Cost">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
                                                                                 <Paddings PaddingLeft="60px" />
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Time(Hrs.)" Width="30px">
+                                                                            <dx:LayoutItem Caption="Time(Hrs.)">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Time" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Pad_1_Time">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Time" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_1_Time">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
@@ -945,7 +954,10 @@
                                                                 </Items>
                                                             </dx:LayoutGroup>
 
-                                                            <dx:LayoutGroup Caption="Standar System #2" ColCount="2" Name="Standar_System_#2" ClientVisible="false">
+                                                            <dx:LayoutGroup Caption="Standar System #2" GroupBoxStyle-Caption-Font-Bold="true" GroupBoxStyle-Caption-ForeColor="Black" ColCount="2" Name="Standar_System_#2" ClientVisible="false">
+<GroupBoxStyle>
+<Caption Font-Bold="True" ForeColor="Black"></Caption>
+</GroupBoxStyle>
                                                                 <Items>
                                                                     <dx:LayoutGroup Caption="" GroupBoxDecoration="None" ColSpan="2">
                                                                         <Items>
@@ -970,19 +982,19 @@
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Cost Add" Width="30px">
+                                                                            <dx:LayoutItem Caption="Cost Add">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_2_Cost" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Pad_2_Cost">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_2_Cost" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_2_Cost">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
                                                                                 <Paddings PaddingLeft="60px" />
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Time(Hrs.)" Width="30px">
+                                                                            <dx:LayoutItem Caption="Time(Hrs.)">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_2_Time" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Pad_2_Time">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_2_Time" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_2_Time">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>

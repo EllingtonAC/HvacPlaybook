@@ -40,7 +40,7 @@ namespace HvacPlaybook
             Duc_Sys_Type2.ClientVisible = false;
             Duc_OD_Cap2.ClientVisible = false;
 
-            btnFinish.ClientVisible = false;
+    //        btnFinish.ClientVisible = false;
 
         }
 
