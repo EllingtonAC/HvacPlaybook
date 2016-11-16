@@ -400,6 +400,15 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox Duc_OD_Cap2;
         
         /// <summary>
+        /// System_btnNext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxButton System_btnNext;
+        
+        /// <summary>
         /// OutDoor_fl control.
         /// </summary>
         /// <remarks>
@@ -731,24 +740,6 @@ namespace HvacPlaybook {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxTextBox OutDoor_SN_Condition_2_Time;
-        
-        /// <summary>
-        /// btnFinish control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxButton btnFinish;
-        
-        /// <summary>
-        /// validProposalType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxValidationSummary validProposalType;
         
         /// <summary>
         /// popupControl control.

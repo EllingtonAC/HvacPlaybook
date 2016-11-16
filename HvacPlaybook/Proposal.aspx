@@ -10,20 +10,26 @@
                 e.cancel = !ASPxClientEdit.ValidateGroup('group' + tabName);
             }
 
-           
-
             function OnButtonClick(s, e) {
                 var indexTab = (pageControl.GetActiveTab()).index;
                 pageControl.SetActiveTab(pageControl.GetTab(indexTab + 1));
 
             }
 
-           
+            function Sys_OnNextClick(s, e) {
+                var indexTab = (standar_pagecontrol.GetActiveTab()).index;
+                standar_pagecontrol.SetActiveTab(standar_pagecontrol.GetTab(indexTab + 1));
+                var str ='       '+ S1Title.GetValue() + ':' + '  ' + S1Capacity.GetValue()+'  ' + S1Type.GetValue()+'  ' + S1_UTorPU.GetValue()+'  ' + '&' +'  '+ S1ID_TorH.GetValue();
+                // alert(str);
+                OutDoor_tb_1.SetValue(str);
+
+            }
+
 
             function OnSelectedIndexChanged(s, e) {
 
                 var value = s.GetValue();
-               if (value == "Standard or Ductless HVAC") {
+                if (value == "Standard or Ductless HVAC") {
                    standar_pagecontrol.SetVisible(true);
                }
             }
@@ -260,7 +266,7 @@
             </dx:ASPxCheckBox>
             <br />
             <dx:ASPxPageControl ID="pageControl" ClientInstanceName="pageControl" runat="server"
-                ActiveTabIndex="0" Width="800px">
+                ActiveTabIndex="2" Width="800px">
                 <ClientSideEvents ActiveTabChanging="OnTabChanging"/>
                 <TabPages>
                     <dx:TabPage Name="CustomerInfo" Text="Customer Information" ActiveTabStyle-Font-Bold="true">
@@ -492,8 +498,8 @@
                                     </ValidationSettings>
                                 </dx:ASPxComboBox>
                                 <hr />
-                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="0"  >
-                                    
+                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="1"  >
+                                  
                                     <TabPages>
                                         <dx:TabPage Name="System" Text="System" >
                                             <ContentCollection>
@@ -514,6 +520,7 @@
                                                                                         <dx:ListEditItem Text="Yes" Value="Yes" />
                                                                                         <dx:ListEditItem Text="No" Value="No" />
                                                                                     </Items>
+                                                                                   
                                                                                 </dx:ASPxComboBox>
                                                                             </dx:LayoutItemNestedControlContainer>
                                                                         </LayoutItemNestedControlCollection>
@@ -757,10 +764,14 @@
                                                             </dx:LayoutGroup>
                                                         </Items>
                                                     </dx:ASPxFormLayout>
+                                                    <dx:ASPxButton ID="System_btnNext" runat="server" Text="Next" ValidationGroup="groupSystem"
+                                                          AutoPostBack="false" Width="150">
+                                                            <ClientSideEvents Click="Sys_OnNextClick" />
+                                                    </dx:ASPxButton>                             
                                                 </dx:ContentControl>
                                             </ContentCollection>
                                         </dx:TabPage>
-                                        <dx:TabPage Name="Outdoor" Text="Outdoor">
+                                        <dx:TabPage Name="Outdoor" Text="Outdoor" >
                                             <ContentCollection>
                                                 <dx:ContentControl runat="server">
                                                     <dx:ASPxFormLayout ID ="OutDoor_fl" runat="server" ColCount="2" ClientInstanceName="OutDoor_fl">
@@ -788,7 +799,17 @@
                                                                             <dx:LayoutItem Caption="PAD" ColSpan="2">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_1" runat="server" Height="16px" Width="354px" ClientInstanceName="OutDoor_Pad_1">
+                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_1" runat="server" Height="24px" Width="354px" ClientInstanceName="OutDoor_Pad_1">
+                                                                                            <Items>
+                                                                                                <dx:ListEditItem Text="On a new 36x36 concrete-type Hurricane Rated Pad" Value="On a new 36x36 concrete-type Hurricane Rated Pad" />
+                                                                                                <dx:ListEditItem Text="On a new 40x40 concrete-type Hurricane Rated Pad" Value="On a new 40x40 concrete-type Hurricane Rated Pad" />
+                                                                                                <dx:ListEditItem Text="On a new 36x48 concrete-type Hurricane Rated Pad" Value="On a new 36x48 concrete-type Hurricane Rated Pad" />
+                                                                                                <dx:ListEditItem Text="On a new 40x62 concrete-type Hurricane Rated Pad" Value="On a new 40x62 concrete-type Hurricane Rated Pad" />
+                                                                                                <dx:ListEditItem Text="On a new 47x66 concrete-type Hurricane Rated Pad" Value="On a new 47x66 concrete-type Hurricane Rated Pad" />
+                                                                                                <dx:ListEditItem Text="On existing Pad w/ new Hurricane Strapping" Value="On existing Pad w/ new Hurricane Strapping" />
+                                                                                                <dx:ListEditItem Text="On a new Aluminum Stand w/ Hurricane Strapping" Value="On a new Aluminum Stand w/ Hurricane Strapping" />
+                                                                                                <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                            </Items>
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
@@ -1155,7 +1176,7 @@
                                                 </dx:ContentControl>
                                             </ContentCollection>
                                         </dx:TabPage>
-                                        <dx:TabPage Name="Ducting" Text="Ducting">
+                                        <dx:TabPage Name="Ducting" Text="Ducting" >
                                             <ContentCollection>
                                                 <dx:ContentControl runat="server"></dx:ContentControl>
                                             </ContentCollection>
@@ -1170,7 +1191,7 @@
                                                 <dx:ContentControl runat="server"></dx:ContentControl>
                                             </ContentCollection>
                                         </dx:TabPage>
-                                        <dx:TabPage Name="Add-On" Text="Add-On">
+                                        <dx:TabPage Name="Add-On" Text="Add-On" >
                                             <ContentCollection>
                                                 <dx:ContentControl runat="server"></dx:ContentControl>
                                             </ContentCollection>
@@ -1180,14 +1201,6 @@
                                 <br />
                                 <br />
 
-
-                                <dx:ASPxButton ID="btnFinish" runat="server" Text="Finish" ValidationGroup="groupProposalType"
-                                    AutoPostBack="false" Width="150">
-                                    <ClientSideEvents Click="OnFinishClick" />
-                                </dx:ASPxButton>
-                                <dx:ASPxValidationSummary ID="validProposalType" ValidationGroup="groupProposalType"
-                                    runat="server">
-                                </dx:ASPxValidationSummary>
                             </dx:ContentControl>
                         </ContentCollection>
                     </dx:TabPage>
