@@ -40,6 +40,10 @@ namespace HvacPlaybook
             Duc_Sys_Type2.ClientVisible = false;
             Duc_OD_Cap2.ClientVisible = false;
 
+            OutDoor_Pad_1_Des.ClientVisible = false;
+            OutDoor_Pad_1_Cost.ClientVisible = false;
+            OutDoor_Pad_1_Time.ClientVisible = false;
+
     //        btnFinish.ClientVisible = false;
 
         }
@@ -239,6 +243,7 @@ namespace HvacPlaybook
             }
         }
 
+      
         protected void Duc_OD_Cap1_cmb_Callback(object sender, CallbackEventArgsBase e)
         {
             ASPxComboBox cb = (ASPxComboBox)sender;

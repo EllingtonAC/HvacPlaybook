@@ -19,10 +19,12 @@
             function Sys_OnNextClick(s, e) {
                 var indexTab = (standar_pagecontrol.GetActiveTab()).index;
                 standar_pagecontrol.SetActiveTab(standar_pagecontrol.GetTab(indexTab + 1));
-                var str ='       '+ S1Title.GetValue() + ':' + '  ' + S1Capacity.GetValue()+'  ' + S1Type.GetValue()+'  ' + S1_UTorPU.GetValue()+'  ' + '&' +'  '+ S1ID_TorH.GetValue();
+                var str ='    '+ S1Title.GetValue() + ':' + ' ' + S1Capacity.GetValue()+' ' + S1Type.GetValue()+' ' + S1_UTorPU.GetValue()+' ' + '&' +' '+ S1ID_TorH.GetValue();
                 // alert(str);
                 OutDoor_tb_1.SetValue(str);
 
+                var str2 = '    ' + S2Title.GetValue() + ':' + ' ' + S2Capacity.GetValue() + ' ' + S2Type.GetValue() + ' ' + S2_UTorPU.GetValue() + ' ' + '&' + ' ' + S2ID_TorH.GetValue();
+                OutDoor_tb_2.SetValue(str2);
             }
 
 
@@ -32,6 +34,30 @@
                 if (value == "Standard or Ductless HVAC") {
                    standar_pagecontrol.SetVisible(true);
                }
+            }
+
+            function OutDoor_Pad_1_OnSelectedChanged(s, e) {
+                var value = s.GetValue();
+                switch (value) {
+                    case "On a new 36x36 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Cost.SetVisible(true);
+                        OutDoor_Pad_1_Time.SetVisible(true);
+                        $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Pad_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Pad_1_Cost.SetValue("$75");
+                        OutDoor_Pad_1_Time.SetValue("1.00");
+                        break;
+                }
+              
+        //            OutDoor_Pad_1_Des.SetVisible(true);
+                   
+       //             $('.OutDoor_Pad_1_Des_Caption').text('Description');
+                   
+
+
+                   
+                
+        
             }
 
             function S1O_combo_OnSelectChanged(s, e) {
@@ -498,7 +524,7 @@
                                     </ValidationSettings>
                                 </dx:ASPxComboBox>
                                 <hr />
-                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="1"  >
+                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="0"  >
                                   
                                     <TabPages>
                                         <dx:TabPage Name="System" Text="System" >
@@ -786,7 +812,7 @@
                                                                             <dx:LayoutItem Caption="">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_tb_1" runat="server" Width="354px" ClientInstanceName="OutDoor_tb_1" OnCallback="OutDoor_tb_1_Callback">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_tb_1" runat="server" Width="354px" ClientInstanceName="OutDoor_tb_1" OnCallback="OutDoor_tb_1_Callback" Height="20px">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
@@ -799,7 +825,8 @@
                                                                             <dx:LayoutItem Caption="PAD" ColSpan="2">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_1" runat="server" Height="24px" Width="354px" ClientInstanceName="OutDoor_Pad_1">
+                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_1" runat="server" Height="20px" Width="354px" ClientInstanceName="OutDoor_Pad_1">
+                                                                                            <ClientSideEvents SelectedIndexChanged="OutDoor_Pad_1_OnSelectedChanged" />
                                                                                             <Items>
                                                                                                 <dx:ListEditItem Text="On a new 36x36 concrete-type Hurricane Rated Pad" Value="On a new 36x36 concrete-type Hurricane Rated Pad" />
                                                                                                 <dx:ListEditItem Text="On a new 40x40 concrete-type Hurricane Rated Pad" Value="On a new 40x40 concrete-type Hurricane Rated Pad" />
@@ -813,23 +840,36 @@
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
+                                                                                 <Paddings PaddingLeft="20px" />
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Cost Add">
+                                                                            <dx:LayoutItem Caption="" ColSpan="2" CaptionStyle-CssClass ="OutDoor_Pad_1_Des_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Cost" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_1_Cost">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Des" runat="server" ClientInstanceName="OutDoor_Pad_1_Des"  Width="345px">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
+                                                                                <CaptionStyle CssClass="OutDoor_Pad_1_Des_Caption"></CaptionStyle>
+                                                                            </dx:LayoutItem>
+                                                                            <dx:LayoutItem Caption="">
+                                                                                <LayoutItemNestedControlCollection>
+                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Cost" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_1_Cost" CaptionStyle-CssClass ="OutDoor_Pad_1_Cost_Caption">
+<CaptionStyle CssClass="OutDoor_Pad_1_Cost_Caption"></CaptionStyle>
+                                                                                        </dx:ASPxTextBox>
+                                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                                </LayoutItemNestedControlCollection>
+                                                                                 <CaptionStyle CssClass="OutDoor_Pad_1_Cost_Caption"></CaptionStyle>
                                                                                 <Paddings PaddingLeft="60px" />
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Time(Hrs.)">
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Pad_1_Time_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                                         <dx:ASPxTextBox ID="OutDoor_Pad_1_Time" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_1_Time">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
+                                                                                <CaptionStyle CssClass="OutDoor_Pad_1_Time_Caption"></CaptionStyle>
                                                                             </dx:LayoutItem>
                                                                         </Items>
                                                                     </dx:LayoutGroup>
@@ -995,7 +1035,7 @@
                                                                     </dx:LayoutGroup>
                                                                     <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None" ColSpan="2">
                                                                         <Items>
-                                                                            <dx:LayoutItem Caption="PAD:" ColSpan="2">
+                                                                            <dx:LayoutItem Caption="PAD" ColSpan="2">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                                         <dx:ASPxComboBox ID="OutDoor_Pad_2" runat="server"  Width="354px" ClientInstanceName="OutDoor_Pad_2">

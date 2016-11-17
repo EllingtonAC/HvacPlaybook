@@ -436,6 +436,15 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox OutDoor_Pad_1;
         
         /// <summary>
+        /// OutDoor_Pad_1_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Pad_1_Des;
+        
+        /// <summary>
         /// OutDoor_Pad_1_Cost control.
         /// </summary>
         /// <remarks>
