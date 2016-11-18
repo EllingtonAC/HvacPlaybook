@@ -47,16 +47,66 @@
                         OutDoor_Pad_1_Cost.SetValue("$75");
                         OutDoor_Pad_1_Time.SetValue("1.00");
                         break;
+                    case "On a new 40x40 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Cost.SetVisible(true);
+                        OutDoor_Pad_1_Time.SetVisible(true);
+                        $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Pad_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Pad_1_Cost.SetValue("$75");
+                        OutDoor_Pad_1_Time.SetValue("1.00");
+                        break;
+                    case "On a new 36x48 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Cost.SetVisible(true);
+                        OutDoor_Pad_1_Time.SetVisible(true);
+                        $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Pad_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Pad_1_Cost.SetValue("$75");
+                        OutDoor_Pad_1_Time.SetValue("1.00");
+                        break;
+                    case "On a new 40x62 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Cost.SetVisible(true);
+                        OutDoor_Pad_1_Time.SetVisible(true);
+                        $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Pad_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Pad_1_Cost.SetValue("$100");
+                        OutDoor_Pad_1_Time.SetValue("1.00");
+                        break;
+                    case "On a new 47x66 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Cost.SetVisible(true);
+                        OutDoor_Pad_1_Time.SetVisible(true);
+                        $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Pad_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Pad_1_Cost.SetValue("$100");
+                        OutDoor_Pad_1_Time.SetValue("1.00");
+                        break;
+                    case "On existing Pad w/ new Hurricane Strapping":
+                        OutDoor_Pad_1_Cost.SetVisible(true);
+                        OutDoor_Pad_1_Time.SetVisible(true);
+                        $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Pad_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Pad_1_Cost.SetValue("$10");
+                        OutDoor_Pad_1_Time.SetValue("0.25");
+                        break;
+                    case "On a new Aluminum Stand w/ Hurricane Strapping":
+                        OutDoor_Pad_1_Cost.SetVisible(true);
+                        OutDoor_Pad_1_Time.SetVisible(true);
+                        $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Pad_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Pad_1_Cost.SetValue("$475");
+                        OutDoor_Pad_1_Time.SetValue("2.00");
+                        break;
+                    case "Other:":
+                        OutDoor_Pad_1_Des.SetVisible(true);
+                        OutDoor_Pad_1_Cost.SetVisible(true);
+                        OutDoor_Pad_1_Time.SetVisible(true);
+                        $('.OutDoor_Pad_1_Des_Caption').text('Description:');
+                        $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Pad_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Pad_1_Cost.SetValue("$0");
+                        OutDoor_Pad_1_Time.SetValue("0.00");
+                        break;
                 }
-              
-        //            OutDoor_Pad_1_Des.SetVisible(true);
-                   
-       //             $('.OutDoor_Pad_1_Des_Caption').text('Description');
-                   
-
-
-                   
-                
+  
         
             }
 
@@ -825,7 +875,7 @@
                                                                             <dx:LayoutItem Caption="PAD" ColSpan="2">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_1" runat="server" Height="20px" Width="354px" ClientInstanceName="OutDoor_Pad_1">
+                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_1" runat="server" Height="20px" Width="356px" ClientInstanceName="OutDoor_Pad_1">
                                                                                             <ClientSideEvents SelectedIndexChanged="OutDoor_Pad_1_OnSelectedChanged" />
                                                                                             <Items>
                                                                                                 <dx:ListEditItem Text="On a new 36x36 concrete-type Hurricane Rated Pad" Value="On a new 36x36 concrete-type Hurricane Rated Pad" />
@@ -845,7 +895,7 @@
                                                                             <dx:LayoutItem Caption="" ColSpan="2" CaptionStyle-CssClass ="OutDoor_Pad_1_Des_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Des" runat="server" ClientInstanceName="OutDoor_Pad_1_Des"  Width="345px">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Des" runat="server" ClientInstanceName="OutDoor_Pad_1_Des"  Width="343px">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
@@ -854,7 +904,7 @@
                                                                             <dx:LayoutItem Caption="">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Cost" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_1_Cost" CaptionStyle-CssClass ="OutDoor_Pad_1_Cost_Caption">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Cost" runat="server" Height="17px" Width="34px" ClientInstanceName="OutDoor_Pad_1_Cost" CaptionStyle-CssClass ="OutDoor_Pad_1_Cost_Caption">
 <CaptionStyle CssClass="OutDoor_Pad_1_Cost_Caption"></CaptionStyle>
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
@@ -865,7 +915,7 @@
                                                                             <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Pad_1_Time_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Time" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_1_Time">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Time" runat="server" Height="17px" Width="31px" ClientInstanceName="OutDoor_Pad_1_Time">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
