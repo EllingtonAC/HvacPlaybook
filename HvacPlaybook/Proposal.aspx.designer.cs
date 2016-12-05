@@ -472,6 +472,15 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox OutDoor_Move_1;
         
         /// <summary>
+        /// OutDoor_Move_1_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Move_1_Des;
+        
+        /// <summary>
         /// OutDoor_Move_1_Cost control.
         /// </summary>
         /// <remarks>
@@ -490,31 +499,40 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxTextBox OutDoor_Move_1_Time;
         
         /// <summary>
-        /// OutDoor_Electirc_1 control.
+        /// OutDoor_Electric_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox OutDoor_Electirc_1;
+        protected global::DevExpress.Web.ASPxComboBox OutDoor_Electric_1;
         
         /// <summary>
-        /// OutDoor_Electirc_1_Cost control.
+        /// OutDoor_Electric_1_Des control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electirc_1_Cost;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electric_1_Des;
         
         /// <summary>
-        /// OutDoor_Electirc_1_Time control.
+        /// OutDoor_Electric_1_Cost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electirc_1_Time;
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electric_1_Cost;
+        
+        /// <summary>
+        /// OutDoor_Electric_1_Time control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electric_1_Time;
         
         /// <summary>
         /// OutDoor_Lifting_1 control.
@@ -524,6 +542,33 @@ namespace HvacPlaybook {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxComboBox OutDoor_Lifting_1;
+        
+        /// <summary>
+        /// OutDoor_Lifting_1_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_1_Des;
+        
+        /// <summary>
+        /// OutDoor_Lifting_1_Height control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_1_Height;
+        
+        /// <summary>
+        /// OutDoor_Lifting_1_Reach control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_1_Reach;
         
         /// <summary>
         /// OutDoor_Lifting_1_Cost control.
@@ -605,6 +650,15 @@ namespace HvacPlaybook {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxComboBox OutDoor_Pad_2;
+        
+        /// <summary>
+        /// OutDoor_Pad_2_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Pad_2_Des;
         
         /// <summary>
         /// OutDoor_Pad_2_Cost control.

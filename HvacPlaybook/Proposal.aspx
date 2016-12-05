@@ -40,6 +40,7 @@
                 var value = s.GetValue();
                 switch (value) {
                     case "On a new 36x36 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Des.SetVisible(false);
                         OutDoor_Pad_1_Cost.SetVisible(true);
                         OutDoor_Pad_1_Time.SetVisible(true);
                         $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
@@ -48,6 +49,7 @@
                         OutDoor_Pad_1_Time.SetValue("1.00");
                         break;
                     case "On a new 40x40 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Des.SetVisible(false);
                         OutDoor_Pad_1_Cost.SetVisible(true);
                         OutDoor_Pad_1_Time.SetVisible(true);
                         $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
@@ -56,6 +58,7 @@
                         OutDoor_Pad_1_Time.SetValue("1.00");
                         break;
                     case "On a new 36x48 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Des.SetVisible(false);
                         OutDoor_Pad_1_Cost.SetVisible(true);
                         OutDoor_Pad_1_Time.SetVisible(true);
                         $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
@@ -64,6 +67,7 @@
                         OutDoor_Pad_1_Time.SetValue("1.00");
                         break;
                     case "On a new 40x62 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Des.SetVisible(false);
                         OutDoor_Pad_1_Cost.SetVisible(true);
                         OutDoor_Pad_1_Time.SetVisible(true);
                         $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
@@ -72,6 +76,7 @@
                         OutDoor_Pad_1_Time.SetValue("1.00");
                         break;
                     case "On a new 47x66 concrete-type Hurricane Rated Pad":
+                        OutDoor_Pad_1_Des.SetVisible(false);
                         OutDoor_Pad_1_Cost.SetVisible(true);
                         OutDoor_Pad_1_Time.SetVisible(true);
                         $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
@@ -80,6 +85,7 @@
                         OutDoor_Pad_1_Time.SetValue("1.00");
                         break;
                     case "On existing Pad w/ new Hurricane Strapping":
+                        OutDoor_Pad_1_Des.SetVisible(false);
                         OutDoor_Pad_1_Cost.SetVisible(true);
                         OutDoor_Pad_1_Time.SetVisible(true);
                         $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
@@ -88,6 +94,7 @@
                         OutDoor_Pad_1_Time.SetValue("0.25");
                         break;
                     case "On a new Aluminum Stand w/ Hurricane Strapping":
+                        OutDoor_Pad_1_Des.SetVisible(false);
                         OutDoor_Pad_1_Cost.SetVisible(true);
                         OutDoor_Pad_1_Time.SetVisible(true);
                         $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
@@ -99,7 +106,7 @@
                         OutDoor_Pad_1_Des.SetVisible(true);
                         OutDoor_Pad_1_Cost.SetVisible(true);
                         OutDoor_Pad_1_Time.SetVisible(true);
-                        $('.OutDoor_Pad_1_Des_Caption').text('Description:');
+                  //      $('.OutDoor_Pad_1_Des_Caption').text('Description:');
                         $('.OutDoor_Pad_1_Cost_Caption').text('Cost Add:');
                         $('.OutDoor_Pad_1_Time_Caption').text('Time(Hrs.):');
                         OutDoor_Pad_1_Cost.SetValue("$0");
@@ -108,6 +115,215 @@
                 }
   
         
+            }
+
+            function OutDoor_Move_1_OnSelectedChanged(s ,e) {
+                var value = s.GetValue();
+                switch (value) {
+                    case "No Relocation Required":
+                        OutDoor_Move_1_Des.SetVisible(false);
+                        OutDoor_Move_1_Cost.SetVisible(true);
+                        OutDoor_Move_1_Time.SetVisible(true);
+                        $('.OutDoor_Move_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Move_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Move_1_Cost.SetValue("$0");
+                        OutDoor_Move_1_Time.SetValue("0.00");
+                        break;
+                    case "Relocate Cond (1 HR)":
+                        OutDoor_Move_1_Des.SetVisible(false);
+                        OutDoor_Move_1_Cost.SetVisible(true);
+                        OutDoor_Move_1_Time.SetVisible(true);
+                        $('.OutDoor_Move_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Move_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Move_1_Cost.SetValue("$150");
+                        OutDoor_Move_1_Time.SetValue("1.00");
+                        break;
+                    case "Relocate Cond (2 HR)":
+                        OutDoor_Move_1_Des.SetVisible(false);
+                        OutDoor_Move_1_Cost.SetVisible(true);
+                        OutDoor_Move_1_Time.SetVisible(true);
+                        $('.OutDoor_Move_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Move_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Move_1_Cost.SetValue("$300");
+                        OutDoor_Move_1_Time.SetValue("2.00");
+                        break;
+                    case "Relocate Cond (3 HR)":
+                        OutDoor_Move_1_Des.SetVisible(false);
+                        OutDoor_Move_1_Cost.SetVisible(true);
+                        OutDoor_Move_1_Time.SetVisible(true);
+                        $('.OutDoor_Move_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Move_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Move_1_Cost.SetValue("$450");
+                        OutDoor_Move_1_Time.SetValue("3.00");
+                        break;
+                    case "Other:":
+                        OutDoor_Move_1_Des.SetVisible(true);
+                        OutDoor_Move_1_Cost.SetVisible(true);
+                        OutDoor_Move_1_Time.SetVisible(true);
+                        $('.OutDoor_Move_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Move_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Move_1_Cost.SetValue("$0");
+                        OutDoor_Move_1_Time.SetValue("0.00");
+                        break;
+
+
+                }
+            }
+            
+            function OutDoor_Electric_1_OnSelectedChanged(s, e) {
+                var value = s.GetValue();
+                switch(value){
+                    case "Install a new shock hazard guard and safety disconnect box":
+                        OutDoor_Electric_1_Des.SetVisible(false);
+                        OutDoor_Electric_1_Cost.SetVisible(true);
+                        OutDoor_Electric_1_Time.SetVisible(true);
+                        $('.OutDoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Electric_1_Cost.SetValue("$50");
+                        OutDoor_Electric_1_Time.SetValue("0.50");
+                        break;
+
+                    case "Install a new shock hazard guard":
+                        OutDoor_Electric_1_Des.SetVisible(false);
+                        OutDoor_Electric_1_Cost.SetVisible(true);
+                        OutDoor_Electric_1_Time.SetVisible(true);
+                        $('.OutDoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Electric_1_Cost.SetValue("$25");
+                        OutDoor_Electric_1_Time.SetValue("0.25");
+                        break;
+                    case "Connect to the existing service as is":
+                        OutDoor_Electric_1_Des.SetVisible(false);
+                        OutDoor_Electric_1_Cost.SetVisible(true);
+                        OutDoor_Electric_1_Time.SetVisible(true);
+                        $('.OutDoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Electric_1_Cost.SetValue("$0");
+                        OutDoor_Electric_1_Time.SetValue("0.00");
+                        break;
+                    case "Add Subpanel w/2 circuit breakers & wire":
+                        OutDoor_Electric_1_Des.SetVisible(false);
+                        OutDoor_Electric_1_Cost.SetVisible(true);
+                        OutDoor_Electric_1_Time.SetVisible(true);
+                        $('.OutDoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Electric_1_Cost.SetValue("$395");
+                        OutDoor_Electric_1_Time.SetValue("2.00");
+                        break;
+                    case "Install new Power Service":
+                        OutDoor_Electric_1_Des.SetVisible(false);
+                        OutDoor_Electric_1_Cost.SetVisible(true);
+                        OutDoor_Electric_1_Time.SetVisible(true);
+                        $('.OutDoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Electric_1_Cost.SetValue("$500");
+                        OutDoor_Electric_1_Time.SetValue("2.00");
+                        break;
+                    case "Other:":
+                        OutDoor_Electric_1_Des.SetVisible(true);
+                        OutDoor_Electric_1_Cost.SetVisible(true);
+                        OutDoor_Electric_1_Time.SetVisible(true);
+                        $('.OutDoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Electric_1_Cost.SetValue("$0");
+                        OutDoor_Electric_1_Time.SetValue("0.00");
+                        break;
+                }
+            }
+
+            function OutDoor_Lifting_1_OnSelectedChanged(s, e) {
+                var value = s.GetValue();
+                switch (value) {
+                    case "None - ground level":
+                        OutDoor_Lifting_1_Des.SetVisible(false);
+                        OutDoor_Lifting_1_Height.SetVisible(false);
+                        OutDoor_Lifting_1_Reach.SetVisible(false);
+                        OutDoor_Lifting_1_Cost.SetVisible(true);
+                        OutDoor_Lifting_1_Time.SetVisible(true);
+                        $('.OutDoor_Lifting_1_Height_Caption').text(' ');
+                        $('.OutDoor_Lifting_1_Reach_Caption').text(' ');
+                        $('.OutDoor_Lifting_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Lifting_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Lifting_1_Cost.SetValue("$0");
+                        OutDoor_Lifting_1_Time.SetValue("0.00");
+                        break;
+                    case "Crane":
+                        OutDoor_Lifting_1_Des.SetVisible(false);
+                        OutDoor_Lifting_1_Height.SetVisible(true);
+                        OutDoor_Lifting_1_Reach.SetVisible(true);
+                        OutDoor_Lifting_1_Cost.SetVisible(true);
+                        OutDoor_Lifting_1_Time.SetVisible(true);
+                        $('.OutDoor_Lifting_1_Height_Caption').text('Height (vertical):');
+                        $('.OutDoor_Lifting_1_Reach_Caption').text('Reach (horiz.):');
+                        $('.OutDoor_Lifting_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Lifting_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Lifting_1_Cost.SetValue("$0");
+                        OutDoor_Lifting_1_Time.SetValue("0.00");
+                        break;
+                    case "Restriction - Add 1 HR":
+                        OutDoor_Lifting_1_Des.SetVisible(false);
+                        OutDoor_Lifting_1_Height.SetVisible(false);
+                        OutDoor_Lifting_1_Reach.SetVisible(false);
+                        OutDoor_Lifting_1_Cost.SetVisible(true);
+                        OutDoor_Lifting_1_Time.SetVisible(true);
+                        $('.OutDoor_Lifting_1_Height_Caption').text(' ');
+                        $('.OutDoor_Lifting_1_Reach_Caption').text(' ');
+                        $('.OutDoor_Lifting_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Lifting_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Lifting_1_Cost.SetValue("$150");
+                        OutDoor_Lifting_1_Time.SetValue("1.00");
+                        break;
+                    case "Restriction - Add 2 HR":
+                        OutDoor_Lifting_1_Des.SetVisible(false);
+                        OutDoor_Lifting_1_Height.SetVisible(false);
+                        OutDoor_Lifting_1_Reach.SetVisible(false);
+                        OutDoor_Lifting_1_Cost.SetVisible(true);
+                        OutDoor_Lifting_1_Time.SetVisible(true);
+                        $('.OutDoor_Lifting_1_Height_Caption').text(' ');
+                        $('.OutDoor_Lifting_1_Reach_Caption').text(' ');
+                        $('.OutDoor_Lifting_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Lifting_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Lifting_1_Cost.SetValue("$300");
+                        OutDoor_Lifting_1_Time.SetValue("2.00");
+                        break;
+                    case "Other:":
+                        OutDoor_Lifting_1_Des.SetVisible(true);
+                        OutDoor_Lifting_1_Height.SetVisible(false);
+                        OutDoor_Lifting_1_Reach.SetVisible(false);
+                        OutDoor_Lifting_1_Cost.SetVisible(true);
+                        OutDoor_Lifting_1_Time.SetVisible(true);
+                        $('.OutDoor_Lifting_1_Height_Caption').text(' ');
+                        $('.OutDoor_Lifting_1_Reach_Caption').text(' ');
+                        $('.OutDoor_Lifting_1_Cost_Caption').text('Cost Add:');
+                        $('.OutDoor_Lifting_1_Time_Caption').text('Time(Hrs.):');
+                        OutDoor_Lifting_1_Cost.SetValue("$0");
+                        OutDoor_Lifting_1_Time.SetValue("0.00");
+                        break;
+
+                }
+            }
+
+            function OutDoor_SN_Conditions_1_OnSelectedChanged(s, e) {
+                var value = s.GetValue();
+                if (value == "Yes") {
+                    OutDoor_Responsible_LP_1.SetVisible(true);
+                    OutDoor_DN_1.SetVisible(true);
+                    OutDoor_SN_Conditions_1_Cost.SetVisible(true);
+                    OutDoor_SN_Conditions_1_Time.SetVisible(true);
+                    $('.OutDoor_Responsible_LP_1_Caption').text('Responsible/Liable Party:');
+                    $('.OutDoor_DN_1_Caption').text('Display Note:');
+                    $('.OutDoor_SN_Conditions_1_Cost_Caption').text('Cost Add:');
+                    $('.OutDoor_SN_Conditions_1_Time_Caption').text('Time (Hrs.)');
+                } else {
+                    OutDoor_Responsible_LP_1.SetVisible(false);
+                    OutDoor_DN_1.SetVisible(false);
+                    OutDoor_SN_Conditions_1_Cost.SetVisible(false);
+                    OutDoor_SN_Conditions_1_Time.SetVisible(false);
+                    $('.OutDoor_Responsible_LP_1_Caption').text(' ');
+                    $('.OutDoor_DN_1_Caption').text(' ');
+                    $('.OutDoor_SN_Conditions_1_Cost_Caption').text(' ');
+                    $('.OutDoor_SN_Conditions_1_Time_Caption').text(' ');
+                }
             }
 
             function S1O_combo_OnSelectChanged(s, e) {
@@ -574,7 +790,7 @@
                                     </ValidationSettings>
                                 </dx:ASPxComboBox>
                                 <hr />
-                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="0"  >
+                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="1"  >
                                   
                                     <TabPages>
                                         <dx:TabPage Name="System" Text="System" >
@@ -862,20 +1078,20 @@
                                                                             <dx:LayoutItem Caption="">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_tb_1" runat="server" Width="354px" ClientInstanceName="OutDoor_tb_1" OnCallback="OutDoor_tb_1_Callback" Height="20px">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_tb_1" runat="server" Width="380px" ClientInstanceName="OutDoor_tb_1" OnCallback="OutDoor_tb_1_Callback" Height="20px">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
-                                                                                <Paddings PaddingLeft="42px" />
+                                                                               <Paddings PaddingLeft="20px" />
                                                                             </dx:LayoutItem>
                                                                         </Items>
                                                                     </dx:LayoutGroup>
                                                                     <dx:LayoutGroup ColCount="2" ColSpan="2" GroupBoxDecoration="None" Caption="">
                                                                         <Items>
-                                                                            <dx:LayoutItem Caption="PAD" ColSpan="2">
+                                                                            <dx:LayoutItem Caption="PAD">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_1" runat="server" Height="20px" Width="356px" ClientInstanceName="OutDoor_Pad_1">
+                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_1" runat="server" Height="20px" Width="178px" ClientInstanceName="OutDoor_Pad_1">
                                                                                             <ClientSideEvents SelectedIndexChanged="OutDoor_Pad_1_OnSelectedChanged" />
                                                                                             <Items>
                                                                                                 <dx:ListEditItem Text="On a new 36x36 concrete-type Hurricane Rated Pad" Value="On a new 36x36 concrete-type Hurricane Rated Pad" />
@@ -889,13 +1105,12 @@
                                                                                             </Items>
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
-                                                                                </LayoutItemNestedControlCollection>
-                                                                                 <Paddings PaddingLeft="20px" />
+                                                                                </LayoutItemNestedControlCollection>                                                                                 
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="" ColSpan="2" CaptionStyle-CssClass ="OutDoor_Pad_1_Des_Caption">
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Pad_1_Des_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Des" runat="server" ClientInstanceName="OutDoor_Pad_1_Des"  Width="343px">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_1_Des" runat="server" ClientInstanceName="OutDoor_Pad_1_Des"  Width="178px" NullText="Description">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
@@ -925,88 +1140,163 @@
                                                                     </dx:LayoutGroup>
                                                                     <dx:LayoutGroup ColCount="2" ColSpan="2" GroupBoxDecoration="None" Caption="">
                                                                         <Items>
-                                                                            <dx:LayoutItem Caption="MOVE" ColSpan="2">
+                                                                            <dx:LayoutItem Caption="MOVE">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxComboBox ID="OutDoor_Move_1" runat="server" Height="16px" Width="354px" ClientInstanceName="OutDoor_Move_1">
+                                                                                        <dx:ASPxComboBox ID="OutDoor_Move_1" runat="server" Height="20px" Width="172px" ClientInstanceName="OutDoor_Move_1">
+                                                                                            <ClientSideEvents SelectedIndexChanged="OutDoor_Move_1_OnSelectedChanged" />
+                                                                                            <Items>
+                                                                                                <dx:ListEditItem Text="No Relocation Required" Value="No Relocation Required" />
+                                                                                                <dx:ListEditItem Text="Relocate Cond (1 HR)" Value="Relocate Cond (1 HR)" />
+                                                                                                <dx:ListEditItem Text="Relocate Cond (2 HR)" Value="Relocate Cond (2 HR)" />
+                                                                                                <dx:ListEditItem Text="Relocate Cond (3 HR)" Value="Relocate Cond (3 HR)" />
+                                                                                                <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                            </Items>
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Cost Add">
+                                                                            <dx:LayoutItem Caption="">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Move_1_Cost" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Move_1_Cost">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Move_1_Des" runat="server" Width="178px" NullText ="Description" ClientInstanceName="OutDoor_Move_1_Des">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
+                                                                            </dx:LayoutItem>
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Move_1_Cost_Caption">
+                                                                                <LayoutItemNestedControlCollection>
+                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Move_1_Cost" runat="server" Height="17px" Width="34px" ClientInstanceName="OutDoor_Move_1_Cost">
+                                                                                        </dx:ASPxTextBox>
+                                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                                </LayoutItemNestedControlCollection>
+                                                                                 <CaptionStyle CssClass="OutDoor_Move_1_Cost_Caption"></CaptionStyle>
                                                                                 <Paddings PaddingLeft="60px" />
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Time(Hrs.)">
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Move_1_Time_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Move_1_Time" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Move_1_Time">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Move_1_Time" runat="server" Height="17px" Width="31px" ClientInstanceName="OutDoor_Move_1_Time">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
+                                                                                 <CaptionStyle CssClass="OutDoor_Move_1_Time_Caption"></CaptionStyle>
                                                                             </dx:LayoutItem>
                                                                         </Items>
                                                                     </dx:LayoutGroup>
                                                                     <dx:LayoutGroup ColCount="2" ColSpan="2" GroupBoxDecoration="None">
                                                                         <Items>
-                                                                            <dx:LayoutItem Caption="ELECTRIC" ColSpan="2">
+                                                                            <dx:LayoutItem Caption="ELECTRIC">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxComboBox ID="OutDoor_Electirc_1" runat="server" Height="16px" Width="350px" ClientInstanceName="OutDoor_Electirc_1">
+                                                                                        <dx:ASPxComboBox ID="OutDoor_Electric_1" runat="server" Height="20px" Width="153px" ClientInstanceName="OutDoor_Electric_1">
+                                                                                            <ClientSideEvents SelectedIndexChanged="OutDoor_Electric_1_OnSelectedChanged" />
+                                                                                            <Items>
+                                                                                                <dx:ListEditItem Text="Install a new shock hazard guard and safety disconnect box" Value="Install a new shock hazard guard and safety disconnect box" />
+                                                                                                <dx:ListEditItem Text="Install a new shock hazard guard" Value="Install a new shock hazard guard" />
+                                                                                                <dx:ListEditItem Text="Connect to the existing service as is" Value="Connect to the existing service as is" />
+                                                                                                <dx:ListEditItem Text="Add Subpanel w/2 circuit breakers &amp; wire" Value="Add Subpanel w/2 circuit breakers & wire" />
+                                                                                                <dx:ListEditItem Text="Install new Power Service" Value="Install new Power Service" />
+                                                                                                <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                            </Items>
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Cost Add">
+                                                                            <dx:LayoutItem Caption="" >
                                                                                 <LayoutItemNestedControlCollection>
-                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Electirc_1_Cost" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Electirc_1_Cost">
+                                                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Electric_1_Des" runat="server" Height="20px" Width="178px" NullText="Description" ClientInstanceName="OutDoor_Electric_1_Des">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
+                                                                                
+                                                                            </dx:LayoutItem>
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Electric_1_Cost_Caption">
+                                                                                <LayoutItemNestedControlCollection>
+                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Electric_1_Cost" runat="server" Height="17px" Width="34px" ClientInstanceName="OutDoor_Electric_1_Cost">
+                                                                                        </dx:ASPxTextBox>
+                                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                                </LayoutItemNestedControlCollection>
+                                                                                 <CaptionStyle CssClass="OutDoor_Electric_1_Cost_Caption"></CaptionStyle>
                                                                                 <Paddings PaddingLeft="60px" />
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Time(Hrs.)">
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Electric_1_Time_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Electirc_1_Time" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Electirc_1_Time">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Electric_1_Time" runat="server" Height="17px" Width="31px" ClientInstanceName="OutDoor_Electric_1_Time">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
+                                                                                 <CaptionStyle CssClass="OutDoor_Electric_1_Time_Caption"></CaptionStyle>
                                                                             </dx:LayoutItem>
                                                                         </Items>
                                                                     </dx:LayoutGroup>
                                                                     <dx:LayoutGroup ColCount="2" ColSpan="2" GroupBoxDecoration="None">
                                                                         <Items>
-                                                                            <dx:LayoutItem Caption="LIFTING" ColSpan="2">
+                                                                            <dx:LayoutItem Caption="LIFTING">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxComboBox ID="OutDoor_Lifting_1" runat="server" Height="16px" Width="353px" ClientInstanceName="OutDoor_Lifting_1">
+                                                                                        <dx:ASPxComboBox ID="OutDoor_Lifting_1" runat="server" Height="20px" Width="160px" ClientInstanceName="OutDoor_Lifting_1">
+                                                                                            <ClientSideEvents SelectedIndexChanged ="OutDoor_Lifting_1_OnSelectedChanged" />
+                                                                                            <Items>
+                                                                                                <dx:ListEditItem Text="None - ground level" Value="None - ground level" />
+                                                                                                <dx:ListEditItem Text="Crane" Value="Crane" />
+                                                                                                <dx:ListEditItem Text="Restriction - Add 1 HR" Value="Restriction - Add 1 HR" />
+                                                                                                <dx:ListEditItem Text="Restriction - Add 2 HR" Value="Restriction - Add 2 HR" />
+                                                                                                <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                            </Items>
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Cost Add">
+                                                                            <dx:LayoutItem Caption="">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Lifting_1_Cost" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Lifting_1_Cost">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Lifting_1_Des" runat="server" ClientInstanceName="OutDoor_Lifting_1_Des" NullText="Description" Width="178px" Height="20px">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
+                                                                            </dx:LayoutItem>
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Lifting_1_Height_Caption">
+                                                                                <LayoutItemNestedControlCollection>
+                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Lifting_1_Height" runat="server" Width="34px" Height="17px" ClientInstanceName ="OutDoor_Lifting_1_Height">
+                                                                                        </dx:ASPxTextBox>
+                                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                                </LayoutItemNestedControlCollection>
+                                                                                <CaptionStyle CssClass="OutDoor_Lifting_1_Height_Caption"></CaptionStyle>
                                                                                 <Paddings PaddingLeft="60px" />
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Time(Hrs.)">
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Lifting_1_Reach_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxTextBox ID="OutDoor_Lifting_1_Time" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_Lifting_1_Time">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Lifting_1_Reach" runat="server" Width="34px" Height="17px" ClientInstanceName="OutDoor_Lifting_1_Reach">
                                                                                         </dx:ASPxTextBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
+                                                                                 <CaptionStyle CssClass="OutDoor_Lifting_1_Reach_Caption"></CaptionStyle>
+                                                                            </dx:LayoutItem>
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Lifting_1_Cost_Caption">
+                                                                                <LayoutItemNestedControlCollection>
+                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Lifting_1_Cost" runat="server" Height="17px" Width="34px" ClientInstanceName="OutDoor_Lifting_1_Cost">
+                                                                                        </dx:ASPxTextBox>
+                                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                                </LayoutItemNestedControlCollection>
+                                                                                 <CaptionStyle CssClass="OutDoor_Lifting_1_Cost_Caption"></CaptionStyle>
+                                                                                <Paddings PaddingLeft="60px" />
+                                                                            </dx:LayoutItem>
+                                                                            <dx:LayoutItem Caption="" CaptionStyle-CssClass ="OutDoor_Lifting_1_Time_Caption">
+                                                                                <LayoutItemNestedControlCollection>
+                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Lifting_1_Time" runat="server" Height="17px" Width="31px" ClientInstanceName="OutDoor_Lifting_1_Time">
+                                                                                        </dx:ASPxTextBox>
+                                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                                </LayoutItemNestedControlCollection>
+                                                                                 <CaptionStyle CssClass="OutDoor_Lifting_1_Time_Caption"></CaptionStyle>
                                                                             </dx:LayoutItem>
                                                                         </Items>
                                                                     </dx:LayoutGroup>
@@ -1016,47 +1306,62 @@
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                                         <dx:ASPxComboBox ID="OutDoor_SN_Conditions_1" runat="server" Height="16px" Width="280px" ClientInstanceName="OutDoor_SN_Conditions_1">
+                                                                                            <ClientSideEvents SelectedIndexChanged ="OutDoor_SN_Conditions_1_OnSelectedChanged" />
+                                                                                            <Items>
+                                                                                                <dx:ListEditItem Text="Yes" Value="Yes" />
+                                                                                                <dx:ListEditItem Text="No" Value="No" />
+                                                                                            </Items>
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
                                                                               
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Responsible/Liable Party" ColSpan="2">
+                                                                            <dx:LayoutItem Caption="" ColSpan="2" CaptionStyle-CssClass="OutDoor_Responsible_LP_1_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                                         <dx:ASPxComboBox ID="OutDoor_Responsible_LP_1" runat="server" Height="16px" Width="280px" ClientInstanceName="OutDoor_Responsible_LP_1">
+                                                                                            <Items>
+                                                                                                <dx:ListEditItem Text="Ellington AC &amp; Heat Inc" Value="Ellington AC &amp; Heat Inc" />
+                                                                                                <dx:ListEditItem Text="Home Owner" Value="Home Owner" />
+                                                                                                <dx:ListEditItem Text="Other-Electrician" Value="Other-Electrician" />
+                                                                                                <dx:ListEditItem Text="Other-General Contractor" Value="Other-General Contractor" />
+                                                                                                <dx:ListEditItem Text="Other-Plumber" Value="Other-Plumber" />
+                                                                                                <dx:ListEditItem Text="Other-Roofer" Value="Other-Roofer" />
+                                                                                            </Items>
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
-                                                                              
+                                                                              <CaptionStyle CssClass="OutDoor_Responsible_LP_1_Caption"></CaptionStyle>
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Display Note" ColSpan="2" >
+                                                                            <dx:LayoutItem Caption="" ColSpan="2" CaptionStyle-CssClass="OutDoor_DN_1_Caption">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                                         <dx:ASPxMemo ID="OutDoor_DN_1" runat="server" Width="100%" ClientInstanceName="OutDoor_DN_1">
                                                                                         </dx:ASPxMemo>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
-                                                                              
+                                                                              <CaptionStyle CssClass="OutDoor_DN_1_Caption"></CaptionStyle>
                                                                             </dx:LayoutItem>
                                                                             <dx:LayoutGroup Caption="" ColCount="2" ColSpan="2" GroupBoxDecoration="None">
                                                                                 <Items>
-                                                                                    <dx:LayoutItem Caption="Cost Add">
+                                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="OutDoor_SN_Conditions_1_Cost_Caption">
                                                                                         <LayoutItemNestedControlCollection>
                                                                                             <dx:LayoutItemNestedControlContainer runat="server">
                                                                                                 <dx:ASPxTextBox ID="OutDoor_SN_Conditions_1_Cost" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_SN_Conditions_1_Cost">
                                                                                                 </dx:ASPxTextBox>
                                                                                             </dx:LayoutItemNestedControlContainer>
                                                                                         </LayoutItemNestedControlCollection>
+                                                                                        <CaptionStyle CssClass="OutDoor_SN_Conditions_1_Cost_Caption"></CaptionStyle>
                                                                                         <Paddings PaddingLeft="60px" />
                                                                                     </dx:LayoutItem>
-                                                                                    <dx:LayoutItem Caption="Time(Hrs.)">
+                                                                                    <dx:LayoutItem Caption="" CaptionStyle-CssClass="OutDoor_SN_Conditions_1_Time_Caption">
                                                                                         <LayoutItemNestedControlCollection>
                                                                                             <dx:LayoutItemNestedControlContainer runat="server">
                                                                                                 <dx:ASPxTextBox ID="OutDoor_SN_Conditions_1_Time" runat="server" Height="16px" Width="30px" ClientInstanceName="OutDoor_SN_Conditions_1_Time">
                                                                                                 </dx:ASPxTextBox>
                                                                                             </dx:LayoutItemNestedControlContainer>
                                                                                         </LayoutItemNestedControlCollection>
+                                                                                        <CaptionStyle CssClass="OutDoor_SN_Conditions_1_Time_Caption"></CaptionStyle>
                                                                                     </dx:LayoutItem>
                                                                                 </Items>
                                                                             </dx:LayoutGroup>
@@ -1085,15 +1390,23 @@
                                                                     </dx:LayoutGroup>
                                                                     <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None" ColSpan="2">
                                                                         <Items>
-                                                                            <dx:LayoutItem Caption="PAD" ColSpan="2">
+                                                                            <dx:LayoutItem Caption="PAD">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_2" runat="server"  Width="354px" ClientInstanceName="OutDoor_Pad_2">
+                                                                                        <dx:ASPxComboBox ID="OutDoor_Pad_2" runat="server"  Width="178px" ClientInstanceName="OutDoor_Pad_2">
                                                                                         </dx:ASPxComboBox>
                                                                                     </dx:LayoutItemNestedControlContainer>
                                                                                 </LayoutItemNestedControlCollection>
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Cost Add">
+                                                                            <dx:LayoutItem Caption="">
+                                                                                <LayoutItemNestedControlCollection>
+                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                        <dx:ASPxTextBox ID="OutDoor_Pad_2_Des" runat="server" Width="178px" ClientInstanceName="OutDoor_Pad_2_Des" NullText="Description">
+                                                                                        </dx:ASPxTextBox>
+                                                                                    </dx:LayoutItemNestedControlContainer>
+                                                                                </LayoutItemNestedControlCollection>
+                                                                            </dx:LayoutItem>
+                                                                            <dx:LayoutItem Caption="">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                                         <dx:ASPxTextBox ID="OutDoor_Pad_2_Cost" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_2_Cost">
@@ -1102,7 +1415,7 @@
                                                                                 </LayoutItemNestedControlCollection>
                                                                                 <Paddings PaddingLeft="60px" />
                                                                             </dx:LayoutItem>
-                                                                            <dx:LayoutItem Caption="Time(Hrs.)">
+                                                                            <dx:LayoutItem Caption="">
                                                                                 <LayoutItemNestedControlCollection>
                                                                                     <dx:LayoutItemNestedControlContainer runat="server">
                                                                                         <dx:ASPxTextBox ID="OutDoor_Pad_2_Time" runat="server" Height="17px" Width="30px" ClientInstanceName="OutDoor_Pad_2_Time">
@@ -1271,7 +1584,7 @@
                                                 <dx:ContentControl runat="server"></dx:ContentControl>
                                             </ContentCollection>
                                         </dx:TabPage>
-                                        <dx:TabPage Name="Electircal" Text="Electrical">
+                                        <dx:TabPage Name="Electrical" Text="Electrical">
                                             <ContentCollection>
                                                 <dx:ContentControl runat="server"></dx:ContentControl>
                                             </ContentCollection>

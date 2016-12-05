@@ -44,6 +44,25 @@ namespace HvacPlaybook
             OutDoor_Pad_1_Cost.ClientVisible = false;
             OutDoor_Pad_1_Time.ClientVisible = false;
 
+            OutDoor_Move_1_Des.ClientVisible = false;
+            OutDoor_Move_1_Cost.ClientVisible = false;
+            OutDoor_Move_1_Time.ClientVisible = false;
+
+            OutDoor_Electric_1_Des.ClientVisible = false;
+            OutDoor_Electric_1_Cost.ClientVisible = false;
+            OutDoor_Electric_1_Time.ClientVisible = false;
+
+            OutDoor_Lifting_1_Des.ClientVisible = false;
+            OutDoor_Lifting_1_Cost.ClientVisible = false;
+            OutDoor_Lifting_1_Time.ClientVisible = false;
+            OutDoor_Lifting_1_Height.ClientVisible = false;
+            OutDoor_Lifting_1_Reach.ClientVisible = false;
+
+            OutDoor_Responsible_LP_1.ClientVisible = false;
+            OutDoor_DN_1.ClientVisible = false;
+            OutDoor_SN_Conditions_1_Cost.ClientVisible = false;
+            OutDoor_SN_Conditions_1_Time.ClientVisible = false;
+
     //        btnFinish.ClientVisible = false;
 
         }
