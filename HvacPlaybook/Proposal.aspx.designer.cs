@@ -688,6 +688,15 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox OutDoor_Move_2;
         
         /// <summary>
+        /// OutDoor_Move_2_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Move_2_Des;
+        
+        /// <summary>
         /// OutDoor_Move_2_Cost control.
         /// </summary>
         /// <remarks>
@@ -715,6 +724,15 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxComboBox OutDoor_Electric_2;
         
         /// <summary>
+        /// OutDoor_Electric_2_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Electric_2_Des;
+        
+        /// <summary>
         /// OutDoor_Electric_2_Cost control.
         /// </summary>
         /// <remarks>
@@ -740,6 +758,33 @@ namespace HvacPlaybook {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxComboBox OutDoor_Lifting_2;
+        
+        /// <summary>
+        /// OutDoor_Lifting_2_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_2_Des;
+        
+        /// <summary>
+        /// OutDoor_Lifting_2_Height control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_2_Height;
+        
+        /// <summary>
+        /// OutDoor_Lifting_2_Reach control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox OutDoor_Lifting_2_Reach;
         
         /// <summary>
         /// OutDoor_Lifting_2_Cost control.
