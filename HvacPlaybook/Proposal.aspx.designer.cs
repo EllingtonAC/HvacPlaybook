@@ -850,6 +850,195 @@ namespace HvacPlaybook {
         protected global::DevExpress.Web.ASPxTextBox OutDoor_SN_Condition_2_Time;
         
         /// <summary>
+        /// Indoor_fl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxFormLayout Indoor_fl;
+        
+        /// <summary>
+        /// Indoor_tb_1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_tb_1;
+        
+        /// <summary>
+        /// Indoor_Application_1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox Indoor_Application_1;
+        
+        /// <summary>
+        /// Indoor_Location_1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox Indoor_Location_1;
+        
+        /// <summary>
+        /// Indoor_Location_1_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Location_1_Des;
+        
+        /// <summary>
+        /// Indoor_Location_1_Cost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Location_1_Cost;
+        
+        /// <summary>
+        /// Indoor_Location_1_Time control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Location_1_Time;
+        
+        /// <summary>
+        /// Indoor_Mounting_1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox Indoor_Mounting_1;
+        
+        /// <summary>
+        /// Indoor_Mounting_1_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Mounting_1_Des;
+        
+        /// <summary>
+        /// Indoor_Mounting_1_Cost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Mounting_1_Cost;
+        
+        /// <summary>
+        /// Indoor_Mounting_1_Time control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Mounting_1_Time;
+        
+        /// <summary>
+        /// Indoor_Electric_1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox Indoor_Electric_1;
+        
+        /// <summary>
+        /// Indoor_Electric_1_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Electric_1_Des;
+        
+        /// <summary>
+        /// Indoor_Electirc_1_Cost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Electirc_1_Cost;
+        
+        /// <summary>
+        /// Indoor_Electric_1_Time control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Electric_1_Time;
+        
+        /// <summary>
+        /// Indoor_Heat_1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox Indoor_Heat_1;
+        
+        /// <summary>
+        /// Indoor_Heat_1_Des control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Heat_1_Des;
+        
+        /// <summary>
+        /// Indoor_Heat_1_Cost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Heat_1_Cost;
+        
+        /// <summary>
+        /// Indoor_Heat_1_Time control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_Heat_1_Time;
+        
+        /// <summary>
+        /// Indoor_tb_2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox Indoor_tb_2;
+        
+        /// <summary>
+        /// Indoor_Application_2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox Indoor_Application_2;
+        
+        /// <summary>
         /// popupControl control.
         /// </summary>
         /// <remarks>

@@ -1079,7 +1079,7 @@
                                     </ValidationSettings>
                                 </dx:ASPxComboBox>
                                 <hr />
-                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="0"  >
+                                <dx:ASPxPageControl ID="standar_pagecontrol" runat="server" ClientInstanceName="standar_pagecontrol" Width="400px" ActiveTabIndex="2"  >
                                   
                                     <TabPages>
                                         <dx:TabPage Name="System" Text="System" >
@@ -1966,7 +1966,232 @@
                                         <dx:TabPage Name="Indoor" Text="Indoor">
                                             <ContentCollection>
                                                 <dx:ContentControl runat="server">
-                                                   
+                                                   <dx:ASPxFormLayout ID="Indoor_fl" ClientInstanceName ="Indoor_fl" runat="server" ColCount="2">
+
+                                                       <Items>
+                                                           <dx:LayoutGroup Caption="Standard System #1" GroupBoxStyle-Caption-Font-Bold="true" GroupBoxStyle-Caption-ForeColor="Black">
+<GroupBoxStyle>
+<Caption Font-Bold="True" ForeColor="Black"></Caption>
+</GroupBoxStyle>
+                                                               <Items>
+                                                                   <dx:LayoutGroup Caption="" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_tb_1" runat="server" Width="340px" ClientInstanceName="Indoor_tb_1">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <Paddings PaddingLeft="65px" />
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="APPLICATION">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Application_1" runat="server" Width="340px" ClientInstanceName="Indoor_Application_1">
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="LOCATION">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Location_1" runat="server" Width="180px" ClientInstanceName="Indoor_Location_1">
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Location_1_Des" runat="server" Width="150px" ClientInstanceName="Indoor_Location_1_Des" NullText="Description">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Location_1_Cost" runat="server" ClientInstanceName="Indoor_Location_1_Cost" Height="17px" Width="34px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                                <CaptionStyle CssClass ="Indoor_Location_1_Cost_Caption"></CaptionStyle>
+                                                                               <Paddings PaddingLeft="60px" />
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Location_1_Time" runat="server" ClientInstanceName="Indoor_Location_1_Time" Height="17px" Width="31px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                                <CaptionStyle CssClass ="Indoor_Location_1_Time_Caption"></CaptionStyle>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="MOUNTING">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Mounting_1" runat="server" ClientInstanceName="Indoor_Mounting_1" Width="180px">
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Mounting_1_Des" runat="server" Width="150px" ClientInstanceName="Indoor_Mounting_1_Des" NullText="Description">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Mounting_1_Cost" runat="server" ClientInstanceName="Indoor_Mounting_1_Cost" Width="34px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass ="Indoor_Mounting_1_Cost_Caption"></CaptionStyle>
+                                                                               <Paddings PaddingLeft="55px" />
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Mounting_1_Time" runat="server" ClientInstanceName="Indoor_Mounting_1_Time" Width="31px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass ="Indoor_Mounting_1_Time_Caption"></CaptionStyle>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="Electric">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Electric_1" runat="server" ClientInstanceName="Indoor_Electric_1" Width="200px">
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Electric_1_Des" runat="server" ClientInstanceName="Indoor_Electric_1_Des" NullText="Description" Width="150px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Electirc_1_Cost" runat="server" ClientInstanceName="Indoor_Electirc_Cost" Width="34px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <Paddings PaddingLeft="75px" />
+                                                                               <CaptionStyle CssClass="Indoor_Electirc_1_Cost_Caption"></CaptionStyle>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Electric_1_Time" runat="server" ClientInstanceName="Indoor_Electric_1_Time" Width="31px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Electric_1_Time_Captioin"></CaptionStyle>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="Heat">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Heat_1" runat="server" ClientInstanceName="Indoor_Heat_1" Width="210px">
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Heat_1_Des" runat="server" ClientInstanceName="Indoor_Heat_1_Des" NullText="Description" Width="145px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Heat_1_Cost" runat="server" ClientInstanceName="Indoor_Heat_1_Cost" Width="34px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Heat_1_Cost_Caption"></CaptionStyle>
+                                                                               <Paddings PaddingLeft ="85px" />
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Heat_1_Time" runat="server" ClientInstanceName="Indoor_Heat_1_Time" Width="31px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass ="Indoor_Heat_1_Time_Caption"></CaptionStyle>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                               </Items>
+                                                           </dx:LayoutGroup>
+                                                           <dx:LayoutGroup Caption="Standard System #2"  GroupBoxStyle-Caption-Font-Bold="true" GroupBoxStyle-Caption-ForeColor="Black">
+<GroupBoxStyle>
+<Caption Font-Bold="True" ForeColor="Black"></Caption>
+</GroupBoxStyle>
+                                                               <Items>
+                                                                   <dx:LayoutGroup Caption="" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_tb_2" runat="server" ClientInstanceName="Indoor_tb_2" Width="340px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <Paddings PaddingLeft="65px" />
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="APPLICATION">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Application_2" runat="server" ClientInstanceName="Indoor_Application_2" Width="340px">
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                               </Items>
+                                                           </dx:LayoutGroup>
+                                                       </Items>
+
+                                                   </dx:ASPxFormLayout>
 
                                                 </dx:ContentControl>
                                             </ContentCollection>
