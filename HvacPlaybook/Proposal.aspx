@@ -364,6 +364,460 @@
                 }
             }
 
+            function Indoor_Location_1_SelectedIndexChanged(s,e) {
+                var value = s.GetValue();
+                switch(value){
+                    case "Garage":
+                        Indoor_Location_1_Des.SetVisible(false);
+                        Indoor_Location_1_Cost.SetVisible(true);
+                        Indoor_Location_1_Time.SetVisible(true);
+                        $('.Indoor_Location_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_1_Cost.SetValue("$0");
+                        Indoor_Location_1_Time.SetValue("0.00");
+                        break;
+                    case "Interior Closet":
+                        Indoor_Location_1_Des.SetVisible(false);
+                        Indoor_Location_1_Cost.SetVisible(true);
+                        Indoor_Location_1_Time.SetVisible(true);
+                        $('.Indoor_Location_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_1_Cost.SetValue("$0");
+                        Indoor_Location_1_Time.SetValue("1.00");
+                        break;
+                    case "Utility Room":
+                        Indoor_Location_1_Des.SetVisible(false);
+                        Indoor_Location_1_Cost.SetVisible(true);
+                        Indoor_Location_1_Time.SetVisible(true);
+                        $('.Indoor_Location_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_1_Cost.SetValue("$0");
+                        Indoor_Location_1_Time.SetValue("1.00");
+                        break;
+                    case "Attic":
+                        Indoor_Location_1_Des.SetVisible(false);
+                        Indoor_Location_1_Cost.SetVisible(true);
+                        Indoor_Location_1_Time.SetVisible(true);
+                        $('.Indoor_Location_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_1_Cost.SetValue("$0");
+                        Indoor_Location_1_Time.SetValue("1.00");
+                        break;
+                    case "Not Applicable":
+                        Indoor_Location_1_Des.SetVisible(false);
+                        Indoor_Location_1_Cost.SetVisible(true);
+                        Indoor_Location_1_Time.SetVisible(true);
+                        $('.Indoor_Location_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_1_Cost.SetValue("$0");
+                        Indoor_Location_1_Time.SetValue("0.00");
+                        break;
+                    case "Other:":
+                        Indoor_Location_1_Des.SetVisible(true);
+                        Indoor_Location_1_Cost.SetVisible(true);
+                        Indoor_Location_1_Time.SetVisible(true);
+                        $('.Indoor_Location_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_1_Cost.SetValue("$0");
+                        Indoor_Location_1_Time.SetValue("0.00");
+                        break;
+
+                }
+
+            }
+
+            function Indoor_Location_2_SelectedIndexChanged(s, e) {
+                var value = s.GetValue();
+                switch (value) {
+                    case "Garage":
+                        Indoor_Location_2_Des.SetVisible(false);
+                        Indoor_Location_2_Cost.SetVisible(true);
+                        Indoor_Location_2_Time.SetVisible(true);
+                        $('.Indoor_Location_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_2_Cost.SetValue("$0");
+                        Indoor_Location_2_Time.SetValue("0.00");
+                        break;
+                    case "Interior Closet":
+                        Indoor_Location_2_Des.SetVisible(false);
+                        Indoor_Location_2_Cost.SetVisible(true);
+                        Indoor_Location_2_Time.SetVisible(true);
+                        $('.Indoor_Location_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_2_Cost.SetValue("$0");
+                        Indoor_Location_2_Time.SetValue("1.00");
+                        break;
+                    case "Utility Room":
+                        Indoor_Location_2_Des.SetVisible(false);
+                        Indoor_Location_2_Cost.SetVisible(true);
+                        Indoor_Location_2_Time.SetVisible(true);
+                        $('.Indoor_Location_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_2_Cost.SetValue("$0");
+                        Indoor_Location_2_Time.SetValue("1.00");
+                        break;
+                    case "Attic":
+                        Indoor_Location_2_Des.SetVisible(false);
+                        Indoor_Location_2_Cost.SetVisible(true);
+                        Indoor_Location_2_Time.SetVisible(true);
+                        $('.Indoor_Location_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_2_Cost.SetValue("$0");
+                        Indoor_Location_2_Time.SetValue("1.00");
+                        break;
+                    case "Not Applicable":
+                        Indoor_Location_2_Des.SetVisible(false);
+                        Indoor_Location_2_Cost.SetVisible(true);
+                        Indoor_Location_2_Time.SetVisible(true);
+                        $('.Indoor_Location_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_2_Cost.SetValue("$0");
+                        Indoor_Location_2_Time.SetValue("0.00");
+                        break;
+                    case "Other:":
+                        Indoor_Location_2_Des.SetVisible(true);
+                        Indoor_Location_2_Cost.SetVisible(true);
+                        Indoor_Location_2_Time.SetVisible(true);
+                        $('.Indoor_Location_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Location_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Location_2_Cost.SetValue("$0");
+                        Indoor_Location_2_Time.SetValue("0.00");
+                        break;
+
+                }
+            }
+
+            function Indoor_Mounting_1_SelectedIndexChanged(s,e) {
+                var value = s.GetValue();
+                switch (value) {
+                    case "On existing stand - new insulation + Cabinet Grade Wood Deck":
+                        Indoor_Mounting_1_Des.SetVisible(false);
+                        Indoor_Mounting_1_Cost.SetVisible(true);
+                        Indoor_Mounting_1_Time.SetVisible(true);
+                        $('.Indoor_Mounting_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_1_Cost.SetValue("$75");
+                        Indoor_Mounting_1_Time.SetValue("1.00");
+                        break;
+                    case "On a new Cabinet Grade Wood Stand - insulated and sealed air tight":
+                        Indoor_Mounting_1_Des.SetVisible(false);
+                        Indoor_Mounting_1_Cost.SetVisible(true);
+                        Indoor_Mounting_1_Time.SetVisible(true);
+                        $('.Indoor_Mounting_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_1_Cost.SetValue("$370");
+                        Indoor_Mounting_1_Time.SetValue("2.00");
+                        break;
+                    case "On an new metal stand":
+                        Indoor_Mounting_1_Des.SetVisible(false);
+                        Indoor_Mounting_1_Cost.SetVisible(true);
+                        Indoor_Mounting_1_Time.SetVisible(true);
+                        $('.Indoor_Mounting_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_1_Cost.SetValue("$50");
+                        Indoor_Mounting_1_Time.SetValue("0.00");
+                        break;
+                    case "On a new metal stand - finish closet (drywall)":
+                        Indoor_Mounting_1_Des.SetVisible(false);
+                        Indoor_Mounting_1_Cost.SetVisible(true);
+                        Indoor_Mounting_1_Time.SetVisible(true);
+                        $('.Indoor_Mounting_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_1_Cost.SetValue("$325");
+                        Indoor_Mounting_1_Time.SetValue("2.50");
+                        break;
+                    case "On a new metal stand - finish closet (plywood)":
+                        Indoor_Mounting_1_Des.SetVisible(false);
+                        Indoor_Mounting_1_Cost.SetVisible(true);
+                        Indoor_Mounting_1_Time.SetVisible(true);
+                        $('.Indoor_Mounting_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_1_Cost.SetValue("$375");
+                        Indoor_Mounting_1_Time.SetValue("2.50");
+                        break;
+                    case "Attic installation package - includes pan & mounting":
+                        Indoor_Mounting_1_Des.SetVisible(false);
+                        Indoor_Mounting_1_Cost.SetVisible(true);
+                        Indoor_Mounting_1_Time.SetVisible(true);
+                        $('.Indoor_Mounting_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_1_Cost.SetValue("$650");
+                        Indoor_Mounting_1_Time.SetValue("3.00");
+                        break;
+                    case "Not Applicable":
+                        Indoor_Mounting_1_Des.SetVisible(false);
+                        Indoor_Mounting_1_Cost.SetVisible(true);
+                        Indoor_Mounting_1_Time.SetVisible(true);
+                        $('.Indoor_Mounting_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_1_Cost.SetValue("$0");
+                        Indoor_Mounting_1_Time.SetValue("0.00");
+                        break;
+                    case "Other:":
+                        Indoor_Mounting_1_Des.SetVisible(true);
+                        Indoor_Mounting_1_Cost.SetVisible(true);
+                        Indoor_Mounting_1_Time.SetVisible(true);
+                        $('.Indoor_Mounting_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_1_Cost.SetValue("$0");
+                        Indoor_Mounting_1_Time.SetValue("0.00");
+                        break;
+
+                }
+            }
+
+            function Indoor_Mounting_2_SelectedIndexChanged(s, e) {
+                var value = s.GetValue();
+                switch (value) {
+                    case "On existing stand - new insulation + Cabinet Grade Wood Deck":
+                        Indoor_Mounting_2_Des.SetVisible(false);
+                        Indoor_Mounting_2_Cost.SetVisible(true);
+                        Indoor_Mounting_2_Time.SetVisible(true);
+                        $('.Indoor_Mounting_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_2_Cost.SetValue("$75");
+                        Indoor_Mounting_2_Time.SetValue("1.00");
+                        break;
+                    case "On a new Cabinet Grade Wood Stand - insulated and sealed air tight":
+                        Indoor_Mounting_2_Des.SetVisible(false);
+                        Indoor_Mounting_2_Cost.SetVisible(true);
+                        Indoor_Mounting_2_Time.SetVisible(true);
+                        $('.Indoor_Mounting_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_2_Cost.SetValue("$370");
+                        Indoor_Mounting_2_Time.SetValue("2.00");
+                        break;
+                    case "On an new metal stand":
+                        Indoor_Mounting_2_Des.SetVisible(false);
+                        Indoor_Mounting_2_Cost.SetVisible(true);
+                        Indoor_Mounting_2_Time.SetVisible(true);
+                        $('.Indoor_Mounting_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_2_Cost.SetValue("$50");
+                        Indoor_Mounting_2_Time.SetValue("0.00");
+                        break;
+                    case "On a new metal stand - finish closet (drywall)":
+                        Indoor_Mounting_2_Des.SetVisible(false);
+                        Indoor_Mounting_2_Cost.SetVisible(true);
+                        Indoor_Mounting_2_Time.SetVisible(true);
+                        $('.Indoor_Mounting_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_2_Cost.SetValue("$325");
+                        Indoor_Mounting_2_Time.SetValue("2.50");
+                        break;
+                    case "On a new metal stand - finish closet (plywood)":
+                        Indoor_Mounting_2_Des.SetVisible(false);
+                        Indoor_Mounting_2_Cost.SetVisible(true);
+                        Indoor_Mounting_2_Time.SetVisible(true);
+                        $('.Indoor_Mounting_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_2_Cost.SetValue("$375");
+                        Indoor_Mounting_2_Time.SetValue("2.50");
+                        break;
+                    case "Attic installation package - includes pan & mounting":
+                        Indoor_Mounting_2_Des.SetVisible(false);
+                        Indoor_Mounting_2_Cost.SetVisible(true);
+                        Indoor_Mounting_2_Time.SetVisible(true);
+                        $('.Indoor_Mounting_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_2_Cost.SetValue("$650");
+                        Indoor_Mounting_2_Time.SetValue("3.00");
+                        break;
+                    case "Not Applicable":
+                        Indoor_Mounting_2_Des.SetVisible(false);
+                        Indoor_Mounting_2_Cost.SetVisible(true);
+                        Indoor_Mounting_2_Time.SetVisible(true);
+                        $('.Indoor_Mounting_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_2_Cost.SetValue("$0");
+                        Indoor_Mounting_2_Time.SetValue("0.00");
+                        break;
+                    case "Other:":
+                        Indoor_Mounting_2_Des.SetVisible(true);
+                        Indoor_Mounting_2_Cost.SetVisible(true);
+                        Indoor_Mounting_2_Time.SetVisible(true);
+                        $('.Indoor_Mounting_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Mounting_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Mounting_2_Cost.SetValue("$0");
+                        Indoor_Mounting_2_Time.SetValue("0.00");
+                        break;
+
+                }
+            }
+
+
+            function Indoor_Electric_1_SelectedIndexChanged(s,e) {
+                var value = s.GetValue();
+                switch(value){
+                    case "Install a new shock hazard guard and safety disconnect box":
+                        Indoor_Electric_1_Cost.SetVisible(true);
+                        Indoor_Electric_1_Time.SetVisible(true);
+                        Indoor_Electric_1_Des.SetVisible(false);
+                        $('.Indoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_1_Cost.SetValue("$50");
+                        Indoor_Electric_1_Time.SetValue("0.50");
+                        break;
+                    case "Install a new shock hazard guard":
+                        Indoor_Electric_1_Cost.SetVisible(true);
+                        Indoor_Electric_1_Time.SetVisible(true);
+                        Indoor_Electric_1_Des.SetVisible(false);
+                        $('.Indoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_1_Cost.SetValue("$25");
+                        Indoor_Electric_1_Time.SetValue("0.25");
+                        break;
+                    case "Connect to the existing service as is":
+                        Indoor_Electric_1_Cost.SetVisible(true);
+                        Indoor_Electric_1_Time.SetVisible(true);
+                        Indoor_Electric_1_Des.SetVisible(false);
+                        $('.Indoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_1_Cost.SetValue("$0");
+                        Indoor_Electric_1_Time.SetValue("0.00");
+                        break;
+                    case "Add Subpanel w/2 circuit breakers & wire":
+                        Indoor_Electric_1_Cost.SetVisible(true);
+                        Indoor_Electric_1_Time.SetVisible(true);
+                        Indoor_Electric_1_Des.SetVisible(false);
+                        $('.Indoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_1_Cost.SetValue("$385");
+                        Indoor_Electric_1_Time.SetValue("2.00");
+                        break;
+                    case "Install new Power Wire":
+                        Indoor_Electric_1_Cost.SetVisible(true);
+                        Indoor_Electric_1_Time.SetVisible(true);
+                        Indoor_Electric_1_Des.SetVisible(false);
+                        $('.Indoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_1_Cost.SetValue("$620");
+                        Indoor_Electric_1_Time.SetValue("3.00");
+                        break;
+                    case "Other:":
+                        Indoor_Electric_1_Cost.SetVisible(true);
+                        Indoor_Electric_1_Time.SetVisible(true);
+                        Indoor_Electric_1_Des.SetVisible(true);
+                        $('.Indoor_Electric_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_1_Cost.SetValue("$0");
+                        Indoor_Electric_1_Time.SetValue("0.00");
+                        break;
+                }
+            }
+
+            function Indoor_Electric_2_SelectedIndexChanged(s, e) {
+                var value = s.GetValue();
+                switch (value) {
+                    case "Install a new shock hazard guard and safety disconnect box":
+                        Indoor_Electric_2_Cost.SetVisible(true);
+                        Indoor_Electric_2_Time.SetVisible(true);
+                        Indoor_Electric_2_Des.SetVisible(false);
+                        $('.Indoor_Electric_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_2_Cost.SetValue("$50");
+                        Indoor_Electric_2_Time.SetValue("0.50");
+                        break;
+                    case "Install a new shock hazard guard":
+                        Indoor_Electric_2_Cost.SetVisible(true);
+                        Indoor_Electric_2_Time.SetVisible(true);
+                        Indoor_Electric_2_Des.SetVisible(false);
+                        $('.Indoor_Electric_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_2_Cost.SetValue("$25");
+                        Indoor_Electric_2_Time.SetValue("0.25");
+                        break;
+                    case "Connect to the existing service as is":
+                        Indoor_Electric_2_Cost.SetVisible(true);
+                        Indoor_Electric_2_Time.SetVisible(true);
+                        Indoor_Electric_2_Des.SetVisible(false);
+                        $('.Indoor_Electric_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_2_Cost.SetValue("$0");
+                        Indoor_Electric_2_Time.SetValue("0.00");
+                        break;
+                    case "Add Subpanel w/2 circuit breakers & wire":
+                        Indoor_Electric_2_Cost.SetVisible(true);
+                        Indoor_Electric_2_Time.SetVisible(true);
+                        Indoor_Electric_2_Des.SetVisible(false);
+                        $('.Indoor_Electric_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_2_Cost.SetValue("$385");
+                        Indoor_Electric_2_Time.SetValue("2.00");
+                        break;
+                    case "Install new Power Wire":
+                        Indoor_Electric_2_Cost.SetVisible(true);
+                        Indoor_Electric_2_Time.SetVisible(true);
+                        Indoor_Electric_2_Des.SetVisible(false);
+                        $('.Indoor_Electric_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_2_Cost.SetValue("$620");
+                        Indoor_Electric_2_Time.SetValue("3.00");
+                        break;
+                    case "Other:":
+                        Indoor_Electric_2_Cost.SetVisible(true);
+                        Indoor_Electric_2_Time.SetVisible(true);
+                        Indoor_Electric_2_Des.SetVisible(true);
+                        $('.Indoor_Electric_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Electric_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Electric_2_Cost.SetValue("$0");
+                        Indoor_Electric_2_Time.SetValue("0.00");
+                        break;
+                }
+            }
+
+            function Indoor_Heat_1_SelectedIndexChanged(s,e) {
+                var value = s.GetValue();
+
+                switch(value){
+                    case "Natural Gas":
+                        Indoor_Heat_1_Cost.SetVisible(true);
+                        Indoor_Heat_1_Time.SetVisible(true);
+                        Indoor_Heat_1_Des.SetVisible(false);
+                        $('.Indoor_Heat_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Heat_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Heat_1_Cost.SetValue("$100");
+                        Indoor_Heat_1_Time.SetValue("0.25");
+                        break;
+                    case "LP Gas":
+                        Indoor_Heat_1_Cost.SetVisible(true);
+                        Indoor_Heat_1_Time.SetVisible(true);
+                        Indoor_Heat_1_Des.SetVisible(false);
+                        $('.Indoor_Heat_1_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Heat_1_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Heat_1_Cost.SetValue("$150");
+                        Indoor_Heat_1_Time.SetValue("0.25");
+                        break;
+                }
+            }
+
+
+            function Indoor_Heat_2_SelectedIndexChanged(s, e) {
+                var value = s.GetValue();
+
+                switch (value) {
+                    case "Natural Gas":
+                        Indoor_Heat_2_Cost.SetVisible(true);
+                        Indoor_Heat_2_Time.SetVisible(true);
+                        Indoor_Heat_2_Des.SetVisible(false);
+                        $('.Indoor_Heat_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Heat_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Heat_2_Cost.SetValue("$100");
+                        Indoor_Heat_2_Time.SetValue("0.25");
+                        break;
+                    case "LP Gas":
+                        Indoor_Heat_2_Cost.SetVisible(true);
+                        Indoor_Heat_2_Time.SetVisible(true);
+                        Indoor_Heat_2_Des.SetVisible(false);
+                        $('.Indoor_Heat_2_Cost_Caption').text('Cost Add:');
+                        $('.Indoor_Heat_2_Time_Caption').text('Time(Hrs.):');
+                        Indoor_Heat_2_Cost.SetValue("$150");
+                        Indoor_Heat_2_Time.SetValue("0.25");
+                        break;
+                }
+            }
+           
+
             function OutDoor_Electric_2_OnSelectedChanged(s, e) {
                 var value = s.GetValue();
                 switch (value) {
@@ -1993,6 +2447,16 @@
                                                                                <LayoutItemNestedControlCollection>
                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
                                                                                        <dx:ASPxComboBox ID="Indoor_Application_1" runat="server" Width="340px" ClientInstanceName="Indoor_Application_1">
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="Natural Gas/Upflow Supply" Value="Natural Gas/Upflow Supply" />
+                                                                                               <dx:ListEditItem Text="Natural Gas/Horiz Left Supply" Value="Natural Gas/Horiz Left Supply" />
+                                                                                               <dx:ListEditItem Text="Natural Gas/Horiz Right Supply" Value="Natural Gas/Horiz Right Supply" />
+                                                                                               <dx:ListEditItem Text="Natural Gas/Downflow Supply" Value="Natural Gas/Downflow Supply" />
+                                                                                               <dx:ListEditItem Text="Propane Gas/Upflow Supply" Value="Propane Gas/Upflow Supply" />
+                                                                                               <dx:ListEditItem Text="Natural Gas/Horiz Left Supply" Value="Natural Gas/Horiz Left Supply" />
+                                                                                               <dx:ListEditItem Text="Propane Gas/Horiz Right Supply" Value="Propane Gas/Horiz Right Supply" />
+                                                                                               <dx:ListEditItem Text="Propane Gas/Downflow Supply" Value="Propane Gas/Downflow Supply" />
+                                                                                           </Items>
                                                                                        </dx:ASPxComboBox>
                                                                                    </dx:LayoutItemNestedControlContainer>
                                                                                </LayoutItemNestedControlCollection>
@@ -2005,6 +2469,15 @@
                                                                                <LayoutItemNestedControlCollection>
                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
                                                                                        <dx:ASPxComboBox ID="Indoor_Location_1" runat="server" Width="180px" ClientInstanceName="Indoor_Location_1">
+                                                                                           <ClientSideEvents SelectedIndexChanged="Indoor_Location_1_SelectedIndexChanged" />
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="Garage" Value="Garage" />
+                                                                                               <dx:ListEditItem Text="Interior Closet" Value="Interior Closet" />
+                                                                                               <dx:ListEditItem Text="Utility Room" Value="Utility Room" />
+                                                                                               <dx:ListEditItem Text="Attic" Value="Attic" />
+                                                                                               <dx:ListEditItem Text="Not Applicable" Value="Not Applicable" />
+                                                                                               <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                           </Items>
                                                                                        </dx:ASPxComboBox>
                                                                                    </dx:LayoutItemNestedControlContainer>
                                                                                </LayoutItemNestedControlCollection>
@@ -2044,6 +2517,17 @@
                                                                                <LayoutItemNestedControlCollection>
                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
                                                                                        <dx:ASPxComboBox ID="Indoor_Mounting_1" runat="server" ClientInstanceName="Indoor_Mounting_1" Width="180px">
+                                                                                           <ClientSideEvents SelectedIndexChanged="Indoor_Mounting_1_SelectedIndexChanged" />
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="On existing stand - new insulation + Cabinet Grade Wood Deck" Value="On existing stand - new insulation + Cabinet Grade Wood Deck" />
+                                                                                               <dx:ListEditItem Text="On a new Cabinet Grade Wood Stand - insulated and sealed air tight" Value="On a new Cabinet Grade Wood Stand - insulated and sealed air tight" />
+                                                                                               <dx:ListEditItem Text="On an new metal stand" Value="On an new metal stand" />
+                                                                                               <dx:ListEditItem Text="On a new metal stand - finish closet (drywall)" Value="On a new metal stand - finish closet (drywall)" />
+                                                                                               <dx:ListEditItem Text="On a new metal stand - finish closet (plywood)" Value="On a new metal stand - finish closet (plywood)" />
+                                                                                               <dx:ListEditItem Text="Attic installation package - includes pan &amp; mounting" Value="Attic installation package - includes pan &amp; mounting" />
+                                                                                               <dx:ListEditItem Text="Not Applicable" Value="Not Applicable" />
+                                                                                               <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                           </Items>
                                                                                        </dx:ASPxComboBox>
                                                                                    </dx:LayoutItemNestedControlContainer>
                                                                                </LayoutItemNestedControlCollection>
@@ -2083,6 +2567,15 @@
                                                                                <LayoutItemNestedControlCollection>
                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
                                                                                        <dx:ASPxComboBox ID="Indoor_Electric_1" runat="server" ClientInstanceName="Indoor_Electric_1" Width="200px">
+                                                                                           <ClientSideEvents SelectedIndexChanged="Indoor_Electric_1_SelectedIndexChanged" />
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="Install a new shock hazard guard and safety disconnect box" Value="Install a new shock hazard guard and safety disconnect box" />
+                                                                                               <dx:ListEditItem Text="Install a new shock hazard guard" Value="Install a new shock hazard guard" />
+                                                                                               <dx:ListEditItem Text="Connect to the existing service as is" Value="Connect to the existing service as is" />
+                                                                                               <dx:ListEditItem Text="Add Subpanel w/2 circuit breakers &amp; wire" Value="Add Subpanel w/2 circuit breakers &amp; wire" />
+                                                                                               <dx:ListEditItem Text="Install new Power Wire" Value="Install new Power Wire" />
+                                                                                               <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                           </Items>
                                                                                        </dx:ASPxComboBox>
                                                                                    </dx:LayoutItemNestedControlContainer>
                                                                                </LayoutItemNestedControlCollection>
@@ -2098,12 +2591,12 @@
                                                                            <dx:LayoutItem Caption="">
                                                                                <LayoutItemNestedControlCollection>
                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
-                                                                                       <dx:ASPxTextBox ID="Indoor_Electirc_1_Cost" runat="server" ClientInstanceName="Indoor_Electirc_Cost" Width="34px" Height="17px">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Electric_1_Cost" runat="server" ClientInstanceName="Indoor_Electric_1_Cost" Width="34px" Height="17px">
                                                                                        </dx:ASPxTextBox>
                                                                                    </dx:LayoutItemNestedControlContainer>
                                                                                </LayoutItemNestedControlCollection>
                                                                                <Paddings PaddingLeft="75px" />
-                                                                               <CaptionStyle CssClass="Indoor_Electirc_1_Cost_Caption"></CaptionStyle>
+                                                                               <CaptionStyle CssClass="Indoor_Electric_1_Cost_Caption"></CaptionStyle>
                                                                            </dx:LayoutItem>
                                                                            <dx:LayoutItem Caption="">
                                                                                <LayoutItemNestedControlCollection>
@@ -2112,7 +2605,7 @@
                                                                                        </dx:ASPxTextBox>
                                                                                    </dx:LayoutItemNestedControlContainer>
                                                                                </LayoutItemNestedControlCollection>
-                                                                               <CaptionStyle CssClass="Indoor_Electric_1_Time_Captioin"></CaptionStyle>
+                                                                               <CaptionStyle CssClass="Indoor_Electric_1_Time_Caption"></CaptionStyle>
                                                                            </dx:LayoutItem>
                                                                        </Items>
                                                                    </dx:LayoutGroup>
@@ -2122,6 +2615,11 @@
                                                                                <LayoutItemNestedControlCollection>
                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
                                                                                        <dx:ASPxComboBox ID="Indoor_Heat_1" runat="server" ClientInstanceName="Indoor_Heat_1" Width="210px">
+                                                                                           <ClientSideEvents SelectedIndexChanged="Indoor_Heat_1_SelectedIndexChanged" />
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="Natural Gas" Value="Natural Gas" />
+                                                                                               <dx:ListEditItem Text="LP Gas" Value="LP Gas" />
+                                                                                           </Items>
                                                                                        </dx:ASPxComboBox>
                                                                                    </dx:LayoutItemNestedControlContainer>
                                                                                </LayoutItemNestedControlCollection>
@@ -2181,9 +2679,209 @@
                                                                                <LayoutItemNestedControlCollection>
                                                                                    <dx:LayoutItemNestedControlContainer runat="server">
                                                                                        <dx:ASPxComboBox ID="Indoor_Application_2" runat="server" ClientInstanceName="Indoor_Application_2" Width="340px">
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="Natural Gas/Upflow Supply" Value="Natural Gas/Upflow Supply" />
+                                                                                               <dx:ListEditItem Text="Natural Gas/Horiz Left Supply" Value="Natural Gas/Horiz Left Supply" />
+                                                                                               <dx:ListEditItem Text="Natural Gas/Horiz Right Supply" Value="Natural Gas/Horiz Right Supply" />
+                                                                                               <dx:ListEditItem Text="Natural Gas/Downflow Supply" Value="Natural Gas/Downflow Supply" />
+                                                                                               <dx:ListEditItem Text="Propane Gas/Upflow Supply" Value="Propane Gas/Upflow Supply" />
+                                                                                               <dx:ListEditItem Text="Natural Gas/Horiz Left Supply" Value="Natural Gas/Horiz Left Supply" />
+                                                                                               <dx:ListEditItem Text="Propane Gas/Horiz Right Supply" Value="Propane Gas/Horiz Right Supply" />
+                                                                                               <dx:ListEditItem Text="Propane Gas/Downflow Supply" Value="Propane Gas/Downflow Supply" />
+                                                                                           </Items>
                                                                                        </dx:ASPxComboBox>
                                                                                    </dx:LayoutItemNestedControlContainer>
                                                                                </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="LOCATION">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Location_2" runat="server" ClientInstanceName="Indoor_Location_2" Width="180px">
+                                                                                            <ClientSideEvents SelectedIndexChanged="Indoor_Location_2_SelectedIndexChanged" />
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="Garage" Value="Garage" />
+                                                                                               <dx:ListEditItem Text="Interior Closet" Value="Interior Closet" />
+                                                                                               <dx:ListEditItem Text="Utility Room" Value="Utility Room" />
+                                                                                               <dx:ListEditItem Text="Attic" Value="Attic" />
+                                                                                               <dx:ListEditItem Text="Not Applicable" Value="Not Applicable" />
+                                                                                               <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                           </Items>
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Location_2_Des" runat="server" ClientInstanceName="Indoor_Location_2_Des" Width="150px" NullText="Description">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Location_2_Cost" runat="server" ClientInstanceName="Indoor_Location_2_Cost" Width="34px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Location_2_Cost_Caption"></CaptionStyle>
+                                                                               <Paddings PaddingLeft="60px" />
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Location_2_Time" runat="server" ClientInstanceName="Indoor_Location_2_Time" Width="31px" Height="17px"> 
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Location_2_Time_Caption"></CaptionStyle>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="MOUNTING">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Mounting_2" runat="server" ClientInstanceName="Indoor_Mounting_2" Width="180px">
+                                                                                            <ClientSideEvents SelectedIndexChanged="Indoor_Mounting_2_SelectedIndexChanged" />
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="On existing stand - new insulation + Cabinet Grade Wood Deck" Value="On existing stand - new insulation + Cabinet Grade Wood Deck" />
+                                                                                               <dx:ListEditItem Text="On a new Cabinet Grade Wood Stand - insulated and sealed air tight" Value="On a new Cabinet Grade Wood Stand - insulated and sealed air tight" />
+                                                                                               <dx:ListEditItem Text="On an new metal stand" Value="On an new metal stand" />
+                                                                                               <dx:ListEditItem Text="On a new metal stand - finish closet (drywall)" Value="On a new metal stand - finish closet (drywall)" />
+                                                                                               <dx:ListEditItem Text="On a new metal stand - finish closet (plywood)" Value="On a new metal stand - finish closet (plywood)" />
+                                                                                               <dx:ListEditItem Text="Attic installation package - includes pan &amp; mounting" Value="Attic installation package - includes pan &amp; mounting" />
+                                                                                               <dx:ListEditItem Text="Not Applicable" Value="Not Applicable" />
+                                                                                               <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                           </Items>
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Mounting_2_Des" runat="server" ClientInstanceName="Indoor_Mounting_2_Des" Width="150px" NullText="Description">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Mounting_2_Cost" runat="server" ClientInstanceName="Indoor_Mounting_2_Cost" Width="34px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Mounting_2_Cost_Caption"></CaptionStyle>
+                                                                               <Paddings PaddingLeft="55px" />
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Mounting_2_Time" runat="server" ClientInstanceName="Indoor_Mounting_2_Time" Width="31px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Mounting_2_Time_Caption"></CaptionStyle>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="Electric">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Electric_2" runat="server" Width="200px" ClientInstanceName="Indoor_Electric_2">
+                                                                                           <ClientSideEvents SelectedIndexChanged="Indoor_Electric_2_SelectedIndexChanged" />
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="Install a new shock hazard guard and safety disconnect box" Value="Install a new shock hazard guard and safety disconnect box" />
+                                                                                               <dx:ListEditItem Text="Install a new shock hazard guard" Value="Install a new shock hazard guard" />
+                                                                                               <dx:ListEditItem Text="Connect to the existing service as is" Value="Connect to the existing service as is" />
+                                                                                               <dx:ListEditItem Text="Add Subpanel w/2 circuit breakers &amp; wire" Value="Add Subpanel w/2 circuit breakers &amp; wire" />
+                                                                                               <dx:ListEditItem Text="Install new Power Wire" Value="Install new Power Wire" />
+                                                                                               <dx:ListEditItem Text="Other:" Value="Other:" />
+                                                                                           </Items>
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Electric_2_Des" runat="server" Width="150px" ClientInstanceName="Indoor_Electric_2_Des" NullText="Description">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Electric_2_Cost" runat="server" ClientInstanceName="Indoor_Electric_2_Cost" Width="34px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Electric_2_Cost_Caption"></CaptionStyle>
+                                                                               <Paddings PaddingLeft="75px" />
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Electric_2_Time" runat="server" ClientInstanceName="Indoor_Electric_2_Time" Width="31px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Electric_2_Time_Caption"></CaptionStyle>
+                                                                           </dx:LayoutItem>
+                                                                       </Items>
+                                                                   </dx:LayoutGroup>
+                                                                   <dx:LayoutGroup Caption="" ColCount="2" GroupBoxDecoration="None">
+                                                                       <Items>
+                                                                           <dx:LayoutItem Caption="Heat">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxComboBox ID="Indoor_Heat_2" runat="server" Width="210px" ClientInstanceName="Indoor_Heat_2">
+                                                                                           <ClientSideEvents SelectedIndexChanged="Indoor_Heat_2_SelectedIndexChanged" />
+                                                                                           <Items>
+                                                                                               <dx:ListEditItem Text="Natural Gas" Value="Natural Gas" />
+                                                                                               <dx:ListEditItem Text="LP Gas" Value="LP Gas" />
+                                                                                           </Items>
+                                                                                       </dx:ASPxComboBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Heat_2_Des" runat="server" Width="145px" ClientInstanceName="Indoor_Heat_2_Des" NullText="Description">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Heat_2_Cost" runat="server" ClientInstanceName="Indoor_Heat_2_Cost" Width="34px" Height="17px">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Heat_2_Cost_Caption"></CaptionStyle>
+                                                                               <Paddings PaddingLeft="85px" />
+                                                                           </dx:LayoutItem>
+                                                                           <dx:LayoutItem Caption="">
+                                                                               <LayoutItemNestedControlCollection>
+                                                                                   <dx:LayoutItemNestedControlContainer runat="server">
+                                                                                       <dx:ASPxTextBox ID="Indoor_Heat_2_Time" runat="server" Width="31px" Height="17px" ClientInstanceName="Indoor_Heat_2_Time">
+                                                                                       </dx:ASPxTextBox>
+                                                                                   </dx:LayoutItemNestedControlContainer>
+                                                                               </LayoutItemNestedControlCollection>
+                                                                               <CaptionStyle CssClass="Indoor_Heat_2_Time_Caption"></CaptionStyle>
                                                                            </dx:LayoutItem>
                                                                        </Items>
                                                                    </dx:LayoutGroup>

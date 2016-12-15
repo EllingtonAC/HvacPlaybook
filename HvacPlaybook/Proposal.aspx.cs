@@ -88,6 +88,42 @@ namespace HvacPlaybook
 
             //        btnFinish.ClientVisible = false;
 
+            Indoor_Location_1_Des.ClientVisible = false;
+            Indoor_Location_1_Cost.ClientVisible = false;
+            Indoor_Location_1_Time.ClientVisible = false;
+
+            Indoor_Mounting_1_Des.ClientVisible = false;
+            Indoor_Mounting_1_Cost.ClientVisible = false;
+            Indoor_Mounting_1_Time.ClientVisible = false;
+
+            Indoor_Electric_1_Des.ClientVisible = false;
+            Indoor_Electric_1_Cost.ClientVisible = false;
+            Indoor_Electric_1_Time.ClientVisible = false;
+
+            Indoor_Heat_1_Des.ClientVisible = false;
+            Indoor_Heat_1_Cost.ClientVisible = false;
+            Indoor_Heat_1_Time.ClientVisible = false;
+
+
+
+
+
+            Indoor_Location_2_Des.ClientVisible = false;
+            Indoor_Location_2_Cost.ClientVisible = false;
+            Indoor_Location_2_Time.ClientVisible = false;
+
+            Indoor_Mounting_2_Des.ClientVisible = false;
+            Indoor_Mounting_2_Cost.ClientVisible = false;
+            Indoor_Mounting_2_Time.ClientVisible = false;
+
+            Indoor_Electric_2_Des.ClientVisible = false;
+            Indoor_Electric_2_Cost.ClientVisible = false;
+            Indoor_Electric_2_Time.ClientVisible = false;
+
+            Indoor_Heat_2_Des.ClientVisible = false;
+            Indoor_Heat_2_Cost.ClientVisible = false;
+            Indoor_Heat_2_Time.ClientVisible = false;
+
         }
 
         protected void showTabs_Init(object sender, EventArgs e)
